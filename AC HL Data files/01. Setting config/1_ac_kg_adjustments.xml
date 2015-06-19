@@ -1,0 +1,108 @@
+<!-- Adjustments - Keeper's Guide - 1_ac_kg_adjustments -->
+
+<thing
+  id="adjACDmnt"
+  name="Manage Dementia"
+  compset="Adjustment"
+  description="Modify the user's Dementia value..."
+  uniqueness="useronce">
+  <fieldval field="adjMinimum" value="0"/>
+  <fieldval field="adjMaximum" value="20"/>  
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+  <eval phase="PreTraits" priority="5000"><![CDATA[
+      var ACDmnt as number
+      ACDmnt = field[adjUser].value
+      perform #traitadjust[trACDmnt,+,ACDmnt,"Increased dementia"]      
+      ]]>
+      <before name="Calc trtFinal"/>
+  </eval>     
+</thing>
+<thing id="trACDmnt" name="Dementia" description="Dementia is managed on the In-Play tab as a tracker" compset="Trait" uniqueness="unique">
+	<fieldval field="trtAbbrev" value="Dem"/>
+	<usesource source="sepActCth"/>
+    <tag group="DashTacCon" tag="Basics" name="Basics" abbrev="Basics"/>
+    <tag group="DashTacCon" tag="Traits" name="Traits" abbrev="Traits"/>
+    <tag group="explicit" tag="6"/>
+
+	<!-- when Dementia>=Sanity, we need to add 1 to the sanity score. How do we stop this firing every time the dementia level goes further up? Probably need to set a hidden value as soon as it hits Sanity and reset this value when Dementia falls below Sanity again. Each time we equal, increment another counter that gets added to Sanity score.  -->
+	
+	</thing>
+
+
+  <thing
+  id="trkACDmnt"
+  name="Dementia"
+  compset="Bennies"
+  >
+  <fieldval field="trkMin" value="0"/>
+  <fieldval field="trkMax" value="20"/>
+      <usesource source="sepActCth"/>
+  <tag group="Helper" tag="Bootstrap"/>
+  <tag group="Helper" tag="ResetMin"/>
+  <tag group="Helper" tag="NoMaxBound"/>
+  
+  <eval index="1" phase="PreTraits" priority="5000"><![CDATA[
+      var Dmnt as number
+      ~hero.child[resSkill].field[resSpent].value += field[trtUser].value - 1
+      ~Dmnt = #trkmax[trkACDmnt]
+	  ~need to find value of tracker
+		Dmnt = hero.child[trkACDmnt].field[trkUser].value
+	 perform #traitadjust[trACDmnt,+,Dmnt,"Increased dementia"]
+    ]]>
+  </eval>  
+  </thing>
+  <thing id="trACSanity" name="Sanity" description="Those who face the twisted horrors of the Mythos tend not to remain sane for very long. The Sanity statistic is a trait that lets you monitor your character&#146;s mental health. Sanity is (2 + half Spirit) - Corruption" compset="Trait" uniqueness="unique">
+    <fieldval field="trtAbbrev" value="San"/>
+    <fieldval field="trtBonus" value="2"/>
+    <usesource source="sepActCth"/>
+    <tag group="DashTacCon" tag="Basics" name="Basics" abbrev="Basics"/>
+    <tag group="DashTacCon" tag="Traits" name="Traits" abbrev="Traits"/>
+    <tag group="explicit" tag="5"/>
+    <eval phase="Traits" priority="4000" name="Calc Derived Bonus"><![CDATA[
+    ~sanity is 2 plus half the character\'s Spirit - Corruption, but we track attributes at
+      ~the half value (2-6), so we add Spirit directly; we get the Spirit by using
+      ~the "#trait" macro
+      ~we also subtract 1 level of sanity for each level of Knowledge(Mythos) that the player knows
+      ~Note: We must also handle an overage beyond d12 on a +1 per 2 full points basis.
+      ~Note: We ADD the amount in case other effects have already applied adjustments.
+      var bonus as number
+      var corruption as number
+      var dementia as number
+      bonus = #trait[attrSpi]
+      dementia = #trait[trACDmnt]
+	  
+      if (bonus >= 6) then
+        bonus = 6 + round(hero.child[attrSpi].field[trtRoll].value / 2,0,-1)
+      endif    
+      
+      	foreach pick in hero where "thingid.skKnow"
+  	  		if (compare(lowercase(eachpick.field[domDomain].text),"mythos") = 0)   then
+    			corruption = eachpick.field[trtFinal].value - 1
+  			endif
+  		nexteach
+  		if (corruption > 0) then
+  	 		bonus = bonus - corruption
+  		endif	
+  	
+	 	~ try to get the value of sanity. If sanity is less than or qual to Dmnt, then increase fieldval trkMax. Read trkMax into Sanity as an adjustment 
+		if (dementia >= field[trtFinal].value) then
+			~ How do I create a secret placeholder value?
+			~perform field[trtCorrupt].modify[+,1,"Dementia impeded sanity loss"]
+			~bonus = bonus - field[trtCorrupt].value
+		endif   		
+  		bonus = bonus
+  		
+      perform field[trtBonus].modify[+,bonus,"Half Spirit and - Corruption"]]]>
+      <before name="Derived trtFinal"/>
+      <after name="Calc trtFinal"/>
+    </eval>
+</thing>
+
+
+<!-- /1_ac_kg_adjustments -->
+
+
+

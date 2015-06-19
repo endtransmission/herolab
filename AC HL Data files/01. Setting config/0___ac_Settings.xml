@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document signature="Hero Lab Data">
+<!--
+Savage Worlds Data file for Modiphius' Acthung! Cthulhu setting. 
+All data Copyright Modiphius 2013
+http://www.modiphius.com/achtung-cthulhu.html
+
+Datafile Author: Paul Smith
+Email: reg@endtransmission.co.uk
+
+http://mythostransmissions.blogspot.co.uk/search/label/Hero%20Lab
+
+-
+Outstanding issues for resolution:
+-
+1) On Hold - Every time Dementia exceeds Sanity we need to increment Sanity by 1 permanently - Need to work out how to create a hidden placeholder field.
+2) Translating mythos tomes - hinACMTam - How do we add a knowledge skill if they do not already have one?
+3) Translating mythos tomes -  hinACMTam - If Knowledge(Mythos) is added when the translation has already been completed, then it gains 2 upgrades instead of one.
+4) How do we handle magic?!!
+5) Review all skills and edges to include adjustments to rolls - See thing_edges.dat - Ace edge as example.
+6) Add vehicle weaponry
+7) Finish vehicles from GM book
+8) Bennies come up twice in the tracker. How do we change the output text for this?
+
+
+Injuries
+1) injACExhau - 2 levels of exhaustion
+2) 
+
+Edge issues
+1) edgACCBoy - Check that at least 4 skill points have been spent on Smarts skills
+2) edgACGrzl - Increase character rank by 1
+3) edgACMExp - Increase sanity by 1 - increment hidden dementia field in sanity by 1-3D6
+4) edgACGrzF - Shooting D8
+5) edgACRNco - Pick requirement of military rank
+6) edgACCdo - +2 to survival rolls; +2 to environmental fatigue; +1 Stealth - all cumulative with other skills
+7) edgACCoUF - Should have one of the two Ranks; Rank(NCO) or Rank(Officer)
+8) edgACInIn - Check for one of Habit, Phobia or Quirk
+
+Weapon issues
+1) wpACM12S - Damage is listed as 1-3D6? This will cause negative damage?!
+
+Hindrances
+1) Fix minor and major shellshock D1/D2 reference - can't remember what this is in reality
+
+-
+Questions
+-
+1) Should Improved Bullseye have a prerequisite of Bullseye?
+2) 
+
+-
+Usage
+-
+
+Sanity - The character's Sanity is based upon the Spirit value. The In-Play tab allows the addition of Dementia points. Sanity loss needs to be added as an Injury. Each occurance of Sanity Loss is -1 Sanity.
+
+-->
+<thing id="setActCth" name="Achtung! Cthulhu" compset="SetAdjust" summary="Achtung! Cthulhu setting">
+
+	<!--bootstrap thing="skACDream"></bootstrap -->	
+
+    <eval phase="Initialize" priority="10000"><![CDATA[
+  perform #resspent[resSkill,-,1,"Free Dreaming"]
+]]></eval>
+</thing>
+
+<!-- / 0__ac_Settings -->
+
+
+
+

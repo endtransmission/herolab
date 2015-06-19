@@ -1,0 +1,75 @@
+ <?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- This file contains all specifications pertaining to the operational control of
+      the data files. This includes usage pools, sources, sortsets, and other related
+      mechanisms.
+-->
+
+<document signature="Hero Lab Structure">
+  <!-- This source enables the selection of Achtung! Cthulhu as a setting -->
+ <source
+    id="sepActCth"
+    name="Acthung! Cthulhu: Campaign Setting"
+    selectable="no"
+    parent="UserParent"
+    sortorder="0"
+    description="Achtung! Cthulhu: Campaign Setting">
+ </source>
+ 
+  <source
+    id="ACKG"
+    name="Achtung! Cthulhu - Keeper's Guide"
+    parent="sepActCth"
+    reportable="yes"
+    sortorder="0"
+    description="Each character utilizes the Savage Worlds Achtung! Cthulhu Keeper's Guide material.">
+  </source>	 
+  <source
+    id="ACPG"
+    name="Achtung! Cthulhu - Player's Guide"
+    parent="sepActCth"
+    reportable="yes"
+    sortorder="1"
+    description="Each character utilizes the Savage Worlds Achtung! Cthulhu Player's Guide material.">
+  </source>	
+   
+ <source
+    id="ACTKing"
+    name="Achtung! Cthulhu - Three Kings"
+    parent="sepActCth"
+    reportable="yes"
+    sortorder="2"
+    description="Each character utilizes the Savage Worlds Achtung! Cthulhu Three Kings material.">
+  </source>
+		
+ <source
+    id="ACHotS"
+    name="Achtung! Cthulhu - Heroes of the sea"
+    parent="sepActCth"
+    reportable="yes"
+    sortorder="3"
+    description="Each character utilizes the Savage Worlds Achtung! Cthulhu Heroes of the Sea material.">
+  </source>	
+
+ <source
+    id="ACtTM"
+    name="Achtung! Cthulhu - The Trellborg Monstrosities"
+    parent="sepActCth"
+    reportable="yes"
+    sortorder="4"
+    description="Each character utilizes the Savage Worlds Achtung! Cthulhu Trellborg Monstrosities material.">
+  </source>	
+
+
+<source
+  id="ACTimeWW2"
+  name="WW2"
+  parent="TimePeriod"
+  sortorder="2"
+  default="yes"
+  description="Enables the availability of equipment from the WW2 time period">
+  </source> 
+  
+</document>
+
+

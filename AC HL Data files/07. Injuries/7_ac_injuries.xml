@@ -1,0 +1,88 @@
+<!-- Injuries - Keeper Guide - 7_ac_injuries -->
+
+<thing id="injACAddi" name="Addiction" description="Drinking is the way in which many of those shocked and battered by their experiences deal with their mental pain and stresses. A few become addicted to morphine, though dousing one’s troubles in alcohol is far more common during World War Two. While these things ease the pain, they also create powerful cravings for more to keep the demons at bay. The investigator gains the Habit (Major) Hindrance." compset="Injury">
+    <usesource source="sepActCth"/>
+    <bootstrap thing="hinHabit"></bootstrap>
+</thing>
+<thing id="injACBlst" name="Bloodlust" description="This investigator has killed more than his fair share, and many times he was close enough to look into his enemy’s eyes. The experience has awakened a strange lust within him. This investigator has the Bloodthirsty Hindrance, but with a difference. If he is unable to kill in hand-to- hand combat every seven days, he becomes dangerously mean until his bloodlust is sated." compset="Injury">
+    <usesource source="sepActCth"/>
+    <bootstrap thing="hinBloodth"></bootstrap>
+</thing>
+<thing id="injACDist" name="Distant" description="The investigator becomes distant and uncommunicative. His comrades can get his attention but others are not so lucky, and he suffers a -4 Charisma penalty with them. This state lasts for the rest of this session and the next, unless there is some significant downtime (at least three weeks) between the two."
+compset="Injury">
+	<usesource source="sepActCth"/>
+  <eval index="1" phase="PreTraits" priority="5000">
+    <before name="Calc trtFinal"/><![CDATA[
+      #traitbonus[trCharisma] -= 4
+    ]]></eval>
+</thing>
+<thing id="injACExhau" name="Exhausted" description="Suffers 2 levels of Fatigue" compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+<thing id="injACfls" name="Flashbacks" description="Not only is the investigator Panicked, but when things really go bad he is overwhelmed by images of past battles and dead comrades. In a combat situation images flash through his mind, confusing the past with reality. A normal hero draws two cards per round and acts on the worst of the two. Heroes with the Level Headed Edge draw just one card to act on; those with the Improved version draw only two cards, and act on the best one. This can be brought under control for the current battle through a Spirit check at -4." compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+<thing id="injACFMind" name="Fragile Mind" description="The investigator has had a close brush with the Mythos and has suffered a -2 Sanity" compset="Injury">
+    <usesource source="sepActCth"/>
+    <eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trACSanity,-,2,"Fragile Mind"]]]>
+      <before name="Calc trtFinal"/>
+      </eval>
+</thing>
+<thing id="injACInsa" name="Insanity" description="Gone insane" compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+<thing id="injACMjPh" name="Major Phobia" description="The investigator is Shaken and gains an indefinite Phobia (Major) Hindrance somehow associated with the trauma." compset="Injury">
+    <usesource source="sepActCth"/>
+    <bootstrap thing="hinPhobia"></bootstrap>
+</thing>
+
+<thing id="ingACMoFe" name="Mark of Fear" description="The hero is Shaken and also suffers some cosmetic physical alteration—a white streak forms in the hero’s hair, his eyes twitch constantly, or some other minor physical alteration. This reduces his Charisma by one." compset="Injury">
+    <usesource source="sepActCth"/>
+      <eval index="1" phase="PreTraits" priority="5000">
+    <before name="Calc trtFinal"/><![CDATA[
+      #traitbonus[trCharisma] -= 1
+    ]]></eval>
+</thing>
+
+<thing id="injACMnPh" name="Minor Phobia" description="The investigator is Shaken and gains an indefinite Phobia (Minor) Hindrance somehow associated with the trauma." compset="Injury">
+    <usesource source="sepActCth"/>
+    <bootstrap thing="hinPhobia"></bootstrap>
+</thing>
+
+<thing id="injACNiT" name="Night Terrors" description="The investigator is Shaken and is so traumatized by events that he cannot sleep properly without some kind of sedative (on the front lines, this usually means alcohol). As a result, the individual is permanently tired. When it is important to sleep, a failed Vigor roll (-2) means this character simply cannot do so, no matter what they try" compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+<thing id="injACPara" name="Paranoia" description="Not only is this poor soul Shaken, but he has seen things in the course of his duty 14 that cannot be rationally explained. He feels that every unexplained or odd action has a deeper meaning and goes to great lengths to fit them into his skewed perception of the world. He gains the Delusional (Major) Hindrance, as well as a -2 to his Charisma." compset="Injury">
+    <usesource source="sepActCth"/>
+    <bootstrap thing="hinDelude"></bootstrap>
+      <eval index="1" phase="PreTraits" priority="5000">
+    <before name="Calc trtFinal"/><![CDATA[
+      #traitbonus[trCharisma] -= 2
+    ]]></eval>
+</thing>
+<thing id="injACQrk" name="Quirk" description="The investigator is Panicked and develops a coping strategy. Whether it is religion, a lucky rabbit’s foot, or a picture of his sweetheart carried inside his helmet liner, the investigator finds something that helps him deal with the terrors he faces. Pick a simple routine or object to be the focus of this disorder. As long as the focus is undisturbed, he can function normally. If, however, the focus is lost or disturbed (his unit is attacked before he can finish his prayers, or his rabbit's foot is lost, for instance) all his Trait rolls are modified by -1." compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+<thing id="injACSLoss" name="Sanity Loss" description="-1 Sanity" compset="Injury">
+    <usesource source="sepActCth"/>
+    <eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trACSanity,-,1,"Sanity Loss"]]]>
+      <before name="Calc trtFinal"/>
+      </eval>
+</thing>
+<thing id="injACShkn" name="Shaken" description="Shaken, not stirred" compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+<thing id="injACTmPh" name="Temporary Phobia" description="Temporary Phobia" compset="Injury">
+    <usesource source="sepActCth"/>
+    <bootstrap thing="hinPhobia"></bootstrap>
+</thing>
+
+<thing id="injACShak" name="The Shakes" description="The investigator is Shaken and when the adrenaline starts pumping, he starts to shake like a leaf. During combat, or any time that the character is under stress (as determined by the Game Master), his hands start shaking, reducing all Agility and Agility-related skill rolls by -2." compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+
+<thing id="injACTYS" name="Thousand Yard Stare" description="Not only is the investigator Shaken, but the distant look in his eyes speaks volumes about the horrors he has seen. He makes all his Notice rolls at -2." compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+
+<!-- / 7_ac_injuries -->

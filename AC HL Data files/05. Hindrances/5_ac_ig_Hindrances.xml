@@ -1,0 +1,42 @@
+<!-- Hindrances - Investigator's Guide - 5_ac_ig_Hindrances -->
+<thing id="hinACBMag" name="Bullet Magnet" description="Some soldiers are just in the wrong place at the wrong time, but this character seems to make a habit of it. The poor, unfortunate soul is hit by accidental fire (using the Innocent Bystander rules) on a 1–2 for single-shot weapons, and a 1–3 for shotguns or full-auto fire. He is also hit on a 1–2 under Heavy Fire" compset="Hindrance" uniqueness="useronce">
+	<usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
+</thing> 
+  
+<thing id="hinACDTh" name="Doubting Thomas (A!C)" description="Besides the description presented in Savage Worlds, Doubting Thomases are just not prepared to deal with the things they will encounter in the world of Achtung! Cthulhu. Characters with this Hindrance suffer double Dementia when such an event occurs (see Achtung! Cthulhu: the Keeper’s Guide to the Secret War for more details). On the plus side, they gain +2 to their starting Sanity for their stubborn faith in the mundane." compset="Hindrance" uniqueness="useronce">
+  	<usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+  	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
+   	<eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trACSanity,+,2,"Doubting Thomas"]]]>
+      <before name="Calc trtFinal"/>
+    </eval>	
+</thing>
+
+<thing id="hinACFan" name="Fanatic" description="Your hero believes so strongly in his country, political party, philosophy, or religion that he will do almost anything for it, and often tries to persuade, cajole, convert, or browbeat those who do not subscribe to his beliefs into doing so. Fanaticism motivates some enemy troops (SS troops and many Japanese soldiers), but it can also manifest among elite Allied troops like commandos, paratroopers, or US Marines, as well as the regular rank and file. If your character is ordered to do something that serves or is perfectly aligned with his beliefs, he must do it, however foolish or dangerous it might be. His attitude among friendly troops may be disadvantageous depending on the situation, and the Game Master may apply a –2 Charisma modifier when appropriate." compset="Hindrance" uniqueness="useronce">
+	<usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
+</thing> 
+
+<thing id="hinACSShMn" name="Shell Shocked (Minor)" description="Modern warfare puts tremendous stress on those on the frontlines. Some soldiers are able to deal with it better than others, but in the end, everyone has a breaking point. Once that point is passed, psychological breakdown begins. Soldiers call it the shakes, shell shock, or flak happy. At a Minor level, the Shell Shocked Hindrance means your character has -1 to his Sanity and tends to stare a lot. At either level, whenever the character gains a Quirk, or suffers a Phobia loss he must make a Spirit roll or be mentally Incapacitated for 1d6 rounds (2d6 rounds if taken as a Major Hindrance)." compset="Hindrance" uniqueness="useronce">
+	<usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	<tag group="User" tag="HindMinor" name="HindMinor" abbrev="HindMinor"/>
+	  	<eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trACSanity,-,1,"Shell Shocked"]]]>
+      <before name="Calc trtFinal"/>
+    </eval>
+</thing> 
+<thing id="hinACSShMj" name="Shell Shocked (Major)" description="Modern warfare puts tremendous stress on those on the frontlines. Some soldiers are able to deal with it better than others, but in the end, everyone has a breaking point. Once that point is passed, psychological breakdown begins. Soldiers call it the shakes, shell shock, or flak happy. As a Major Hindrance, Sanity and Charisma suffer a -2 penalty. At either level, whenever the character gains a Quirk, or suffers a Phobia loss he must make a Spirit roll or be mentally Incapacitated for 1d6 rounds (2d6 rounds if taken as a Major Hindrance)." compset="Hindrance" uniqueness="useronce">
+	<usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
+	<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #traitadjust[trCharisma,-,2,"Shell Shocked"]]]>
+		<![CDATA[perform #traitadjust[trACSanity,-,2,"Shell Shocked"]]]>
+      		<before name="Calc trtFinal"/>
+    </eval>
+</thing> 
+
+<thing id="hinACSlow" name="Slow" description="Not everyone is born with cat-like reflexes. This soldier is just a little slow on the uptake, or maybe he freezes up when lead starts flying. He draws two cards in combat and acts on the worst. If he draws a Joker, he uses it normally and ignores his Hindrance for the round. Slow characters cannot take the Quick Edge, but they can actually improve their reaction time by taking the Level Headed Edge (but not during character creation). For this soldier, Level Headed allows them to draw one card and act normally. Improved Level Headed grants them two cards and they act on the better of the two." compset="Hindrance" uniqueness="useronce">
+	<usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
+</thing>
+
+<!-- / 5_ac_ig_Hindrances -->
