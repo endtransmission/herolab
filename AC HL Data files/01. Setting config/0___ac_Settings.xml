@@ -17,10 +17,6 @@ Sanity - The character's Sanity is based upon the Spirit value. The In-Play tab 
 
 -->
 <thing id="setActCth" name="Achtung! Cthulhu" compset="SetAdjust" summary="Achtung! Cthulhu setting">
-
-</thing>
-<thing id="setACTKing" name="Achtung! Cthulhu Three Kings" compset="SetAdjust" summary="Three Kings adventure">
-  <usesource source="ACTKing"/>
 	<bootstrap thing="skACDream"></bootstrap>	
     <eval phase="Initialize" priority="10000"><![CDATA[
   perform #resspent[resSkill,-,1,"Free Dreaming"]

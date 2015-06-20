@@ -1,0 +1,10 @@
+<!-- 6_ac_kg_skills -->
+<thing id="skACDream" name="Dreaming" description="All investigators start with d4 in Dreaming. They have been manipulating their own dreams for their whole lives, albeit unknowingly. Dreaming is used to alter Dreamlands reality and can only be performed if the user is asleep and dreaming. The dreamer chooses, consciously or unconsciously, what it is he creates. He may make something small, such as a piece of fruit, or he may achieve something wonderful. The creation process may take a single dream and a Dreaming roll to complete, or it may take many separate creative efforts, many dreams and much time. If the dream\'s creative impulse comes from the dreamer\'s subconscious, the GM may decide what is created in whole or in part. Creations normally are not a threat to the Dreamer (for example, his subconscious would not dream up a Deep One to attack him), unless he is insane at the time of course. The more complex or large the item the investigator wishes to create, the larger the penalty to the Dreaming roll. See below for a list of suggested cumulative penalties: Living: -4; Mechanical: -4; Each size +1/-1; Richly decorated: -2" compset="Skill">
+    <usesource source="setActCth"/>
+    <link linkage="attribute" thing="attrSpi"/>
+</thing>
+<thing id="skACAtTech" name="Atlantean Technology" description="This skill represents the ability to use ancient artefacts from Atlantis and any technology derived from them by Nachtwolf scientists. Failure indicates that the device doesn't work and may, in extreme cases, cause it to explode with a small burst template." compset="Skill">
+    <usesource source="setActCth"/>
+    <link linkage="attribute" thing="attrSma"/>
+</thing>
+<!-- / skills -->

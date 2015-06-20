@@ -1,0 +1,31 @@
+<!-- example tome -->
+<thing id="eqACBoS" name="The Book of Shadows" 
+		description="The Book of Shadows Instructions: Sanity loss: 1 (Add the Sanity Loss injury); Cthulhu Mythos: +1 die type (Add the Hindrance: Mythos Tome After Effect); To translate, add the Translate(Book of Shadows) adjustment to your character; Arcane Lore: -1; Spells to learn: Black Binding (zombie), Grey Binding (uncontrollable zombie, casting reduced by -2), Devouring Retribution (Summon uncontrollable Shoggoth)" compset="Equipment" summary="Mythos Grimoir" uniqueness="unique">
+    <fieldval field="shortname" value="Book of Shadows"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACtBoS"
+  name="Translate(Book of Shadows)"
+  compset="Adjustment"
+  description="Language - German (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="4"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>    
+  
+  <!-- requires Language(German) -->
+  <prereq message="Language(German) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"german") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+
+<!-- end tomes -->

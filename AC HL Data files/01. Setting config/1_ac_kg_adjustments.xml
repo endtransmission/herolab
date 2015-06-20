@@ -1,25 +1,6 @@
 <!-- Adjustments - Keeper's Guide - 1_ac_kg_adjustments -->
 
-<thing
-  id="adjACDmnt"
-  name="Manage Dementia"
-  compset="Adjustment"
-  description="Modify the user's Dementia value..."
-  uniqueness="useronce">
-  <fieldval field="adjMinimum" value="0"/>
-  <fieldval field="adjMaximum" value="20"/>  
-  <usesource source="sepActCth"/>
-  <tag group="AdjustShow" tag="Increment"/>
-  <tag group="Helper" tag="UserAdjust"/>
-  <tag group="InPlay" tag="PermOK"/>
-  <eval phase="PreTraits" priority="5000"><![CDATA[
-      var ACDmnt as number
-      ACDmnt = field[adjUser].value
-      perform #traitadjust[trACDmnt,+,ACDmnt,"Increased dementia"]      
-      ]]>
-      <before name="Calc trtFinal"/>
-  </eval>     
-</thing>
+
 <thing id="trACDmnt" name="Dementia" description="Dementia is managed on the In-Play tab as a tracker" compset="Trait" uniqueness="unique">
 	<fieldval field="trtAbbrev" value="Dem"/>
 	<usesource source="sepActCth"/>

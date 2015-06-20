@@ -1,19 +1,57 @@
 <!-- Hindrances - Keeper Guide - 5_AC_Hindrances -->
   <thing id="hinACDeRe" name="Mythos power: Devouring Retribution" description="Summon Shoggoth - The wielder has no control over the released Shoggoth. " compset="Hindrance" uniqueness="useronce">
 	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	  	      <eval phase="PreTraits" priority="5000">
+
+~ Fix the hindrance and reward point numbers.
+hero.child[resHinder].field[resMax].value -= 1
+herofield[acMaxMinor].value += 1
+herofield[acMaxHindP].value += 1
+      <before name="Calc trtFinal"/>
+      </eval>
   </thing>
       
   <thing id="hinACBbZ" name="Mythos power: Black Binding (Zombie)"  description="Summon Zombie " compset="Hindrance" uniqueness="useronce">
 	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	  	      <eval phase="PreTraits" priority="5000">
+
+~ Fix the hindrance and reward point numbers.
+hero.child[resHinder].field[resMax].value -= 1
+herofield[acMaxMinor].value += 1
+herofield[acMaxHindP].value += 1
+      <before name="Calc trtFinal"/>
+      </eval>
   </thing>
   
   <thing id="hinACGbZ" name="Mythos power: Grey Binding (Zombie)"  description="Summon Zombie - The wielder has no control over the released Zombie. " compset="Hindrance" uniqueness="useronce">
 	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	  	      <eval phase="PreTraits" priority="5000">
+
+~ Fix the hindrance and reward point numbers.
+hero.child[resHinder].field[resMax].value -= 1
+herofield[acMaxMinor].value += 1
+herofield[acMaxHindP].value += 1
+      <before name="Calc trtFinal"/>
+      </eval>
   </thing>
   
   <thing id="hinACBiDr" name="Mythos power: Bind Dreamer" description="Bind Dreamer " compset="Hindrance" uniqueness="useronce">
 	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	      <eval phase="PreTraits" priority="5000">
+
+~ Fix the hindrance and reward point numbers.
+hero.child[resHinder].field[resMax].value -= 1
+herofield[acMaxMinor].value += 1
+herofield[acMaxHindP].value += 1
+      <before name="Calc trtFinal"/>
+      </eval>
   </thing> 
+  
+    <thing id="hinACBRep" name="Bad Reputation" description="Everyone is uneasy around this character" compset="Hindrance" summary="Bad reputation" uniqueness="useronce">
+	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	  <tag group="Print" tag="NoPrint" name="NoPrint" abbrev="NoPrint"/>
+	  <eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trCharisma,-,2,"Bad Reputation"]]]></eval>
+  </thing>
   
   <thing id="hinACMTam" name="Mythos Tome after effect [Add Knowledge(Mythos)]" description="This needs to be added when you sell or drop a Mythos Tome (Assuming you\'ve read the book!) and you don\'t already have Knowledge(Mythos). NOTE You will need to manually add the text Mythos to the free knowledge skill" compset="Hindrance" summary="After effects of reading a mythos tome" uniqueness="useronce">
 	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
@@ -22,16 +60,8 @@
 	  <bootstrap thing="skKnow">
 		  <assignval field="domDomain" value="Mythos"/>
 	  </bootstrap>
-		  <!-- need to add Knowledge(mythos) -->
-  </thing>
-  
-  <thing id="hinACBRep" name="Bad Reputation" description="Everyone is uneasy around this character" compset="Hindrance" summary="Bad reputation" uniqueness="useronce">
-	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
-	  <tag group="Print" tag="NoPrint" name="NoPrint" abbrev="NoPrint"/>
-	  <eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trCharisma,-,2,"Bad Reputation"]]]></eval>
-  </thing>
-  
-  <thing id="hinACMTim" name="Mythos Tome after effect [Increase Mythos]" description="This needs to be added when you sell or drop a Mythos Tome (Assuming you&apos;ve read the book!)" compset="Hindrance" summary="After effects of reading a mythos tome">
+   </thing>
+   <thing id="hinACMTim" name="Mythos Tome after effect [Increase Mythos]" description="This needs to be added when you sell or drop a Mythos Tome (Assuming you&apos;ve read the book!)" compset="Hindrance" summary="After effects of reading a mythos tome">
 	  <usesource source="sepActCth"/>
 	  <tag group="Print" tag="NoPrint"/>
 	  <bootstrap thing="injACSLoss"></bootstrap>
