@@ -1,0 +1,25 @@
+<!-- Interface 19.40 Hindrances -->
+
+<thing id="hin40SSh" name="Shell Shock" description="The character begins the first round of combat Shaken. The status can be removed as normal" compset="Hindrance" uniqueness="useronce">
+	<usesource source="int1940" parent="sepActCth" name="Achtung! Cthulhu - Interface 19.40"/>
+	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
+</thing> 
+<thing id="hin40Shak" name="Shakes" description="Whenever the character fails a Spirit roll, they must take a Vigor roll. If this is failed, they begin to have a seizure" compset="Hindrance" uniqueness="useronce">
+	<usesource source="int1940" parent="sepActCth" name="Achtung! Cthulhu - Interface 19.40"/>
+	<tag group="User" tag="HindMinor" name="HindMinor" abbrev="HindMinor"/>
+</thing> 
+<thing id="hin40owd" name="Owned" description="The character owes such a massive debt to someone that they have little say over what the owner tells them to do" compset="Hindrance" uniqueness="useronce">
+	<usesource source="int1940" parent="sepActCth" name="Achtung! Cthulhu - Interface 19.40"/>
+	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
+</thing> 
+<thing id="hin40RaMn" name="Racist (Minor)" description="The character has -2 Charisma among other races" compset="Hindrance" uniqueness="useronce">
+	<usesource source="int1940" parent="sepActCth" name="Achtung! Cthulhu - Interface 19.40"/>
+	<tag group="User" tag="HindMinor" name="HindMinor" abbrev="HindMinor"/>
+</thing> 
+<thing id="hin40RaMj" name="Racist (Major)" description="The character has -4 Charisma among other races" compset="Hindrance" uniqueness="useronce">
+	<usesource source="int1940" parent="sepActCth" name="Achtung! Cthulhu - Interface 19.40"/>
+	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
+</thing> 
+
+
+<!-- end -->
