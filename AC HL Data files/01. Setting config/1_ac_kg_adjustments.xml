@@ -27,9 +27,7 @@
   
   <eval index="1" phase="PreTraits" priority="5000"><![CDATA[
       var Dmnt as number
-      ~hero.child[resSkill].field[resSpent].value += field[trtUser].value - 1
-      ~Dmnt = #trkmax[trkACDmnt]
-	  ~need to find value of tracker
+	  ~ Need to see if the user has hinACDTh, if so, the tracker needs to add 2 instead of 1
 		Dmnt = hero.child[trkACDmnt].field[trkUser].value
 	 perform #traitadjust[trACDmnt,+,Dmnt,"Increased dementia"]
     ]]>

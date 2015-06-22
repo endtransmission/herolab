@@ -1,0 +1,6 @@
+<!-- Factions -->
+<thing id="facACSecD" name="Section D" description="British secret service (Mythos)" compset="Faction" uniqueness="unique">
+    <usesource source="ACTKing"/>
+</thing>
+
+<!-- / factions -->

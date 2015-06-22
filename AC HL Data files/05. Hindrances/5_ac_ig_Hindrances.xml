@@ -4,7 +4,7 @@
 	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
 </thing> 
   
-<thing id="hinACDTh" name="Doubting Thomas (A!C)" description="Besides the description presented in Savage Worlds, Doubting Thomases are just not prepared to deal with the things they will encounter in the world of Achtung! Cthulhu. Characters with this Hindrance suffer double Dementia when such an event occurs (see Achtung! Cthulhu: the Keeper’s Guide to the Secret War for more details). On the plus side, they gain +2 to their starting Sanity for their stubborn faith in the mundane." compset="Hindrance" uniqueness="useronce">
+<thing id="hinACDTh" name="Doubting Thomas (A!C)" description="Characters with this Hindrance suffer double Dementia when such an event occurs (NOTE: This is means you need to manually add two Dementia points to the tracker). \n\nOn the plus side, they gain +2 to their starting Sanity for their stubborn faith in the mundane." compset="Hindrance" uniqueness="useronce">
   	<usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
   	<tag group="User" tag="HindMajor" name="HindMajor" abbrev="HindMajor"/>
    	<eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trACSanity,+,2,"Doubting Thomas"]]]>
