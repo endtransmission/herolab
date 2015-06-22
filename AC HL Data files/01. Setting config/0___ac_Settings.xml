@@ -16,7 +16,7 @@ Usage
 Sanity - The character's Sanity is based upon the Spirit value. The In-Play tab allows the addition of Dementia points. Sanity loss needs to be added as an Injury. Each occurance of Sanity Loss is -1 Sanity.
 
 -->
-<thing id="setActCth" name="Achtung! Cthulhu" compset="SetAdjust" summary="Achtung! Cthulhu setting">
+<thing id="sepActCth" name="Achtung! Cthulhu" compset="SetAdjust" summary="Achtung! Cthulhu setting">
 	<bootstrap thing="skACDream"></bootstrap>	
     <eval phase="Initialize" priority="10000"><![CDATA[
   perform #resspent[resSkill,-,1,"Free Dreaming"]
