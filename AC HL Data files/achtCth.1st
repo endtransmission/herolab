@@ -60,7 +60,14 @@
     description="Each character utilizes the Savage Worlds Achtung! Cthulhu Trellborg Monstrosities material.">
   </source>	
 
-
+ <source
+ 	id="int1940"
+ 	name="Achtung! Cthulhu - Interface 19.40"
+ 	parent="sepActCth"
+ 	reportable="yes"
+ 	sortorder="5"
+ 	description="Each character can gain access to Interface 19.40 crossover material">
+</source>
 <source
   id="ACTimeWW2"
   name="WW2"

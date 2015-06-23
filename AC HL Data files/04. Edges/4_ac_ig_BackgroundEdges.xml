@@ -1,0 +1,99 @@
+
+<thing id="edgACAGrd" name="Academy Graduate" description="Your character is a graduate of one of his country’s prestigious military academies, and among officers is considered part of the “special club”. The extensive regimen of military training has prepared him for combat as well as the rigours of military politics. \n\nThis future general adds +2 Charisma when dealing with “Headquarters”-type officers (rather than field officers) of the same service branch (Army or Navy), in addition to any other bonuses they may have for other social Edges. \n\nThis officer also ignores the Rank requirement for Leadership Edges. Unfortunately, most enlisted troops have a dim view of “ringknockers” and his Charisma is at –2 with enlisted soldiers until he reaches the rank of Captain. Such malcontents will frequently disobey orders and cause mayhem when they can get away with it." compset="Edge" uniqueness="useronce">
+    <fieldval field="shortname" value="Academy Graduate"/>
+    <usesource source="sepActCth"/>    
+    <!-- requirements: Novice and D6 Smarts -->
+        <tag group="MinRank" tag="0"/>
+        <tag group="EdgeType" tag="Background"/>
+        <exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+</thing>
+<thing id="edgACCBoy" name="College Boy" description="This investigator spent some time in college before entering the workplace, being drafted, or enlisting. He has an additional 4 skill points to spend on any Smarts related skills. At least one of these must be a Knowledge skill at d6 or better (his Major)." compset="Edge" uniqueness="useronce">
+    <fieldval field="shortname" value="College Boy"/>
+    <usesource source="sepActCth"/>   
+    <!-- requirements: Novice and D8 Smarts -->
+        <tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+        <tag group="EdgeType" tag="Background"/>
+		<eval phase="Setup" priority="8000"><![CDATA[ #resmax[resSkill] +=4 ]]></eval> 
+		<exprreq message="Smarts d8 required"><![CDATA[#trait[attrSma] >= 4]]></exprreq>
+		<!-- To Do: check that the at least 4 points have been spent on Smarts skills -->
+</thing>
+<thing id="edgACGrzl" name="Grizzled" description="This veteran has already seen the elephant and survived it. He begins play as a Seasoned character to represent his previous experience, and his military rank is higher than normal. Grizzled soldiers get four Advances immediately upon character creation, just as if they had earned 20 Experience Points. The price is that the advancements must be repaid— the next 20 Experience Points your hero earns are forfeited to pay back the debt. An enlisted character with this Edge begins as an NCO. A character who takes the Rank Edge starts as an Officer." compset="Edge" uniqueness="useronce">
+    <fieldval field="shortname" value="Grizzled"/>
+    <usesource source="sepActCth"/>
+    <!-- need to increase character's Rank -->
+    <tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+    <tag group="EdgeType" tag="Background"/>
+    <eval phase="PreTraits" priority="5000"><![CDATA[    
+	    #resmax[resXP] += 20
+		#resmax[resAdvance] +=4]]>    
+    </eval>
+    <exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+	<exprreq message="Spirit d6 required"><![CDATA[#trait[attrSpi] >= 3]]></exprreq>
+	<exprreq message="Vigor d8 required"><![CDATA[#trait[attrVig] >= 4]]></exprreq>
+    <exprreq message="Shooting d8 required"><![CDATA[#traitfound[skShooting] >= 4]]></exprreq>
+    <exprreq message="Fighting d8 required"><![CDATA[#traitfound[skFighting] >= 4]]></exprreq>
+</thing>
+<thing id="edgACIcyC" name="Icy Calm" description="The Investigator is able to ignore penalty modifiers on the rolls on both the Horror and Terror Tables" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Icy Calm"/>
+		<usesource source="sepActCth"/>
+		<tag group="MinRank" tag="1" name="Seasoned" abbrev="Seasoned"/>
+	    <tag group="EdgeType" tag="Background"/>
+        <!-- Requirements: Seasoned -->
+		<exprreq message="Spirit d8 required"><![CDATA[#trait[attrSpi] >= 4]]></exprreq>
+</thing>
+<thing id="edgACMExp" name="Mythos Exposure" description="At some point in the past your character had an encounter with the supernatural. Maybe it was the haunted house he spent the night in on a dare, or perhaps he read strange tomes from the locked trunk in his grandfather’s attic and learned something best left unlearnt. However it happened, your character has a sense that strange and fearsome things really do exist in this world and, unlike many, this knowledge has made him stronger. Add +2 to Sanity, and +2 to fear rolls caused by supernatural events." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Mythos Exposure"/>
+		<usesource source="sepActCth"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+	    <tag group="EdgeType" tag="Background"/>
+		<!-- Requirements: Novice, Smarts d8+  -->
+    	<eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trACSanity,+,2,"Mythos Exposure"]]]>
+      		<before name="Calc trtFinal"/>
+      	</eval>
+		<exprreq message="Smarts d8 required"><![CDATA[#trait[attrSma] >= 4]]></exprreq>
+</thing>
+<thing id="edgACNIGB" name="National Identity - British" description="The British stiff upper lip makes them incredibly resilient under even the most dreadful circumstances. Tommys add +2 to Spirit rolls made to resist Fear, Intimidation, or arcane powers. It does not add to Spirit rolls made to recover from being Shaken." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="National Identity - British"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+    	<tag group="User" tag="NeedWild"/>		
+</thing>
+<thing id="edgACNICa" name="National Identity - Canadian" description="The young nation of Canada is the first of the Commonwealth nations to join England in their war on Germany. Their soldiers are eager to prove themselves, and get +3 on trait and damage rolls when dealt a Joker, rather than +2." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="National Identity - Canadian"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+    	<tag group="User" tag="NeedWild"/>		
+</thing>
+<thing id="edgACNIFr" name="National Identity - French" description="Those French who resist their German occupiers are at terrible risk. Spies are shot on sight, while those seen as collaborators find themselves quietly targeted by their neighbours. Learning to live under such circumstances is only possible with incredible spirit. If a Frenchman with this Edge spends a benny to make a roll, he rerolls any result of 1." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="National Identity - French"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>				
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+    	<tag group="User" tag="NeedWild"/>		
+</thing>
+<thing id="edgACNIPL" name="National Identity - Polish" description="The Poles suffer terribly under Nazi occupation. Though their home army is defeated in the Blitzkrieg of 39, they later field resistance fighters, special forces (such as those who accompany British troops at Operation Market Garden), and entire divisions in France and Africa. The desire to regain their country makes these fighters extremely resilient. Polish characters add +1 to their Toughness (after 1939)" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="National Identity - Polish"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>				
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+    	<tag group="User" tag="NeedWild"/>		
+</thing>
+<thing id="edgACNIRU" name="National Identity - Russian" description="many “Ivans” seem resigned to inevitable suffering, whether in the trenches, in captivity, or back at the collective farm. Yet they struggle on, even while waiting for the British and Americans to re-ignite the Western Front. Soviet characters with this Edge are somewhat numb to their fate and ignore one level of wound modifier." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="National Identity - Russian"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+    	<tag group="User" tag="NeedWild"/>		
+</thing>
+<thing id="edgACNIUS" name="National Identity - American" description="The rest of the world could not help but see the smiling American GI as extremely fortunate. Lady Luck often smiles on the Yanks in combat as well. Whenever the character spends a benny, roll a d6. On a 6, he gets the benny back immediately (it may even be spent on the same roll he spent the first one on)." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="National Identity - American"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+    	<tag group="User" tag="NeedWild"/>		
+</thing>
+
+
+<!-- end 4_IG_backEdges -->

@@ -1,0 +1,110 @@
+<!-- 4_ig_combatEdges -->
+<thing id="edgACBnG" name="Blood and Guts" description="This warrior has seen his fair share of gore and carnage and has grown jaded to it. He automatically passes Fear tests caused by gore. In addition, his savagery grants him +1 damage in bloody close combat." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Blood and Guts"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="2" name="Veteran" abbrev="Veteran"/>	
+</thing>
+
+
+<thing id="edgACBeye" name="Bullseye" description="Many of the enemy’s fighting machines are terribly formidable, but well-trained and experienced gunners know just where to aim in order to hit a vehicle’s weak spot. Characters with this Edge may modify vehicle critical hit die rolls result by 1, up or down." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Bullseye"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="1" name="Seasoned" abbrev="Seasoned"/>	
+</thing>
+<thing id="edgACIBE" name="Improved Bullseye" description="As for Bullseye, but the critical can be modified by up to 2 points." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Improved Bullseye"/>
+	<usesource source="sepActCth"/>
+			<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="2" name="Veteran" abbrev="Veteran"/>	
+		<pickreq thing="edgACBeye"/>
+</thing>
+
+<thing id="edgACDig" name="Dig In!" description="This canny grunt is good at making himself small and getting the most out of any cover he is in. While in cover, foes suffer a –1 penalty to any physical attack rolls against him. The hero also adds +1 to his Toughness against area effect damage as long as he is prone or in cover." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Dig In!"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+</thing>
+<thing id="edgACIDig" name="Improved Dig In!" description="As for Dig In!, but foes subtract 2 from attack rolls, and the hero gains +2 Toughness versus area effect attacks if prone or in cover." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Improved Dig In!"/>
+	<usesource source="sepActCth"/>
+			<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="1" name="Seasoned" abbrev="Seasoned"/>
+		<pickreq thing="edgACDig"/>	
+</thing>
+<thing id="edgACGrzF" name="Grazing Fire" description="This edge allows your character to use a machine gun more effectively in suppressive fire mode. Targets who roll a 1 or 2 on their Spirit checks are hit and take damage." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Grazing Fire"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="1" name="Seasoned" abbrev="Seasoned"/>
+		<pickreq thing="edgRckRoll"/>	
+		<!-- shooting D8 -->
+	    <exprreq message="Shooting d8 required."><![CDATA[
+		      #traitfound[skShooting] >= 4
+      	]]></exprreq>
+</thing>
+
+<thing id="edgACHeD" name="Hoze Em down" description="Machine-gunners with this Edge can suppress an area more effectively than the typical gunner. When using a braced medium or heavy machine gun, this killer can sup- press an area equal to two Medium Burst templates. The second template must be adjacent to the first (in any direction), and the weapon burns through double its usual amount of ammunition." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Hoze em down"/>
+	<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+		<!-- shooting D8 -->
+		    <exprreq message="Shooting d8 required."><![CDATA[
+      #traitfound[skShooting] >= 4
+      ]]></exprreq>
+</thing>
+<thing id="edgACIHeD" name="Improved Hoze Em Down" description="This edge allows a machine-gunner to suppress an area equal to three Medium Burst templates, at triple the usual amount of ammo spent. Each additional template must be adjacent to the first." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Improved Hoze Em Down"/>
+			<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="1" name="Seasoned" abbrev="Seasoned"/>
+		<pickreq thing="edgACHeD"/>	
+</thing>
+
+<thing id="edgACInc" name="Incoming" description="After a while, many veterans are able to distinguish the sounds of different kinds of artillery fire, both friendly and enemy, and determine if it is outgoing or incoming mail. Whenever a character with the Incoming! Edge is under artillery attack, he may throw himself prone before the shell impacts, reducing damage from the attack by –2. This is cumulative with Dig In!" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Incoming"/>
+	<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="1" name="Seasoned" abbrev="Seasoned"/>
+</thing>
+
+<thing id="edgACPiB" name="Pickle Barrel" description="The primary goal of tactical and strategic bombers is of course, getting their eggs (bombs) or fish (torpedoes) in the pickle barrel (on target). This Edge helps the pilots and aircrew of these kinds of planes to do just that. Characters with this Edge receive a +2 on skill rolls to hit with bombs or torpedoes." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Pickle Barrel"/>
+			<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		<prereq message="Piloting D6 or Knowledge(Bombadier)required">
+		<validate><![CDATA[
+   foreach pick in hero where "thingid.skKnow"
+	 if (compare(lowercase(eachpick.field[domDomain].text),"bombadier") = 0) then
+		@valid=1
+		Done
+	 endif
+   nexteach
+   
+   if (hero.childfound[skPiloting].field[trtFinal].value >= 3) then
+   		@valid=1
+   		Done
+   endif
+   ]]></validate></prereq>
+</thing>
+<thing id="edgACTnkH" name="Tank hunter" description="To an infantryman, a tank is a near-invincible, armoured, fire-breathing monster. To a character with the Tank Hunter Edge, a tank is just a large target. When attacking armoured vehicles, your hunter knows how to hit the weak points and adds +4 to the AP value of the weapon. This bonus applies to attacks with ranged anti-tank weapons or to close up weapons like limpet mines, bundles of grenades, and Molotov cocktails." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Tank hunter"/>
+			<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+</thing>
+<thing id="edgACITnH" name="Improved Tank hunter" description="The Tank Hunter adds a d6 to any damage roll versus a vehicle with Heavy Armour." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Improved Tank hunter"/>
+			<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Combat"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		<pickreq thing="edgACTnkH"/>
+</thing>
+
+
+<!-- end -->
