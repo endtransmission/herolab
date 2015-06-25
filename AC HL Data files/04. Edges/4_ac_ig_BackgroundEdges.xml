@@ -57,14 +57,20 @@
 		<usesource source="sepActCth"/>
 	    <tag group="EdgeType" tag="Background"/>		
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
-    	<tag group="User" tag="NeedWild"/>		
+    	<tag group="User" tag="NeedWild"/>	
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"National Identity"]]]>
+		</eval>
 </thing>
 <thing id="edgACNICa" name="National Identity - Canadian" description="The young nation of Canada is the first of the Commonwealth nations to join England in their war on Germany. Their soldiers are eager to prove themselves, and get +3 on trait and damage rolls when dealt a Joker, rather than +2." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="National Identity - Canadian"/>
 		<usesource source="sepActCth"/>
 	    <tag group="EdgeType" tag="Background"/>		
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
-    	<tag group="User" tag="NeedWild"/>		
+    	<tag group="User" tag="NeedWild"/>	
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"National Identity"]]]>
+		</eval>
 </thing>
 <thing id="edgACNIFr" name="National Identity - French" description="Those French who resist their German occupiers are at terrible risk. Spies are shot on sight, while those seen as collaborators find themselves quietly targeted by their neighbours. Learning to live under such circumstances is only possible with incredible spirit. If a Frenchman with this Edge spends a benny to make a roll, he rerolls any result of 1." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="National Identity - French"/>
@@ -72,6 +78,9 @@
 	    <tag group="EdgeType" tag="Background"/>				
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
     	<tag group="User" tag="NeedWild"/>		
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"National Identity"]]]>
+		</eval>
 </thing>
 <thing id="edgACNIPL" name="National Identity - Polish" description="The Poles suffer terribly under Nazi occupation. Though their home army is defeated in the Blitzkrieg of 39, they later field resistance fighters, special forces (such as those who accompany British troops at Operation Market Garden), and entire divisions in France and Africa. The desire to regain their country makes these fighters extremely resilient. Polish characters add +1 to their Toughness (after 1939)" compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="National Identity - Polish"/>
@@ -79,6 +88,9 @@
 	    <tag group="EdgeType" tag="Background"/>				
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
     	<tag group="User" tag="NeedWild"/>		
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"National Identity"]]]>
+		</eval>
 </thing>
 <thing id="edgACNIRU" name="National Identity - Russian" description="many “Ivans” seem resigned to inevitable suffering, whether in the trenches, in captivity, or back at the collective farm. Yet they struggle on, even while waiting for the British and Americans to re-ignite the Western Front. Soviet characters with this Edge are somewhat numb to their fate and ignore one level of wound modifier." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="National Identity - Russian"/>
@@ -86,6 +98,9 @@
 	    <tag group="EdgeType" tag="Background"/>		
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
     	<tag group="User" tag="NeedWild"/>		
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"National Identity"]]]>
+		</eval>
 </thing>
 <thing id="edgACNIUS" name="National Identity - American" description="The rest of the world could not help but see the smiling American GI as extremely fortunate. Lady Luck often smiles on the Yanks in combat as well. Whenever the character spends a benny, roll a d6. On a 6, he gets the benny back immediately (it may even be spent on the same roll he spent the first one on)." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="National Identity - American"/>
@@ -93,7 +108,32 @@
 	    <tag group="EdgeType" tag="Background"/>		
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
     	<tag group="User" tag="NeedWild"/>		
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"National Identity"]]]>
+		</eval>
 </thing>
+
+
+<!-- Edges for Military or civ -->
+<thing id="edgACRMOS" name="Role - Military Occupation (MOS)" description="Military Occupational Specialist role: Allows Military rank and access to military skills" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Military Occupational Specialist (MOS)"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Role: MOS"]]]>
+		</eval> 	
+</thing>
+<thing id="edgACRCiv" name="Role - Civilian Occupation" description="Civilian Occupational role: Allows access to civilian skills" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Civilian Occupation"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Role: Civilian"]]]>
+		</eval> 	
+</thing>
+
 
 
 <!-- end 4_IG_backEdges -->

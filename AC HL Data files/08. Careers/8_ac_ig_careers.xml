@@ -1,0 +1,64 @@
+<!-- Careers -->
+<!-- Military careers: edgACRMOS -->
+
+<thing id="edgACcAr" name="Career - Army" description="Military career: Army" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Career: Army"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Career: Army"]]]>
+		</eval> 	
+		<pickreq thing="edgACRMOS"></pickreq>
+		<exprreq message="Shooting d4 required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+    	<exprreq message="Fighting d4 required"><![CDATA[#traitfound[skFighting] >= 2]]></exprreq>
+		
+		<!-- bootstrap: steel helmet, bayonet, web gear (belt, suspenders, 4 ammo pouches), backpack, bandages, mess kit, canteen, gas mask, entrenching tool, spare uniform, boots, socks, bedroll, rain poncho, tent -->
+				
+</thing>
+<thing id="edgACcCom" name="Career - US Marine or UK Commando" description="Military career: US Marine or UK Commando" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Career: US Marine/UK Commando"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Career: Marine or Commando"]]]>
+		</eval> 	
+		<pickreq thing="edgACRMOS"></pickreq>
+		<exprreq message="Spirit d6 required"><![CDATA[#trait[attrSpi] >= 3]]></exprreq>
+		<exprreq message="Shooting d4 required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+    	<exprreq message="Fighting d4 required"><![CDATA[#traitfound[skFighting] >= 2]]></exprreq>
+		
+		<!-- bootstrap: steel helmet, bayonet, web gear (belt, suspenders, 4 ammo pouches), backpack, bandages, mess kit, canteen, gas mask, entrenching tool, spare uniform, boots, socks, bedroll, rain poncho, tent -->
+				
+</thing>
+<thing id="edgACcNvy" name="Career - Navy" description="Military career: Navy" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Career: Navy"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Career:  Navy"]]]>
+		</eval> 
+		<pickreq thing="edgACRMOS"></pickreq>	
+		<exprreq message="Agility d6 required"><![CDATA[#trait[attrAgi] >= 3]]></exprreq>
+		<exprreq message="Swimming d4 required"><![CDATA[#traitfound[skSwimming] >= 2]]></exprreq>
+		<exprreq message="Shooting d4 required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+    	<exprreq message="Boating d4 required"><![CDATA[#traitfound[skBoating] >= 2]]></exprreq>
+		<!-- bootstrap: duffle bag, spare uniform, shoes, steel helmet, life preserver, flak jacket -->				
+</thing>
+<thing id="edgACcACp" name="Career - Air Corp" description="Military career: Air Corp" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Career: Air Corp"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Career: Air Corp"]]]>
+		</eval> 
+		<pickreq thing="edgACRMOS"></pickreq>	
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Repair d4 required"><![CDATA[#traitfound[skRepair] >= 2]]></exprreq>
+		<exprreq message="Shooting d4 required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+		<!-- bootstrap: Leather flight helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+</thing>
+<!-- end careers -->

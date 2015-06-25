@@ -1,0 +1,85 @@
+<!-- Start Military occupational packages -->
+
+<thing id="edgACoACr" name="Career - Occupation - Air Crew" description="Military occupation: Air Crew" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Occupation: Air Crew"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Occupation: Air Crew"]]]>
+		</eval> 
+		<pickreq thing="edgACRMOS"></pickreq>
+		<pickreq thing="edgACcACp"></pickreq>	
+		<!-- requires knowledge(Aircraft Systems) -->
+		<prereq message="Knowledge(Aircraft Systems) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"airfraft systems") = 0) then
+  				validif (eachpick.field[trtFinal].value >= 2)
+  			endif
+  			nexteach]]>
+  		</validate>
+		</prereq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Shooting required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+		<!-- bootstrap: Leather flight helmet, flak jacket, steel helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+</thing>
+<thing id="edgACoACB" name="Career - Occupation - Air Crew (Bombadier)" description="Military occupation: Bombadier" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Occupation: Bombadier"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Occupation: Bombadier"]]]>
+		</eval> 
+		<pickreq thing="edgACRMOS"></pickreq>
+		<pickreq thing="edgACcACp"></pickreq>	
+		<!-- requires knowledge(bombadier or navigator) -->
+			  <prereq message="Knowledge(Bombadier) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  if (compare(lowercase(eachpick.field[domDomain].text),"bombadier") = 0) then
+  validif (eachpick.field[trtFinal].value >= 2)
+  endif
+  nexteach]]></validate>
+		</prereq>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Shooting required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+		<!-- bootstrap: Leather flight helmet, flak jacket, steel helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+</thing>
+<thing id="edgACoACN" name="Career - Occupation - Air Crew (Navigator)" description="Military occupation: Navigator" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Occupation: Navigator"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Occupation: Navigator"]]]>
+		</eval> 
+		<pickreq thing="edgACRMOS"></pickreq>
+		<pickreq thing="edgACcACp"></pickreq>	
+		<!-- requires knowledge(bombadier or navigator) -->
+			  <prereq message="Knowledge(Bombadier) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  if (compare(lowercase(eachpick.field[domDomain].text),"navigator") = 0) then
+  validif (eachpick.field[trtFinal].value >= 2)
+  endif
+  nexteach]]></validate>
+		</prereq>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Shooting required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+		<!-- bootstrap: Leather flight helmet, flak jacket, steel helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+</thing>
+
+
+<!-- Start Civilian occupations -->
+
+<thing id="edgACoAnt" name="Career - Occupation - Antiquarian" description="Civilian occupation: Antiquarian" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Occupation: Antiquarian"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Background"/>		
+		<eval phase="PreTraits" priority="5000">
+		<![CDATA[perform #resspent[resEdge,-,1,"Occupation: Antiquarian"]]]>
+		</eval> 
+		<pickreq thing="edgACRCiv"></pickreq>	
+		<exprreq message="Smarts d8 required"><![CDATA[#trait[attrSma] >= 4]]></exprreq>
+<!-- add $500 -->		
+</thing>
+
+<!-- end occupations -->
