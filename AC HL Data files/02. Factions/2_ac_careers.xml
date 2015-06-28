@@ -1,0 +1,307 @@
+<!-- Careers -->
+  <!-- Start Military occupational packages -->
+
+<thing id="grpACoACr" name="Air Crew" description="Military occupation: Air Crew" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Air Crew"/>
+		<usesource source="sepActCth"/>		
+		<pickreq thing="facACcACp"></pickreq >
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Shooting required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+		<prereq message="Knowledge(Aircraft Systems) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"aircraft systems") = 0) then
+  				validif (eachpick.field[trtFinal].value >= 2)
+  			endif
+  			nexteach]]>
+  		</validate>
+		</prereq>
+		<!-- bootstrap: Leather flight helmet, flak jacket, steel helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+
+</thing>
+<thing id="grpACoACB" name="Air Crew (Bombadier)" description="Military occupation: Bombadier" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Bombadier"/>
+<usesource source="sepActCth"/>		
+<pickreq thing="facACcACp"></pickreq >	
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Shooting required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+		<prereq message="Knowledge(Bombadier) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"bombadier") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+		<!-- bootstrap: Leather flight helmet, flak jacket, steel helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+</thing>
+<thing id="grpACoACN" name="Air Crew (Navigator)" description="Military occupation: Navigator" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Navigator"/>
+		<usesource source="sepActCth"/>	
+		<pickreq thing="facACcACp"></pickreq >		
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Shooting required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+		<prereq message="Knowledge(Navigator) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"navigator") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+		<!-- bootstrap: Leather flight helmet, flak jacket, steel helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+</thing>
+
+<thing id="grpACoSpO" name="First Spec Ops" description="Military occupation: Army Rangers/Commandos/First Special Services Force" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Spec Ops"/>
+		<usesource source="sepActCth"/>		
+		<pickreq thing="facACcCom"></pickreq>	
+		<exprreq message="Agility d6 required"><![CDATA[#trait[attrAgi] >= 3]]></exprreq>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Spirit d6 required"><![CDATA[#trait[attrSpi] >= 3]]></exprreq>
+		<exprreq message="Strength d8 required"><![CDATA[#trait[attrStr] >= 4]]></exprreq>
+		<exprreq message="Vigor d8 required"><![CDATA[#trait[attrVig] >= 4]]></exprreq>
+		<exprreq message="Fighting required"><![CDATA[#traitfound[skFighting] >= 2]]></exprreq>
+		<exprreq message="Shooting required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+		<exprreq message="Stealth required"><![CDATA[#traitfound[skStealth] >=2]]></exprreq>
+		<exprreq message="Survival required"><![CDATA[#traitfound[skSurvival] >=2]]></exprreq>		
+</thing>
+<thing id="grpACoArtl" name="Artilleryman" description="Military occupation: Artilleryman" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Artilleryman"/>
+		<usesource source="sepActCth"/>		
+		<pickreq thing="facACcAr"></pickreq>	
+		<exprreq message="Strength d6 required"><![CDATA[#trait[attrStr] >= 3]]></exprreq>
+		<exprreq message="Driving required"><![CDATA[#traitfound[skDriving] >= 2]]></exprreq>
+		<exprreq message="Repair required"><![CDATA[#traitfound[skRepair] >= 2]]></exprreq>
+		<prereq message="Knowledge(Artillery) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"artillery") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+		<!-- bootstrap: Leather flight helmet, flak jacket, steel helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+</thing>
+<thing id="grpACoDvr" name="Diver" description="Military occupation: Diver" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Diver"/>
+		<usesource source="sepActCth"/>
+		<pickreq thing="facACcNvy"></pickreq>	
+		<exprreq message="Agility d6 required"><![CDATA[#trait[attrAgi] >= 3]]></exprreq>
+		<exprreq message="Fighting required"><![CDATA[#traitfound[skFighting] >= 2]]></exprreq>
+		<exprreq message="Swimming required"><![CDATA[#traitfound[skSwimming] >= 2]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<prereq message="Knowledge(Demolitions) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"demolitions") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+		<!-- diving gear -->
+</thing>
+<thing id="grpACoFtG" name="Foot Guard" description="Military occupation: Foot Guard" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Foot Guard"/>
+		<usesource source="sepActCth"/>		
+		<pickreq thing="facACcAr"></pickreq>	
+		<exprreq message="Agility d6 required"><![CDATA[#trait[attrAgi] >= 3]]></exprreq>
+		<exprreq message="Vigor d6 required"><![CDATA[#trait[attrVig] >= 3]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Throwing required"><![CDATA[#traitfound[skThrowing] >= 2]]></exprreq>
+</thing>
+<thing id="grpACoInf" name="Infantryman" description="Military occupation: Infantryman" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Infantryman"/>
+		<usesource source="sepActCth"/>		
+		<pickreq thing="facACcAr"></pickreq>	
+		<exprreq message="throwing required"><![CDATA[#traitfound[skThrowing] >= 2]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+</thing>
+<thing id="grpACoMed" name="Medic" description="Military occupation: MEdic" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Medic"/>
+  		<usesource source="sepActCth"/>	
+  		<pickreq thing="facACcAr"></pickreq>	
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Healing required"><![CDATA[#traitfound[skHealing] >= 2]]></exprreq>
+		<prereq message="Knowledge(Medicine) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"Medicine") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+		<!-- Medical kit -->				
+</thing>
+<thing id="grpACoPar" name="Paratrooper" description="Military occupation: Paratrooper" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Paratrooper"/>
+		<usesource source="sepActCth"/>		
+		<pickreq thing="facACcCom"></pickreq>	
+		<exprreq message="Strength d6 required"><![CDATA[#trait[attrStr] >= 3]]></exprreq>
+		<exprreq message="Stealth required"><![CDATA[#traitfound[skStealth] >= 2]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Throwing required"><![CDATA[#traitfound[skThrowing] >= 2]]></exprreq>
+</thing>
+<thing id="grpACoPlF" name="Fighter Pilot" description="Military occupation: Fighter Pilot" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Fighter Pilot"/>
+  		<usesource source="sepActCth"/>	
+  		<pickreq thing="facACcACp"></pickreq>	
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Piloting required"><![CDATA[#traitfound[skPiloting] >= 2]]></exprreq>
+		<prereq message="Knowledge(Bombadier) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"bombadier") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+		<prereq message="Knowledge(Navigation) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"navigation") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+		<!-- must take edgACRNco or edgACRNOf -->
+	<prereq message="NCO or Officer rank required">
+		<validate>
+		<![CDATA[foreach pick in hero where "thingid.edgACRNco"
+  				@valid=1
+  		nexteach]]>
+  		<![CDATA[foreach pick in hero where "thingid.edgACRNOf"
+  				@valid=1
+  		nexteach]]></validate>
+   </prereq>
+		
+					
+</thing>
+<thing id="grpACoPlB" name="Bomber Pilot" description="Military occupation: Bomber Pilot" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Bomber Pilot"/>
+  		<usesource source="sepActCth"/>	
+  		<pickreq thing="facACcACp"></pickreq>	
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Piloting required"><![CDATA[#traitfound[skPiloting] >= 2]]></exprreq>
+<!-- must take edgACRNco or edgACRNOf -->				
+</thing>
+
+<!-- Start Civilian occupations -->
+
+<thing id="grpACoAnt" name="Antiquarian" description="Civilian occupation: Antiquarian" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Antiquarian"/>
+		<usesource source="sepActCth"/>
+		<eval phase="PreTraits" priority="5000">
+			herofield[acCashNet].value += 450</eval>
+		<!--pickreq thing="grpACRCiv"></pickreq-->	
+		<exprreq message="Smarts d8 required"><![CDATA[#trait[attrSma] >= 4]]></exprreq>		
+</thing>
+<thing id="grpACoArt" name="Artist" description="Civilian occupation: Artist" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Artist"/>
+		<usesource source="sepActCth"/>
+		<!--pickreq thing="grpACRCiv"></pickreq-->	
+		<!-- camera, film, art materials -->
+</thing>
+<thing id="grpACoAv8" name="Aviator" description="Civilian occupation: aviator" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Aviator"/>
+		<usesource source="sepActCth"/>		
+		<exprreq message="Agility d6 required"><![CDATA[#trait[attrAgi] >= 3]]></exprreq>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Piloting required"><![CDATA[#traitfound[skPiloting] >= 2]]></exprreq>
+		<prereq message="Knowledge(Navigator) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"navigator") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+</thing>
+<thing id="grpACoBMk" name="Black Marketeer" description="Civilian occupation: Black Marketeer" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Black Marketeer"/>
+		<usesource source="sepActCth"/>
+		<eval phase="PreTraits" priority="5000">
+			herofield[acCashNet].value += 450</eval>		
+		<!--pickreq thing="grpACRCiv"></pickreq-->	
+		<exprreq message="Agility d6 required"><![CDATA[#trait[attrAgi] >= 3]]></exprreq>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<!-- lockpicks -->
+</thing>
+<thing id="grpACoBfn" name="Boffin" description="Civilian occupation: Boffin" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Boffin"/>
+		<usesource source="sepActCth"/>
+		<eval phase="PreTraits" priority="5000">
+			herofield[acCashNet].value += 450</eval>		
+		<!--pickreq thing="grpACRCiv"></pickreq-->	
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+</thing>
+<thing id="grpACoCDD" name="Catch-all" description="Civilian occupation: Clergyman/Doctor/Driver/Farmer/Labourer/Nurse/Secretary" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Catch-All"/>
+		<usesource source="sepActCth"/>
+		<eval phase="PreTraits" priority="5000">
+			herofield[acCashNet].value += 150</eval>		
+		<!--pickreq thing="grpACRCiv"></pickreq-->	
+</thing>
+<thing id="grpACoCtf" name="Comtographer" description="Civilian occupation: Compotgrapher" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Comptographer"/>
+		<usesource source="sepActCth"/>		
+		<!--pickreq thing="grpACRCiv"></pickreq-->	
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+</thing>
+<thing id="grpACoPI" name="Investigator" description="Civilian occupation: Detective/Policeman/Private Eye" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Detective/Policeman"/>
+		<usesource source="sepActCth"/>
+		<!--pickreq thing="grpACRCiv"></pickreq-->	
+		<!-- truncheon, revolver, whistle -->
+</thing>
+<thing id="grpACoEnt" name="Entertainer" description="Civilian occupation: Entertainer/Musician" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Entertainer"/>
+		<usesource source="sepActCth"/>
+		<!-- bootstrap: instrument -->
+</thing>
+<thing id="grpACoNws" name="News correspondent" description="Civilian occupation: News Correspondent" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: News Correspondent"/>
+		<usesource source="sepActCth"/>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<!-- bootstrap: camera, notepad -->
+</thing>
+<thing id="grpACoPsy" name="Parapsychologist" description="Civilian occupation: Parapsychologist" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Parapsychologist"/>
+		<usesource source="sepActCth"/>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+</thing>
+<thing id="grpACoPzn" name="Partisan" description="Civilian occupation: Partisan" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Partisan"/>
+		<usesource source="sepActCth"/>
+<!-- bootstrap:rifle, knife -->
+		<eval phase="PreTraits" priority="5000">
+			herofield[acCashNet].value += 150</eval>
+</thing>
+
+<!-- Generic Occupation -->
+<thing id="grpACoEng" name="Engineer" description="Engineer" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Engineer"/>
+		<usesource source="sepActCth"/>		
+		<!--pickreq thing="grpACRCiv"></pickreq-->	
+		<exprreq message="Agility d6 required"><![CDATA[#trait[attrAgi] >= 3]]></exprreq>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Notice required"><![CDATA[#traitfound[skNotice] >= 2]]></exprreq>
+		<exprreq message="Piloting required"><![CDATA[#traitfound[skPiloting] >= 2]]></exprreq>
+		<prereq message="Knowledge(Navigator) is required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (compare(lowercase(eachpick.field[domDomain].text),"navigator") = 0) then
+  					validif (eachpick.field[trtFinal].value >= 2)
+  				endif
+  			nexteach]]></validate>
+		</prereq>
+</thing>
+<thing id="grpACoSpy" name="Intelligence Operative" description="Civilian occupation: Intelligence Operative" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Intelligence Operative"/>
+		<usesource source="sepActCth"/>
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+
+</thing>
+<thing id="grpACoMch" name="Merchant Navy" description="Civilian occupation: Merchant Navy/Marine/Navy Sailor" compset="Group" uniqueness="unique">
+		<fieldval field="shortname" value="Occupation: Merchant Navy/Navy Sailor"/>
+		<usesource source="sepActCth"/>
+	<!-- bootstrap toolkit -->
+</thing>
+
+<!-- end occupations -->
+  
+  
+ <!-- end careers --> 

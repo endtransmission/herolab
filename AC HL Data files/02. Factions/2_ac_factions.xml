@@ -1,0 +1,57 @@
+<!-- Factions -->
+<thing id="facACSecD" name="Section D" description="British secret service (Mythos)" compset="Faction" uniqueness="unique">
+		<fieldval field="shortname" value="Career: Section D"/>
+		<usesource source="sepActCth"/>
+</thing>
+<thing id="facACMI6" name="MI6" compset="Faction" uniqueness="unique">
+		<fieldval field="shortname" value="Career: MI6"/>
+		<usesource source="sepActCth"/>
+</thing>
+
+<thing id="facACcAr" name="Army" description="Military career: Army" compset="Faction" uniqueness="unique">
+		<fieldval field="shortname" value="Career: Army"/>
+		<usesource source="sepActCth"/>
+		<!--pickreq thing="facACRMOS"></pickreq-->
+		<!-- bootstrap: steel helmet, bayonet, web gear (belt, suspenders, 4 ammo pouches), backpack, bandages, mess kit, canteen, gas mask, entrenching tool, spare uniform, boots, socks, bedroll, rain poncho, tent -->
+		<bootstrap thing="edgACRMOS"></bootstrap>	
+		<exprreq message="Shooting d4 required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+    	<exprreq message="Fighting d4 required"><![CDATA[#traitfound[skFighting] >= 2]]></exprreq>		
+		
+</thing>
+
+
+<thing id="facACcCom" name="US Marine or UK Commando" description="Military career: US Marine or UK Commando" compset="Faction" uniqueness="unique">
+		<fieldval field="shortname" value="Career: US Marine/UK Commando"/>
+		<usesource source="sepActCth"/>
+		<bootstrap thing="edgACRMOS"></bootstrap>	
+		<!-- bootstrap: steel helmet, bayonet, web gear (belt, suspenders, 4 ammo pouches), backpack, bandages, mess kit, canteen, gas mask, entrenching tool, spare uniform, boots, socks, bedroll, rain poncho, tent -->
+		<exprreq message="Spirit d6 required"><![CDATA[#trait[attrSpi] >= 3]]></exprreq>
+		<exprreq message="Shooting d4 required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+    	<exprreq message="Fighting d4 required"><![CDATA[#traitfound[skFighting] >= 2]]></exprreq>
+			
+</thing>
+<thing id="facACcNvy" name="Navy" description="Military career: Navy" compset="Faction" uniqueness="unique">
+		<fieldval field="shortname" value="Career: Navy"/>
+		<usesource source="sepActCth"/>
+		<!-- bootstrap: duffle bag, spare uniform, shoes, steel helmet, life preserver, flak jacket -->	
+		<bootstrap thing="edgACRMOS"></bootstrap>	
+		<exprreq message="Agility d6 required"><![CDATA[#trait[attrAgi] >= 3]]></exprreq>
+		<exprreq message="Swimming d4 required"><![CDATA[#traitfound[skSwimming] >= 2]]></exprreq>
+		<exprreq message="Shooting d4 required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+    	<exprreq message="Boating d4 required"><![CDATA[#traitfound[skBoating] >= 2]]></exprreq>
+			
+</thing>
+<thing id="facACcACp" name="Air Corp" description="Military career: Air Corp" compset="Faction" uniqueness="unique">
+		<fieldval field="shortname" value="Career: Air Corp"/>
+		<usesource source="sepActCth"/>
+		<!-- bootstrap: Leather flight helmet, goggles, oxygen mask, spare uniform, flight jacket, boots, heated suit, leather flight suit, shoulder holster, life preserver, survival kit, knife, parachute -->				
+		<bootstrap thing="edgACRMOS"></bootstrap>	
+		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
+		<exprreq message="Repair d4 required"><![CDATA[#traitfound[skRepair] >= 2]]></exprreq>
+		<exprreq message="Shooting d4 required"><![CDATA[#traitfound[skShooting] >= 2]]></exprreq>
+
+</thing>
+
+
+
+<!-- / factions -->

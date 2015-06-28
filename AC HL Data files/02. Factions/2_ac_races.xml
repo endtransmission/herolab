@@ -1,0 +1,35 @@
+<thing id="racACNIGB" name="Human - British" description="The British stiff upper lip makes them incredibly resilient under even the most dreadful circumstances. Tommys add +2 to Spirit rolls made to resist Fear, Intimidation, or arcane powers. It does not add to Spirit rolls made to recover from being Shaken."  compset="Race" uniqueness="unique">
+    <fieldval field="shortname" value="National Identity - British"/>
+       <usesource source="sepActCth"/>     <bootstrap thing="abFreeEdge"/>
+
+</thing>
+<thing id="racACNICa" name="Human - Canadian" description="The young nation of Canada is the first of the Commonwealth nations to join England in their war on Germany. Their soldiers are eager to prove themselves, and get +3 on trait and damage rolls when dealt a Joker, rather than +2."  compset="Race" uniqueness="unique">
+    <fieldval field="shortname" value="National Identity - Canadian"/>
+       <usesource source="sepActCth"/>     <bootstrap thing="abFreeEdge"/>
+
+</thing>
+  <thing id="racACNIFr" name="Human - French" description="Those French who resist their German occupiers are at terrible risk. Spies are shot on sight, while those seen as collaborators find themselves quietly targeted by their neighbours. Learning to live under such circumstances is only possible with incredible spirit. If a Frenchman with this Edge spends a benny to make a roll, he rerolls any result of 1." compset="Race" uniqueness="unique">
+    <fieldval field="shortname" value="National Identity - French"/>
+       <usesource source="sepActCth"/>     <bootstrap thing="abFreeEdge"/>
+
+</thing>
+  <thing id="racACNIPL" name="Human - Polish" description="The Poles suffer terribly under Nazi occupation. Though their home army is defeated in the Blitzkrieg of 39, they later field resistance fighters, special forces (such as those who accompany British troops at Operation Market Garden), and entire divisions in France and Africa. The desire to regain their country makes these fighters extremely resilient. Polish characters add +1 to their Toughness (after 1939)" compset="Race" uniqueness="unique">
+    <fieldval field="shortname" value="National Identity - Polish"/>
+       <usesource source="sepActCth"/>     <bootstrap thing="abFreeEdge"/>
+
+</thing>
+  <thing id="racACNIRU" name="Human - Russian" description="many “Ivans” seem resigned to inevitable suffering, whether in the trenches, in captivity, or back at the collective farm. Yet they struggle on, even while waiting for the British and Americans to re-ignite the Western Front. Soviet characters with this Edge are somewhat numb to their fate and ignore one level of wound modifier." compset="Race" uniqueness="unique">
+    <fieldval field="shortname" value="National Identity - Russian"/>
+       <usesource source="sepActCth"/>     <bootstrap thing="abFreeEdge"/>
+
+</thing>
+  <thing id="racACNIUS" name="Human - American" description="The rest of the world could not help but see the smiling American GI as extremely fortunate. Lady Luck often smiles on the Yanks in combat as well. Whenever the character spends a benny, roll a d6. On a 6, he gets the benny back immediately (it may even be spent on the same roll he spent the first one on)." compset="Race" uniqueness="unique">
+    <fieldval field="shortname" value="National Identity - American"/>
+       <usesource source="sepActCth"/>     <bootstrap thing="abFreeEdge"/>
+
+</thing>
+  <thing id="racACNIDe" name="Human - German" compset="Race" uniqueness="unique">
+    <fieldval field="shortname" value="National Identity -German"/>
+       <usesource source="sepActCth"/>     <bootstrap thing="abFreeEdge"/>
+
+</thing>

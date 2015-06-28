@@ -2,7 +2,7 @@
 	Preclude Arcane Backgrounds, Champion, Holy/ Unholy Warrior, Mentalist, and Wizard. 
 	Have not blocked out Weird Science or Superpowers due to forthcoming expansions
 -->
-
+<preclude id="racHuman" source="sepActCth"/>
 <preclude id="edgArcMag" source="sepActCth"/>
 <preclude id="edgArcMir" source="sepActCth"/>
 <preclude id="edgArcPsi" source="sepActCth"/>

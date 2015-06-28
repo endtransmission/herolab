@@ -17,10 +17,16 @@ Sanity - The character's Sanity is based upon the Spirit value. The In-Play tab 
 
 -->
 <thing id="sepActCth" name="Achtung! Cthulhu" compset="SetAdjust" summary="Achtung! Cthulhu setting">
+    <fieldval field="setFctTerm" value="Organisations"/>
+    <fieldval field="setGrpTerm" value="Careers"/>
+    <tag group="Hero" tag="GroupUse"/>
+    <tag group="Hero" tag="FactionUse"/>    
 	<bootstrap thing="skACDream"></bootstrap>	
     <eval phase="Initialize" priority="10000"><![CDATA[
   perform #resspent[resSkill,-,1,"Free Dreaming"]
-]]></eval>
+]]>~Set starting Cash
+	trustme
+      herofield[acCashCfg].value = 50</eval>
 </thing>
 
 <!-- / 0__ac_Settings -->

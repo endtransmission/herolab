@@ -1,8 +1,9 @@
 
 <thing id="edgACaFgM" name="A Few Good Men" description="The hero knows how to get the best from the troops at his disposal. When the Game Master checks to see which of the commander’s troopers are alive or dead after a battle, he may reroll any failures. This Edge affects up to 12 men (a typical squad), and does not stack if multiple characters have the ability. If the leader is the overall commander in a Mass Battle, roll a d6 whenever a token is lost. On a 6, the token is recovered." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="A Few Good Men"/>
-		<usesource source="setActCth"/>
+		<usesource source="sepActCth"/>
 		<tag group="MinRank" tag="2" name="Heroic" abbrev="Heroic"/>
+		    <tag group="EdgeType" tag="Leadership"/>
 		<pickreq thing="edgCommand" />
 		<pickreq thing="edgInspire" />
 		<exprreq message="Smarts d8 required"><![CDATA[#trait[attrSma] >= 4]]></exprreq>
@@ -10,25 +11,26 @@
 </thing>
 <thing id="edgACFMgM" name="A Few More Good Men" description="As for A Few Good Men, but the commander can affect up to a platoon’s worth of men (no more than 40)." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="A Few More good Men"/>
-		<usesource source="setActCth"/>
+		<usesource source="sepActCth"/>
+		    <tag group="EdgeType" tag="Leadership"/>		
 		<pickreq thing="edgACaFgM"/>
 </thing>
 <thing id="edgACRNco" name="Rank (NCO)" description="Non-commissioned officers (NCOs, such as sergeants) and regular officers (lieutenants and higher) get to order subordinates around, but are also the ones held responsible for the success, or failure, of their men and their mission. They know the thrill of watching a plan come together, and the agony of watching one fall apart. In Achtung! Cthulhu, the Rank Edge allows NCOs and officers to command others, but this is a double-edged sword that grants few benefits. To compensate, characters who purchase this Edge get an additional benefit as well. (Non-player characters and those who achieve the rank during play do not get these additional abilities.) NCOs are the backbone of their units, and must be tougher, stronger, and more resilient than those they lead. Non-coms with the Rank (NCO) Edge add +2 to their base Toughness to reflect their hard-bitten nature. The character’s military rank is the lowest for an NCO in his particular service branch (a sergeant in the US Army, for example)." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="Rank (NCO)"/>
-		<usesource source="setActCth"/>
-		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
-		<!-- pickreq MOS qualified - No idea how to do this yet as we've not created ranks -->
+		<usesource source="sepActCth"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>    
+		<tag group="EdgeType" tag="Leadership"/>
         <eval phase="Effects" priority="5000"><![CDATA[
       perform #traitadjust[trTough,+,2,"Rank(NCO)"]]]></eval>
-		<pickreq thing="edgACRMOS"></pickreq >
-
+				<pickreq thing="edgACRMOS"></pickreq>
 		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
 
 </thing>
 <thing id="edgACRNOf" name="Rank (Officer)" description="Officer (NCOs, such as sergeants) and regular officers (lieutenants and higher) get to order subordinates around, but are also the ones held responsible for the success, or failure, of their men and their mission. They know the thrill of watching a plan come together, and the agony of watching one fall apart. In Achtung! Cthulhu, the Rank Edge allows NCOs and officers to command others, but this is a double-edged sword that grants few benefits. To compensate, characters who purchase this Edge get an additional benefit as well. (Non-player characters and those who achieve the rank during play do not get these additional abilities.) Officers are there to inspire and lead, and should defi- nitely concentrate on Leadership Edges as they advance. To help them get there, officers gain an additional benny per game session, and must always spend that benny on those under their command. (Note: an officer with the Common Bond Edge can grant a benny to anyone—not just those under his command.)" compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="Rank (Officer)"/>
-		<usesource source="setActCth"/>
+		<usesource source="sepActCth"/>
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		    <tag group="EdgeType" tag="Leadership"/>
 		<pickreq thing="edgACRMOS"></pickreq>
 <exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
 </thing>
