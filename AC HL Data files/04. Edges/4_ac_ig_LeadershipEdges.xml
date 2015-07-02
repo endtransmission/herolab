@@ -22,7 +22,7 @@
 		<tag group="EdgeType" tag="Leadership"/>
         <eval phase="Effects" priority="5000"><![CDATA[
       perform #traitadjust[trTough,+,2,"Rank(NCO)"]]]></eval>
-				<pickreq thing="edgACRMOS"></pickreq>
+		<pickreq thing="edgACRMOS"></pickreq>
 		<exprreq message="Smarts d6 required"><![CDATA[#trait[attrSma] >= 3]]></exprreq>
 
 </thing>

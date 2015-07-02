@@ -1,0 +1,23 @@
+<!-- social edges -->
+<thing id="edgACBoB" name="Band of Brothers" description="This group of soldiers has been to Hell and back together. That kind of bond hardens men, and makes them better able to withstand wounds that might otherwise put them out of action. Subtract 1 point of damage from every attack that hits the character for each other brother with this ability within 5”, to a maximum of –3. If three heroes with the Band of Brothers Edge fight together, for instance, they ignore two points of damage from every attack that hits them." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Band of Brothers"/>
+		<usesource source="sepActCth"/>
+		<tag group="MinRank" tag="2" name="Veteran" abbrev="Veteran"/>	
+    	<tag group="User" tag="NeedWild"/>	
+	    <tag group="EdgeType" tag="Social"/>   		
+   	    <pickreq thing="edgComBond"/>
+</thing>
+<thing id="edgACScrn" name="Scrounger" description="Wars and the associated chaos that go with them often bring out unusual traits in people, both good and bad. Some seem to have an uncanny ability to find just what they are looking for, no matter where they find themselves. A consummate trader and wheeler-dealer, this investigator can find a way to acquire almost any piece of equipment or luxury item. Once per session, and while in a populated area (such as a large village or town). See Investigator Guide for more info" compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Scrounger"/>
+		<usesource source="sepActCth"/>
+	    <tag group="EdgeType" tag="Social"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+    <exprreq message="Smarts d6 required."><![CDATA[
+      #trait[attrSma] >= 3
+      ]]></exprreq>    	    
+    <exprreq message="Streetwise d6 required."><![CDATA[
+      #traitfound[skStreet] >= 3
+      ]]></exprreq>    	    
+    	    
+</thing>
+<!-- end Social edges -->

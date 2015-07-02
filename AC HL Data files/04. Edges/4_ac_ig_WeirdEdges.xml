@@ -1,0 +1,64 @@
+  <!-- weird Edges -->
+
+<thing id="edgACCoUF" name="Courage Under Fire" description="Sometimes you feel as if you have a guardian angel. Bullets and even artillery fragments seem to whizz right by you, especially when you are doing your duty and commanding your men. If your character is standing and not in cover, roll a die for every successful attack that would wound him (including area effect attacks). If the die roll is odd, the hero takes no damage. Otherwise he is affected normally." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Courage Under Fire"/>
+		<usesource source="sepActCth"/>
+			    <tag group="EdgeType" tag="Weird"/> 
+		<tag group="MinRank" tag="1" name="Seasoned" abbrev="Seasoned"/>	
+	    <pickreq thing="edgCommand"/>
+	<prereq message="NCO or Officer rank required">
+		<validate>
+		<![CDATA[foreach pick in hero where "thingid.edgACRNco"
+  				@valid=1
+  		nexteach]]>
+  		<![CDATA[foreach pick in hero where "thingid.edgACRNOf"
+  				@valid=1
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+<thing id="edgACInIn" name="Insane Insight" description="Once per session the player of this investigator can ask a Yes/No question of the Game Master, who must then give a truthful answer." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Insane Insight"/>
+		<usesource source="sepActCth"/>
+			    <tag group="EdgeType" tag="Weird"/> 
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+	<prereq message="A permanent Habit (Minor), Phobia, or Quirkrequired.">
+      <validate><![CDATA[
+        foreach pick in hero where "thingid.hinHabit"
+        	@valid=1
+        nexteach
+        foreach pick in hero where "thingid.hinPhobia"
+        	@valid=1
+        nexteach
+        foreach pick in hero where "thingid.hinQuirk"
+        	@valid=1
+        nexteach
+]]></validate>
+      </prereq>
+<!--  a permanent Habit (Minor), Phobia, or Quirk  hinHabit, hinPhobia, hinQuirk-->
+</thing>
+<thing id="edgACRadr" name="Radar" description="Maybe your hero has a sixth sense. Or maybe he just has really keen hearing. Either way, his squad mates have learned to hit the deck when he does. The soldier can somehow anticipate incoming area effect attacks such as artillery, tank rounds, and even thrown grenades. When caught in an area effect attack, he automatically goes to ground. Since cover modifiers count as armour against area effect attacks, the warrior gets +2 points of armour against the blast. Better still, allies who have been around the character for a while, and who have not acted when the attack hits, get an Agility roll to hit the dirt as well." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Radar"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Weird"/> 
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+</thing>
+<thing id="edgACRdHd" name="Radio Head" description="The fillings in your teeth sometimes pick up radio chatter. At least that’s what the medics said. But you know there is far more to it than that. Not only do you occasionally pick up random radio messages, but you have even figured out how to change frequencies! Radio Head grants the character the ability to pick up radio chatter within a 1 mile radius. Make a Smarts roll when attempting to “tune in”. Failure results in a severe headache (Fatigue) that lasts for 1d6 hours. Success means that the soldier picks up on nearby radio chatter, though it is up to the Game Master as to exactly what he overhears." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Radio Head"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Weird"/> 
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+</thing>	    
+<thing id="edgACSqd" name="Squid" description="Sometimes you feel like you were born in water. The character adds +2 to Swimming rolls and can hold his breath for 20 times his Vigor in seconds." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Squid"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Weird"/> 
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+</thing>
+<thing id="edgACSugg" name="Suggestible" description="Something about your mental make-up makes it easier for modern psychiatric methods to repair the psychological damage inflicted by both the sanity-blasting horrors of the Mythos, and the more mundane horrors of the war. Not only does the investigator make mental healing rolls in half the time of his colleagues, he also gains a +2 bonus to the roll." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Suggestible"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Weird"/> 
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+</thing>  
+  
+  <!-- end weird Edges -->

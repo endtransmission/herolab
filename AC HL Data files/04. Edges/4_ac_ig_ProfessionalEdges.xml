@@ -1,0 +1,117 @@
+<!-- Profession Edges -->
+<thing id="edgACCdo" name="Commando" description="Commandos tackle the toughest missions on the front, often operating behind enemy lines with little chance of coming home. Due to the invariably tricky circumstances they find themselves in, commandos need to be mentally sharp to stay ahead of the enemy. This applies to British Commandos, Ghurkas, Long Range Desert Group, SAS, US Army Rangers and Marine Raiders, and other similar elite soldiers. Commandos add +2 to all Fatigue rolls made against environmental hazards (including cold and heat), sleep deprivation, foot marches, and add +2 to all Survival rolls. As much of their work involves getting close to their targets for a silent takedown, they receive a +1 to Stealth rolls. All of these bonuses are cumulative with those derived from other Edges." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Commando"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Profession"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+		<pickreq thing="edgACaFgM"/>	
+      <exprreq message="Spirit d6 required."><![CDATA[
+      #trait[attrSpi] >= 3
+      ]]></exprreq>
+      <exprreq message="Agility d6 required."><![CDATA[
+      #trait[attrAgi] >= 3
+      ]]></exprreq> 
+      <exprreq message="Smarts d6 required."><![CDATA[
+      #trait[attrSma] >= 3
+      ]]></exprreq>
+      <exprreq message="Strength d8 required."><![CDATA[
+      #trait[attrStr] >= 4
+      ]]></exprreq>           
+      <exprreq message="Vigour d8 required."><![CDATA[
+      #trait[attrVig] >= 4
+      ]]></exprreq>      
+      <exprreq message="Shooting d6 required."><![CDATA[
+      #traitfound[skShooting] >= 3
+      ]]></exprreq>
+      <exprreq message="Fighting d6 required."><![CDATA[
+      #traitfound[skFighting] >= 3
+      ]]></exprreq>
+      <exprreq message="Stealth d8 required."><![CDATA[
+      #traitfound[skStealth] >= 4
+      ]]></exprreq>
+</thing>
+
+<thing id="edgACDemo" name="Demo Man" description="This maniac is intimately familiar with all sorts of explo- sives, detonators, and booby-traps. He adds +2 to all rolls made to set, disarm, or improvise explosives and booby-traps (but not Notice them). This can cover a range of abilities and skills determined by your Game Master (for example ordnance disposal,  making, or structural demolition)." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Demo Man"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Profession"/>
+    <prereq message="KnowlEdge(Demolitions) d6 required">
+      <validate><![CDATA[        foreach pick in hero where "thingid.skKnow"
+          if (compare(lowercase(eachpick.field[domDomain].text),"demolitions") = 0) then
+            validif (eachpick.field[trtFinal].value >= 3)
+            endif
+          nexteach]]></validate>
+      </prereq>
+</thing>
+<thing id="edgACFrog" name="Frogman" description="Navy frogmen are highly skilled, tough, and motivated. Their primary job is underwater demolitions. Whether their targets are beach obstacles, mines, or enemy ships, frogmen can remove, defuse, or blow them sky high. When supporting beach landings, they make maps, do hydrographic surveys, and prepare obstacles for demolition so that the beach is as clear as possible for the main landing force. They can also find themselves planting explosives on ships at anchor in enemy harbours. Their training is as rigorous as any commando. Swimming rolls for frogmen are made at +2, and Pace is improved by +1”. These bonuses are cumulative with those offered by other Edges. Creatures with the Aquatic special ability do not get their +2 attack bonus against Frogmen." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Frogman"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Profession"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+      <exprreq message="Smarts d6 required."><![CDATA[
+      #trait[attrSma] >= 3
+      ]]></exprreq>	
+      <exprreq message="Strength d6 required."><![CDATA[
+      #trait[attrStr] >= 3
+      ]]></exprreq>       			
+      <exprreq message="Vigour d6 required."><![CDATA[
+      #trait[attrVig] >= 3
+      ]]></exprreq>  
+	  <exprreq message="Swimming d8+ required"><![CDATA[
+	  #traitfound[skSwimming] >=4	  
+	  ]]></exprreq>
+    <prereq message="KnowlEdge(Demolitions) d6 required">
+      <validate><![CDATA[        foreach pick in hero where "thingid.skKnow"
+          if (compare(lowercase(eachpick.field[domDomain].text),"demolitions") = 0) then
+            validif (eachpick.field[trtFinal].value >= 3)
+            endif
+          nexteach]]></validate>
+      </prereq>
+</thing>
+
+<thing id="edgACJump" name="Jump Qualified" description="Your character has had training in the use of a parachute. He knows how to put one on, deploy it, and land without breaking his legs (usually). The Jump Qualified Edge gives your character +2 to all rolls associated with parachuting, such as manoeuvering or landing." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Jump Qualified"/>
+		<usesource source="sepActCth"/>
+			    <tag group="EdgeType" tag="Profession"/>		
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+</thing>
+<thing id="edgACJRig" name="Jury Rig" description="This character can improvise something when the need for a tool arises. He suffers no negative penalties on Trait rolls for lack of equipment in most situations. In addition, given a few simple tools, props, or devices, he can generally rig devices to help escape from death-traps, build weapons to match some bizarre requirement, or other- wise create something that is needed when such a thing is not actually present. The extent of this is completely up to the Game Master, but creativity should be rewarded, particu- larly in dire situations where few other answers are possible." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Jury Rig"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Profession"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+		    <!-- Requires Smarts of d6+ -->
+    <exprreq message="Smarts d6 required."><![CDATA[
+      #trait[attrSma] >= 3
+      ]]></exprreq>
+    <!-- Requires Repair of d6+ -->
+    <exprreq message="Repair d6 required."><![CDATA[
+      #traitfound[skRepair] >= 3
+      ]]></exprreq>
+    <!-- Requires Notice of d8+ -->
+    <exprreq message="Notice d8 required."><![CDATA[
+      #traitfound[skNotice] >= 4
+      ]]></exprreq>
+</thing>
+<thing id="edgACMedic" name="Medic!" description="A character with this Edge can get wounded soldiers up and fighting again in seconds. If the medic can get to a wounded non-Wild Card by the end of the round in which he is wounded, he can make an immediate Healing roll at –2. If the roll is successful, the victim is merely Shaken instead of wounded." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Medic!"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Profession"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+	 <exprreq message="Vigour d6 required."><![CDATA[
+      #traitfound[skHealing] >= 3
+      ]]></exprreq> 
+</thing>
+<thing id="edgACMeIn" name="Mechanically Inclined" description="Modern warfare relies on technology. The side that can get the most out of its equipment can have a decisive advantage in battle. You intend to see to it that the winning side is your side. Your character is good with mechanical and electronic devices, and can more easily figure out how to use and repair them. He gets a +2 bonus to KnowlEdge or Repair rolls required to use, design, troubleshoot, or mend such apparatus (engines, radio sets, encryption devices, electrical and hydraulic systems, machinery, etc.)." compset="Edge" uniqueness="useronce">
+		<fieldval field="shortname" value="Mechanically Inclined"/>
+		<usesource source="sepActCth"/>
+		<tag group="EdgeType" tag="Profession"/>
+		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+    <exprreq message="Smarts d6 required."><![CDATA[
+      #trait[attrSma] >= 3
+      ]]></exprreq>
+    <exprreq message="Notice d6 required."><![CDATA[
+      #traitfound[skRepair] >= 3
+      ]]></exprreq>      		
+</thing>
+<!-- end Profession Edges -->

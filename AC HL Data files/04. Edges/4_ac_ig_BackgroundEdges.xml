@@ -16,6 +16,13 @@
 		<eval phase="Setup" priority="8000"><![CDATA[ #resmax[resSkill] +=4 ]]></eval> 
 		<exprreq message="Smarts d8 required"><![CDATA[#trait[attrSma] >= 4]]></exprreq>
 		<!-- To Do: check that the at least 4 points have been spent on Smarts skills -->
+		<prereq message="At least 2 points of Knowledge are required">
+			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  				if (eachpick.field[trtFinal].value >= 3) then
+  					@valid=1
+  				endif
+  			nexteach]]></validate>
+		</prereq>
 </thing>
 <thing id="edgACGrzl" name="Grizzled" description="This veteran has already seen the elephant and survived it. He begins play as a Seasoned character to represent his previous experience, and his military rank is higher than normal. Grizzled soldiers get four Advances immediately upon character creation, just as if they had earned 20 Experience Points. The price is that the advancements must be repaid— the next 20 Experience Points your hero earns are forfeited to pay back the debt. An enlisted character with this Edge begins as an NCO. A character who takes the Rank Edge starts as an Officer." compset="Edge" uniqueness="useronce">
     <fieldval field="shortname" value="Grizzled"/>
