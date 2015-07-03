@@ -15,13 +15,40 @@
         <tag group="EdgeType" tag="Background"/>
 		<eval phase="Setup" priority="8000"><![CDATA[ #resmax[resSkill] +=4 ]]></eval> 
 		<exprreq message="Smarts d8 required"><![CDATA[#trait[attrSma] >= 4]]></exprreq>
-		<!-- To Do: check that the at least 4 points have been spent on Smarts skills -->
-		<prereq message="At least 2 points of Knowledge are required">
-			<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+		<prereq message="At least 4 points of Smarts skills, including 1 Knowledge d6 are required">
+			<validate>
+  			<![CDATA[~ Many thanks to SeeleyOne for the initial concept of this formula!
+var total as number
+var knowcount as number
+var smacount as number
+total = 0
+knowcount = 0
+smacount = 0
+			~ Check for Knowledge skills
+			foreach pick in hero where "thingid.skKnow"
   				if (eachpick.field[trtFinal].value >= 3) then
-  					@valid=1
+    				knowcount +=1 
   				endif
-  			nexteach]]></validate>
+  			nexteach
+			if (knowcount >= 1) then
+   				total += 1
+			endif			
+			~ We now know that we have 2 points in one knowledge skill
+			~ Check for Smarts skills
+			foreach pick in hero from Skill where "Attribute.attrSma"
+  				smacount += (eachpick.field[trtFinal].value)
+			nexteach
+			~ 5 is the minimum total from spending 4 points in Smarts
+			if (smacount >= 5) then
+   				total += 1
+			endif
+~if we have at least two, we're valid
+        validif (total >= 2)
+        if (@ispick <> 0) then
+             altpick.linkvalid = 0
+          endif		
+  			]]>
+  			</validate>
 		</prereq>
 </thing>
 <thing id="edgACGrzl" name="Grizzled" description="This veteran has already seen the elephant and survived it. He begins play as a Seasoned character to represent his previous experience, and his military rank is higher than normal. Grizzled soldiers get four Advances immediately upon character creation, just as if they had earned 20 Experience Points. The price is that the advancements must be repaid— the next 20 Experience Points your hero earns are forfeited to pay back the debt. An enlisted character with this Edge begins as an NCO. A character who takes the Rank Edge starts as an Officer." compset="Edge" uniqueness="useronce">
