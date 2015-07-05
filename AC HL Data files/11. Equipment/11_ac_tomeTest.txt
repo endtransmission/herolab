@@ -17,7 +17,7 @@
   <tag group="AdjustShow" tag="Increment"/>
   <tag group="Helper" tag="UserAdjust"/>
   <tag group="InPlay" tag="PermOK"/>    
-  
+  <autoadd thing="injACSLoss" portal="peInjury"></autoadd>
   <!-- requires Language(German) -->
   <prereq message="Language(German) is required">
 		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"

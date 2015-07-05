@@ -1,0 +1,623 @@
+<!-- Keeper's Guide Tomes -->
+<thing id="eqACBiLi" name="Tome - Liber Ivonis" description="Mythos Grimoire: LIBER IVONIS—in Latin, translated by Caius Phillipus Faber, 9th Century AD. Although the original work is ascribed to the Hyperborean wizard Eibon, the earliest verified edition is this Latin variant. The work has never been printed, but six bound manuscript versions have been recorded as passing through various library collections. Language: Latin (-1). 9 successful rolls needed to read the book. Spells: call/dismiss Aza- thoth, call/dismiss Rlim Shaikorth, chant of Thoth, contact formless spawn of Zhothaqquah (Tsathoggua), contact deity Kthulhut (Cthulhu), contact deity Yok Zothoth (Yog·So- thoth), contact deity Zhothaqquah (Tsathoggua), create gate, deflect harm, Eibon’s wheel of mist, enchant sacrificial dagger, raise night fog, wither limb, plus any other spells the Game Master wishes." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Liber Ivonis"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACBiLi"
+  name="Translate(Liber Ivonis)"
+  compset="Adjustment"
+  description="Language - Latin (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="9"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>
+  <prereq message="Language(Latin) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"latin") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq> 
+</thing>
+
+<thing id="eqACBiLD" name="Tome - Livre D\'Ivon" description="Mythos Grimoire: LIVRE D’IVON—in French, trans- lated by Gaspard du Nord, 13th Century AD. Currently there are only thirteen handwritten, bound copies of this manuscript known to exist, all in varying degrees of completeness. Language: French (-1). 9 successful rolls needed to read the book. Spells: as per Liber Ivonis." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Livre D\'Ivon"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACBiLD"
+  name="Translate(Livre D\'Ivon)"
+  compset="Adjustment"
+  description="Language - French (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="9"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>    
+  <prereq message="Language(French) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"french") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+
+<thing id="eqACBoI" name="Tome - Book of Ebion" description="Mythos Grimoire: BOOK OF EIBON—in English, translator unknown, 15th Century AD. This particular edition of Eibon’s work is comprised of an incomplete and highly flawed Translate. There are eighteen copies on record, all transcribed by different authors. Language: English (-1). 7 successful rolls needed to read the book. Spells: as per Liber Ivonis, except call/dismiss Rlim Shaikorth, chant of Thoth, and deflect harm are absent." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Book of Ebion"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACBoI"
+  name="Translate(Book of Ebion)"
+  compset="Adjustment"
+  description="Language - English (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="7"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd> 
+    <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+
+<thing id="eqACCdG" name="Tome - Cultes Des Ghoules" description="Mythos Grimoire: CULTES DES GHOULES—in French, by Francois-Honore Balfour, Comte d’Eriette, c.1702. Pub. France 1703. Quarto. Immediately denounced by the Church upon publication, the book catalogues the history and practices of a sizeable French cult who counted amongst its members necromancers, necrophages, and necrophiliacs. Of the fourteen copies known to still be in existence, the most recent was rediscovered in 1916. Language: French (-1). 6 successful rolls needed to read the book. Spells: black binding, call/dismiss Nyogtha, call/dismiss Shub-Niggurath, chant of Thoth, contact ghoul, resurrection, shrivelling, summon/ bind byakheee, summon/bind dark young." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Cultes Des Ghoules"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACCdG"
+  name="Translate(Cultes Des Ghoules)"
+  compset="Adjustment"
+  description="Language - French (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="6"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>
+      <prereq message="Language(French) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"french") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>   
+</thing>
+
+<thing id="eqACCotI" name="Tome - Cult of the Idisi" description="Mythos Grimoire: CULT OF THE IDISI—in Latin, author unknown, pub. c.780-785. The whereabouts of the original manuscript are currently a mystery, but copies may still be hidden in Germany’s ancient monasteries. Language: Latin (-1). 4 successful rolls needed to read the book. Spells: mortal shackles (bind enemy), dark mother’s bounty (bless crops), dark mother’s curse (blight crops), presence of the dark mother (call Shub-Niggurath), closing of the eyes (cause blindness), bringer of sickness (cause disease), fleshly puppet (compel flesh), bend bone (lame animal), bond bone (heal animal), song of the forest’s children (summon/bind dark young)." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Cult of the Idisi"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACCotI"
+  name="Translate(Cult of the Idisi)"
+  compset="Adjustment"
+  description="Language - Latin (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="4"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>   
+      <prereq message="Language(Latin) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"latin") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+
+<thing id="eqACHC" name="Tome - Hanseatic Codex" description="Mythos Grimoire: HANSEATIC CODEX—in Latin, author unknown, pub. c.1185-1190. Obviously a later copy of the Saxon original, this version of the book lacks much of the bloodthirsty detail of its predecessor and many of the spells. Wirth’s own Translate is lacking all spells, and readers should treat it as per Culte des Femmes Guerrières du Nord below. Language: Latin (-1). 3 successful rolls needed to read the book. Spells: mortal shackles (bind enemy), presence of the great mother (call Shub-Niggurath), fleshly puppet (compel flesh), song of the forest’s children (summon/bind dark young)." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Hanseatic Codex"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACHC"
+  name="Translate(Hanseatic Codex)"
+  compset="Adjustment"
+  description="Language - Latin (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="3"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>   
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd> 
+      <prereq message="Language(Latin) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"latin") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+
+<thing id="eqACCFG" name="Tome - Culte des Femmes Guerrieres du Nord" description="CULTE DES FEMMES GUERRIÈRES DU NORD (CULT OF THE NORTHERN WARRIOR WOMEN)—in French, by Hajo Duerre, pub. 1834. 19th Century version of the Cult of the Idisi discovered in Paris by Édouard Saby. Written for the popular French occult market, the book contains many lurid details of the warrior maidens of the North, several of them made up by the author, although Duerre obviously had access to a more complete version of the book based on the various sly hints this manuscript contains. No spells. Language: French (+0). 1 successful roll needed to read the book. Spells: successfully reading it provides the reader with a special Benny which can only be spent on Knowledge (Occult) rolls. Contains no actual spells." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Culte des Femmes Guerrieres du Nord"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACCFG"
+  name="Translate(Culte des Femmes Guerrueres du Nord)"
+  compset="Adjustment"
+  description="Language - French (0)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="1"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>
+      <prereq message="Language(French) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"french") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>   
+</thing>
+
+<thing id="eqACMI" name="Tome - Merseburg Incantations" description="MERSEBURG INCANTATIONS—in Old High German, author unknown, pub. c.9th-10th Century. Discovered in 1841 in the Merseburg Cathedral library in a manuscript taken from the Abbey at Fulda, Germany. Translates by the Brothers Grimm are available, but lack the power of the two charms noted in the original. Language: German (-2). 1 successful roll needed to read the book. Spells: bond beast’s bones (heal animal), unravelled fetters. Successfully reading it provides the reader with a special Benny which can only be spent on Knowledge (Occult) rolls." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Merseburg Incantations"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACMI"
+  name="Translate(Merseburg Incantations)"
+  compset="Adjustment"
+  description="Language - German (-2)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="1"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd> 
+      <prereq message="Language(German) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"german") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>  
+</thing>
+
+<thing id="eqACDvM" name="Tome - De Vermis Mysteriis" description="Mythos Grimoire: DE VERMIS MYSTERIIS—in Latin, by Ludwig Prinn, 1542. A black-letter folio is known to have been printed in Cologne, Germany, in the same year, with both books being suppressed by the Church upon publication due to their descriptions of the Arab world, both mundane and supernatural. There are only fifteen copies known to have survived into the 20th Century. Language: Latin (-1). 12 successful rolls needed to read the book. Spells: black binding, chant of Thoth, contact Yig, invoke demon(summon/bind byakhee), invoke child of the goat (summon/ bind dark young), Prinn’s crux ansata, plus any other spells of the Game Master’s choosing." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="De Vermis Mysteriis"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACDvM"
+  name="Translate(De Vermis Mysteriis)"
+  compset="Adjustment"
+  description="Language - Latin (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="12"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>  
+      <prereq message="Language(Latin) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"latin") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq> 
+</thing>
+
+<thing id="eqACOSG" name="Tome - De Origine et Situ Germanorum" description="Mythos Grimoire: DE ORIGINE ET SITU GERMANORUM—“Concerning the Origin and Situation of the Germanics”, in Latin, by Gaius Cornelius Tacitus, pub. 98AD. Largely cribbed from other works, including Pliny the Elder’s far more explicit and spell-laden Bella Germaniae (c.60-70AD), Tacitus’ study of the Germanic tribes consists of forty-six very short chapters. As well as the fairly standard minutiae of life in Northern Europe, the book also contains rather disturbing material on the nature of the tribes\' religious practices. The exact whereabouts of this particular version of the book is currently unknown, if indeed it still exists. Language: Latin (-1). 4 successful rolls needed to read the book. Spells: storm and stress (alter weather), augur, speak with darkness (call Nyogtha), speak with the dark mother (call Shub-Niggurath), fever’s pall (cause disease), crushing darkness (clutch of Nyo- gtha), speak with black toads (contact formless spawn), speak with messenger (contact Nyarlathotep), speak with toad-father (contact Tsathoggua), curse of the stone, the mother’s touch (healing), night and fog (raise night fog), speak with winged hunter (summon hunting horror)." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Situ Germanorum"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACOST"
+  name="Translate(Situ Germanorum)"
+  compset="Adjustment"
+  description="Language - Latin (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="4"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd> 
+      <prereq message="Language(Latin) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"latin") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>  
+</thing>
+
+<thing id="eqACCAes" name="Tome - Codex Aesinas" description="Mythos Grimoire: CODEX AESINAS—in Latin, copied by Stefano Guarnieri c.1541-45. Owned by the Counts Baldeschi-Balleani of Jesi, Italy, since 1547. The object of Himmler’s attention since 1936, this version of the book has lost much of the arcane knowledge of the original over the centuries. Himmler’s photo facsimile of the book is used to produce Palaeographical Studies of Tacitus’ Agricola and Germania Along With a Photocopy of the Codex Aesinas with Rudolph Till, in 1943. Any remaining Mythos sections have been carefully edited out of this particular German reprint on the orders of Reinhardt Weissler, and readers suffer only the effects listed for The Complete Works of Tacitus, as described below. Language: Latin (-1). 3 successful rolls needed to read the book. Spells: augur, fever’s pall (cause disease), crushing darkness (clutch of Nyogtha), speak with black toads (contact formless spawn), curse of the stone, night and fog (raise night fog), speak with winged hunter (summon hunting horror)." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Codex Aesinas"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACCAes"
+  name="Translate(Codex Aesinas)"
+  compset="Adjustment"
+  description="Language - Latin (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="3"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>  
+      <prereq message="Language(Latin) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"latin") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>  
+</thing>
+
+<thing id="eqACCwoT" name="Tome - Complete works of Tacitus" description="THE COMPLETE WORKS OF TACITUS—in English, Moses Hadas (ed.), based on the 1876 Translate by Alfred Church and William Brodribb, pub. 1942. Random House’s Modern Library collection of Tacitus’ works, including the Germania. Other than offering an insight into how Himmler has distorted the Roman history of the Germanic tribes to suit his own purposes, there is little of an occult nature to be learnt from this version of the book. Language: English (+0). 1 successful roll needed to read the book. Spells: successfully reading it provides the reader with a special Benny which can only be spent on Knowledge (Occult) rolls." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Complete works of Tacitus"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACCwoT"
+  name="Translate(Complete works of Tacitus)"
+  compset="Adjustment"
+  description="Language - English (0)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="1"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>   
+      <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+
+<thing id="eqACMatK" name="Tome - Monstres and their kynde" description="Mythos Grimoire: MONSTRES AND THEIR KYNDE— in English, author unknown, 16th Century AD. There is only a single folio version of this handwritten manuscript still in existence, but that disappeared from the British Museum in 1898. Although rumours of other versions often surface, none has been verified. From the British Museum’s catalogue records, the book is known to contain a plethora of topics cribbed from other, greater, works such as the Necronomicon and the Book of Eibon, amongst others. Many of the Mythos’ most formidable entities are described therein, including Cthulhu and Yog-Sothoth. Language: English (-1). 8 successful rolls needed to read the book. Spells: command face- less one (summon/bind nightgaunt), command ice demon (summon/bind byakhee), command night beast (summon/bind hunting horror), command star walker (summon/ bind dimensional shambler), enchant sacrificial dagger." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Monstres and their kynde"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACMatK"
+  name="Translate(Monstres and their kynde)"
+  compset="Adjustment"
+  description="Language - English (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="8"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>   
+      <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq> 
+</thing>
+
+<thing id="eqACUnKu" name="Tome - Unausprechlichen Kulten" description="Mythos Grimoire: UNAUSPRECHLICHEN KULTEN—in German, by Friedrich Wilhelm von Junzt, 1839, possibly printed in Hamburg. Quarto. Frequently referred to as the Black Book, this tome discusses the author’s connections to a variety of cults and secret societies. Six copies of this particular edition are known to be held by highly respected libraries in Europe and America, although other editions are also rumoured to exist. The original edition can easily be identified thanks to Gunther Hasse’s horrific engravings. Language: German (-1). 12 successful rolls needed to read the book. Spells: approach brother (contact ghoul), beckon great one (contact Father Dagon), call aether devil (contact mi·go), call forth the sun (call/dismiss Azathoth), call forth the horned man (call/dismiss Nyarlathotep), call forth that which should not be (call/dismiss Nyogtha), call forth the woodland goddess (call/ dismiss Shub-Niggurath), command airy travellers (summon/ bind byakhee), command the trees (summon/bind dark young), contact children of the deep (contact deep ones), revivify (resurrection), plus any other spells the Game Master wishes." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Unausprechlichen Kulten"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACUnKu"
+  name="Translate(Unausprechlichen Kulten)"
+  compset="Adjustment"
+  description="Language - German (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="12"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>  
+      <prereq message="Language(German) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"german") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>  
+</thing>
+
+<thing id="eqACNC45" name="Tome - Nameless Cults - 1845" description="Mythos Grimoire: NAMELESS CULTS—in English, Translate by author unknown, pub. 1845. Octavo. This is an unauthorised and badly flawed Translate published by Bride- well of England. A minimum of twenty copies are known to be held in various collections, both public and private. Language: English (-1). 10 successful rolls needed to read the book. Spells: as per Unausprechlichen Kulten, but most of the spells in this version of Nameless Cults are incomplete or faulty. The mod- ifier to learn its spells is -4, and once an attempt has failed twice then the spell proves to be fatally flawed and cannot be learned." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Nameless Cults - 1845"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACNC45"
+  name="Translate(Nameless Cults - 1845)"
+  compset="Adjustment"
+  description="Language - English (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="10"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd> 
+      <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>  
+</thing>
+
+<thing id="eqACNC09" name="Tome - Nameless Cults - 1909" description="NAMELESS CULTS—in English, author unknown, pub. 1909. This edition is a sanitised version of the faulty Bridewell text, published by Golden Goblin Press, New York, and contains only descriptions of the spells and not the complete rituals of the earlier editions. This volume occasionally crops up in used bookshops, if you are prepared to look hard enough. Language: English (+0). 7 successful rolls needed to read the book. Spells: none." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Nameless Cults - 1909"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACNC09"
+  name="Translate(Nameless Cults - 1909)"
+  compset="Adjustment"
+  description="Language - English (0)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="7"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>   
+      <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq> 
+</thing>
+
+<thing id="eqACNeAA" name="Tome - Necronomicon - Al-Azif" description="Mythos Grimoire: AL-AZIF—in Arabic, by Abdul al-Haz- rad c. 730 AD. The original form of this tome is unknown, but numerous manuscript versions are known to have passed between early medieval scholars before it was reported as lost in the 12th Century. An immense collection of esoteric and blasphemous knowledge, the book touches on nearly every aspect of the Mythos, and is a valuable source of information on a wide variety of subjects, including charts and star maps. Language: Arabic (-2). 14 successful rolls needed to read the book. Reading this book increases Knowledge (Mythos) by two steps, with the concomitant Sanity loss. Spells: call/dismiss Azathoth, call/dismiss Cthugha, call/dismiss Hastur, call/dismiss Nyogtha, call/dismiss Shub-Niggurath, call/dismiss Yog-Sothoth, chant of Thoth, contact ghoul, contact Nyarlathotep, contact sand dweller, dominate, dread curse of Azathoth, elder sign, powder of Ibn·Ghazi, resurrection, shrivelling, summon/bind byakhee, summon/ bind fire vampire." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Necronomicon - Al-Azif"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACNeAA"
+  name="Translate(Necronomicon - Al Asif)"
+  compset="Adjustment"
+  description="Language - Arabic (-2)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="14"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>  
+      <prereq message="Language(Arabic) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"arabic") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>  
+</thing>
+
+<thing id="eqACNeGr" name="Tome - Necronomicon - Greek" description="Mythos Grimoire: NECRONOMICON—in Greek, translated by Theodoras Philetas, c.950 AD. It is unclear what the fate of earlier manuscript versions has been, although they must have existed at some point due to the presence of an Italian folio edition. Suppressed by the Church, this manuscript lacked any drawings, maps, or charts; the last accurately identified copy was burned in Salem in 1692. Language: Greek (-2). 14 successful rolls needed to read the book. Reading this book increases Knowledge (Mythos) by two steps, with the concomitant Sanity loss. Spells: as Al-Azif." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Necronomicon - Greek"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACNeGr"
+  name="Translate(Necronomicon - Greek)"
+  compset="Adjustment"
+  description="Language - Greek (-2)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="14"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd> 
+      <prereq message="Language(Greek) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"greek") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>  
+</thing>
+
+<thing id="eqACNeLa" name="Tome - Necronomicon - Latin" description="Mythos Grimoire: NECRONOMICON—in Latin, by Olaus Wormius, 1228 AD. In its first incarnation, the book was circulated in manuscript form prior to being printed in Germany in the late 15th Century as a black-letter folio. The Spanish edition of the early 17th Century is almost identical to the German version. At this moment in time, only one copy of the German printing exists; the Spanish edition has survived far better, although there are still only four copies extant. Language: Latin (-2). 13 successful rolls needed to read the book. Reading this book increases Knowledge (Mythos) by two steps, with the concomitant Sanity loss. Spells: as Al-Azif." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Necronomicon - Latin"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACNeLa"
+  name="Translate(Necronomicon - Latin)"
+  compset="Adjustment"
+  description="Language - Latin (-2)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="13"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>  
+      <prereq message="Language(Latin) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"latin") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>  
+</thing>
+
+<thing id="eqACNeEn" name="Tome - Necronomicon - Latin" description="Mythos Grimoire: NECRONOMICON—in English, Translate by Dr. John Dee, 1586. Although an accurate Translate of the Greek version, certain of the more unsavoury passages have been ommitted. Dee’s work on the Necronomicon has never been printed and exists only in bound manuscript form. There are currently believed to be three almost complete copies in existence. Language: English (-2). 12 successful rolls needed to read the book. Reading this book increases Knowledge (Mythos) by two steps, with the concomitant Sanity loss. Spells: call forth the angel Yaz- rael (call/dismiss Yog-Sothoth), call forth the lord of the pit (call/dismiss Nyogtha), chant of Thoth, consult dark servant (contact ghoul), consult ye spirit of the earth (contact Nyarlathotep), dominate, elder sign, powder of Ibn-Ghazi." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Necronomicon - English"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACNeEn"
+  name="Translate(Necronomicon - English)"
+  compset="Adjustment"
+  description="Language - English (-2)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="12"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>   
+      <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq> 
+</thing>
+
+<thing id="eqACNeSM" name="Tome - Necronomicon - Sussex Manuscript" description="Mythos Grimoire: SUSSEX MAUSCRIPT—in English, translated by Baron Frederic, 1597. Octavo. This edition represents a muddled and incomplete Translate of the Latin Necronomicon, originally printed in Sussex, England. The book is more properly known as the Cultus Maleficarum. Language: English (-1). 9 successful rolls needed to read the book. Spells: as per Al-Azif, but some of the spells are possibly dangerously flawed. The modifier to learn its spells is -4, and once an attempt has failed twice then the spell proves to be fatally flawed and cannot be learned." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Necronomicon - Sussex Manuscript"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACNeSM"
+  name="Translate(Necronomicon - Sussex Manuscript)"
+  compset="Adjustment"
+  description="Language - English (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="9"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/>
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd> 
+      <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>   
+</thing>
+
+<thing id="eqACPnMa" name="Tome - Pnakotic Manuscripts" description="Mythos Grimoire: PNAKOTIC MANUSCRIPTS—in English, unknown author, 15th Century AD. In the form of a bound manuscript, five versions of this book are known to be housed in European and American collections. The apparent precursor volume, the Pnakotica, was written in classical Greek. Some claim that the book traces its origins to the pre-human crinoids who allegedly seeded life on Earth. Language: English (-1). 11 successful roll needed to read the book. Spell: contact winged thing (contact elder thing)." compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="Pnakotic Manuscripts"/>
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACPnMa"
+  name="Translate(Pnakotic Manuscript)"
+  compset="Adjustment"
+  description="Language - English (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="11"/>
+      <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>   
+    <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+
+<thing id="eqACtoTM" name="Tome - True Majick" description="TRUE MAGICK—in English, by Theophilus Wenn, 17th Century AD. Described as an encyclopedia of the Devil’s Lore, this tome exists only as a sma11 and crumbling hand-bound manuscript. Spells: call forth the winged one (summon/bind byakhee), speak with the dark one (call/dismiss Nyogtha), plus other spells of the Game Master’s choosing. " compset="Equipment" summary="Mythos Grimoir">
+    <fieldval field="shortname" value="True Majick"/>
+    <usesource source="ACTKG"/>
+    <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
+</thing>
+<thing
+  id="adjACtTM"
+  name="Translate(True Majick)"
+  compset="Adjustment"
+  description="Language - English (-1)"
+  uniqueness="useronce">
+    <fieldval field="adjMinimum" value="0"/>
+    <fieldval field="adjMaximum" value="4"/>
+  <usesource source="sepActCth"/>
+  <tag group="AdjustShow" tag="Increment"/>
+  <tag group="Helper" tag="UserAdjust"/>
+  <tag group="InPlay" tag="PermOK"/> 
+        <autoadd thing="injACSLoss" portal="peInjury"></autoadd>   
+    <prereq message="Language(English) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.lgLanguage"
+  			if (compare(lowercase(eachpick.field[domDomain].text),"english") = 0) then
+	  			@valid=1
+  			endif
+  		nexteach]]></validate>
+   </prereq>
+</thing>
+
+<!-- / tomes -->
