@@ -1,0 +1,7 @@
+<!-- Heroes of the Sea - Melee weapons -->
+  <thing id="wpACRapier" name="Rapier" compset="Melee" summary="Rapier">
+    <fieldval field="wpParry" value="1"/>
+    <usesource source="ACHotS"/>
+    <tag group="WeaponType" tag="ModMelee"/>
+    <tag group="WeaponDie" tag="3"/>
+    </thing>

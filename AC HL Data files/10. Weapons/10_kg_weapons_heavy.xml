@@ -1,0 +1,106 @@
+<!-- Keeper's Guide - Weapons - Ranged/Heavy -->
+<thing id="wpACGr36" name="Granatwerfer (GrW) 36" description="..." compset="Ranged">
+    <fieldval field="shortname" value="GrW 36"/>
+    <fieldval field="wpDamage" value="2d8+1"/>
+    <fieldval field="wpShort" value="50"/>
+    <fieldval field="wpMedium" value="100"/>
+    <fieldval field="wpLong" value="200"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="31"/>	
+    <fieldval field="wpSpecial" value="Minimum range of 30"/>  	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="MedBurst"/>
+ 	<tag group="Weapon" tag="HvyWeapon"/>
+ 	<tag group="Weapon" tag="NoMove"/>
+ </thing>
+
+
+
+<thing id="wpACPf30k" name="Panzerfaust 30k" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Panzerfaust 30k"/>
+    <fieldval field="wpDamage" value="4d8"/>
+    <fieldval field="wpShort" value="10"/>
+    <fieldval field="wpMedium" value="20"/>
+    <fieldval field="wpLong" value="40"/>
+    <fieldval field="wpPiercing" value="12"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="10"/>	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>
+	<tag group="Weapon" tag="SmallBurst"/> 
+    <tag group="Weapon" tag="HvyWeapon"/>
+</thing>
+
+<thing id="wpACPf30" name="Panzerfaust 30" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Panzerfaust 30"/>
+    <fieldval field="wpDamage" value="4d8"/>
+    <fieldval field="wpShort" value="10"/>
+    <fieldval field="wpMedium" value="20"/>
+    <fieldval field="wpLong" value="40"/>
+    <fieldval field="wpPiercing" value="15"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="10"/>	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="SmallBurst"/>
+	<tag group="Weapon" tag="HvyWeapon"/>
+</thing>
+
+<thing id="wpACPf60" name="Panzerfaust 60" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Panzerfaust 60"/>
+    <fieldval field="wpDamage" value="4d8"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="17"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="10"/>	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="SmallBurst"/>
+	<tag group="Weapon" tag="HvyWeapon"/>
+</thing>
+
+<thing id="wpACPf100" name="Panzerfaust 100" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Panzerfaust 100"/>
+    <fieldval field="wpDamage" value="4d8"/>
+    <fieldval field="wpShort" value="20"/>
+    <fieldval field="wpMedium" value="40"/>
+    <fieldval field="wpLong" value="60"/>
+    <fieldval field="wpPiercing" value="19"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="10"/>	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="SmallBurst"/>
+	<tag group="Weapon" tag="HvyWeapon"/>
+</thing>
+
+<thing id="wpACPf150" name="Panzerfaust 150" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Panzerfaust 150"/>
+    <fieldval field="wpDamage" value="4d8"/>
+    <fieldval field="wpShort" value="20"/>
+    <fieldval field="wpMedium" value="40"/>
+    <fieldval field="wpLong" value="60"/>
+    <fieldval field="wpPiercing" value="21"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="10"/>	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="SmallBurst"/>
+ 	<tag group="Weapon" tag="HvyWeapon"/>
+ </thing> 

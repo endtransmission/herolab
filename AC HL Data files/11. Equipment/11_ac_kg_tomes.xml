@@ -595,7 +595,7 @@
 
 <thing id="eqACtoTM" name="Tome - True Majick" description="TRUE MAGICK—in English, by Theophilus Wenn, 17th Century AD. Described as an encyclopedia of the Devil’s Lore, this tome exists only as a sma11 and crumbling hand-bound manuscript. Spells: call forth the winged one (summon/bind byakhee), speak with the dark one (call/dismiss Nyogtha), plus other spells of the Game Master’s choosing. " compset="Equipment" summary="Mythos Grimoir">
     <fieldval field="shortname" value="True Majick"/>
-    <usesource source="ACTKG"/>
+    <usesource source="ACTKing"/>
     <tag group="GearType" tag="ACGrimoir" name="Grimoir"/>
 </thing>
 <thing

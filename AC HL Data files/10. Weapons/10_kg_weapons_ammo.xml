@@ -1,0 +1,5 @@
+<!-- Keeper's Guide - Weapons - Ammo -->
+<thing id="eqACFeur" name="Feuerflugel rounds" description="This ammunition does 2d10 damage with a Small Burst template, AP5 and Heavy Weapon. Biological targets hit burst into flames and take 1d10 damage per round. Flammable items within the blast have a 1 in 6 chance of catching fire" compset="Ammunition" summary="Tracer Rounds">
+    <fieldval field="shortname" value="Feuerflugel"/>
+    <usesource source="ACKG"/>
+</thing>

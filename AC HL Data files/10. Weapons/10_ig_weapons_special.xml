@@ -1,0 +1,142 @@
+<!-- Investigator guide - weapons - special weapons -->
+
+<thing id="wpAC82Gr" name="No.82 Grenade" description="No. 82 Grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="No.82 Grenade"/>
+    <fieldval field="wpShort" value="05"/>
+    <fieldval field="wpMedium" value="10"/>
+    <fieldval field="wpLong" value="20"/>
+    <fieldval field="wpDamage" value="4d6"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="2"/>
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="LargeBurst"/>
+    <tag group="Weapon" tag="HvyWeapon"/> 
+</thing>
+
+<thing id="wpACTyre" name="Tyreburster grenade" description="Tyreburster grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="Tyreburster"/>
+    <fieldval field="wpDamage" value="2d6"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="SmaBurst"/> 
+</thing>
+
+<thing id="wpACGPGr" name="GP Grenade" description="GP Grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="GP Grenade"/>
+    <fieldval field="wpShort" value="05"/>
+    <fieldval field="wpMedium" value="10"/>
+    <fieldval field="wpLong" value="20"/>
+    <fieldval field="wpDamage" value="Special"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>
+</thing>
+
+<thing id="wpACSatch" name="Satchel charge" description="Satchel Charge" compset="SpecWeap">
+    <fieldval field="shortname" value="Satchel Charge"/>
+    <fieldval field="wpDamage" value="Special"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="LargeBurst"/> 
+</thing>
+
+<thing id="wpAC36M" name="No.36M (Mills Bomb)" description="No.36M" compset="SpecWeap">
+    <fieldval field="shortname" value="No.36M"/>
+    <fieldval field="wpShort" value="05"/>
+    <fieldval field="wpMedium" value="10"/>
+    <fieldval field="wpLong" value="20"/>
+    <fieldval field="wpDamage" value="3d6"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="2"/>    
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>
+</thing>
+
+<thing id="wpACRflG" name="Rifle Grenade (Mills Bomb)" description="Rifle Grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="Rifle Grenade"/>
+    <fieldval field="wpShort" value="10"/>
+    <fieldval field="wpMedium" value="20"/>
+    <fieldval field="wpLong" value="40"/>
+    <fieldval field="wpDamage" value="2d6+1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>
+    <tag group="Weapon" tag="SnapFire"/>    
+</thing>
+
+<thing id="wpAC2inM" name="2inch Mortar" description="2 inch mortar" compset="SpecWeap">
+    <fieldval field="shortname" value="2 inch mortar"/>
+    <fieldval field="wpShort" value="50"/>
+    <fieldval field="wpMedium" value="75"/>
+    <fieldval field="wpLong" value="100"/>
+    <fieldval field="wpDamage" value="2d8 / Smoke / Illumination"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="9"/>  
+    <fieldval field="wpPiercing" value="1"/> 
+    <fieldval field="wpSpecial" value="May not move."/>         
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>
+    <tag group="Weapon" tag="HvyWeapon"/> 
+</thing>
+
+<thing id="wpACPApl" name="Pineapple grenade" description="Pineapple" compset="SpecWeap">
+    <fieldval field="shortname" value="Pineapple"/>
+    <fieldval field="wpShort" value="05"/>
+    <fieldval field="wpMedium" value="10"/>
+    <fieldval field="wpLong" value="20"/>
+    <fieldval field="wpDamage" value="3d6"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="2"/>    
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>
+</thing>
+
+<thing id="wpACM17G" name="M17 Rifle Grenade" description="M17 Rifle Grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="M17 Rifle Grenade"/>
+    <fieldval field="wpShort" value="10"/>
+    <fieldval field="wpMedium" value="20"/>
+    <fieldval field="wpLong" value="40"/>
+    <fieldval field="wpDamage" value="2d6+1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>
+    <tag group="Weapon" tag="SnapFire"/>    
+</thing> 

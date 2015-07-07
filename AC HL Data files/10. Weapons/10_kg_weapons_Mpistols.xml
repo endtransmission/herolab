@@ -1,0 +1,67 @@
+<!-- Keeper's Guide - Weapons - MG pistols -->
+
+<thing id="wpACWP38" name="Walther P38" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Walther P38"/>
+    <fieldval field="wpDamage" value="2D6-1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="8"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="Weapon" tag="SemiAuto"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACWaPp" name="Walther PP" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Walther PP"/>
+    <fieldval field="wpDamage" value="2D6-1"/>
+    <fieldval field="wpShort" value="10"/>
+    <fieldval field="wpMedium" value="20"/>
+    <fieldval field="wpLong" value="40"/>
+    <fieldval field="wpShots" value="8"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="Weapon" tag="SemiAuto"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACWPPK" name="Walther PPK" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Walther PPK"/>
+    <fieldval field="wpDamage" value="2D6-1"/>
+    <fieldval field="wpShort" value="10"/>
+    <fieldval field="wpMedium" value="20"/>
+    <fieldval field="wpLong" value="40"/>
+    <fieldval field="wpShots" value="7"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="Weapon" tag="SemiAuto"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACSWMp" name="Shewolf Machinenpistole" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Shewolf Machinenpistole"/>
+    <fieldval field="wpDamage" value="2D8"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="15"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="12"/>
+    <fieldval field="wpFireRate" value="1 or 3"/>
+    <fieldval field="wpPiercing" value="1"/>	
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="Weapon" tag="tAuto"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+    <tag group="Weapon" tag="3RB"/>
+</thing>

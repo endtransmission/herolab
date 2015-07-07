@@ -1,0 +1,31 @@
+<!-- Heroes of the sea - Weapons - Ranged -->
+<thing id="wpACFsSpr" name="Fish Spear" compset="Ranged">
+    <fieldval field="wpDamage" value="Str +d6"/>
+    <fieldval field="wpShort" value="3"/>
+    <fieldval field="wpMedium" value="6"/>
+    <fieldval field="wpLong" value="12"/>
+    <usesource source="ACHotS"/>
+    <tag group="Weapon" tag="rngParry" name="Parry +1"/>
+    <tag group="WeaponType" tag="MedPoles"/>
+</thing>
+<thing id="wpACSprGn" name="Spear Gun" compset="Ranged">
+    <fieldval field="wpDamage" value="2d6"/>
+    <fieldval field="wpShort" value="9"/>
+    <fieldval field="wpMedium" value="18"/>
+    <fieldval field="wpLong" value="27"/>
+    <fieldval field="wpShots" value="1"/>
+    <usesource source="ACHotS"/>
+    <tag group="WeaponType" tag="ModRange"/>
+</thing>
+<thing id="wpACLEn4" name="Lee Enfield No.4" description="The Lee-Enfield bolt-action, magazine-fed, repeating rifle was the main firearm used by the military forces of the British Empire and Commonwealth during the first half of the 20th century. It was the British Army&apos;s standard rifle from its official adoption in 1895 until 1957." compset="Ranged" summary="Lee Enfield rifle">
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpShots" value="10"/>
+    <fieldval field="wpAmmo" value=".303"/>
+    <usesource source="ACHotS"/>
+    <tag group="Weapon" tag="SnapFire"/>
+    <tag group="WeaponType" tag="ModRifle"/>
+</thing>

@@ -1,0 +1,393 @@
+
+<!-- Keeper's Guide - weapons - Ranged -->
+
+<thing id="wpACBrHi" name="Browning Hi-Power Pistol" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Browning Hi-Power"/>
+    <fieldval field="wpDamage" value="2D6-1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="13"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2.5"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="Weapon" tag="SemiAuto"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACWb38S" name="Webley .38/200 Service Revolver" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Browning Hi-Power"/>
+    <fieldval field="wpDamage" value="2D6+1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="6"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="WeaponType" tag="ModPistol"/>
+    <tag group="Weapon" tag="Revolver"/>    
+</thing>
+
+<thing id="wpACM191" name="M191 1A1" description="..." compset="Ranged">
+    <fieldval field="shortname" value="M191 1A1"/>
+    <fieldval field="wpDamage" value="2D6+1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="7"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2.5"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="Weapon" tag="SemiAuto"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACMAB" name="MAB Modele D Pistol" description="..." compset="Ranged">
+    <fieldval field="shortname" value="MAB Pistol"/>
+    <fieldval field="wpDamage" value="2D6+1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="9"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2.5"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="Weapon" tag="SemiAuto"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACMAS" name="MAS Modele 1873 Revolver" description="..." compset="Ranged">
+    <fieldval field="shortname" value="MAS 1873"/>
+    <fieldval field="wpDamage" value="2D8"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="6"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="WeaponType" tag="ModPistol"/>
+    <tag group="Weapon" tag="Revolver"/>    
+</thing>
+
+<thing id="wpACEnpn" name="Enpen Mk.1 Pistol" description="..." compset="Ranged">
+    <fieldval field="shortname" value="enpen Pistol"/>
+    <fieldval field="wpDamage" value="2D6-1"/>
+    <fieldval field="wpShort" value="03"/>
+    <fieldval field="wpMedium" value="06"/>
+    <fieldval field="wpLong" value="12"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpSpecial" value="Silenced"/>    
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACHDMp" name="High Standard HDM Pistol" description="..." compset="Ranged">
+    <fieldval field="shortname" value="HDM Pistol"/>
+    <fieldval field="wpDamage" value="2D6-1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="10"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2.5"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpSpecial" value="Silenced"/>    
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>	
+    <tag group="WeaponType" tag="ModPistol"/>
+    <tag group="Weapon" tag="ThreeRound"/>    
+</thing>
+
+<thing id="wpACWlrd" name="Welrod Mk.IIA Pistol" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Welrod Mk.IIA"/>
+    <fieldval field="wpDamage" value="2D6+1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="8"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpSpecial" value="Silenced"/>  
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACWlr9" name="Welrod 9mm Pistol" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Welrod Mk.IIA"/>
+    <fieldval field="wpDamage" value="2D8"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpShots" value="5"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="2"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpSpecial" value="Silenced"/>  
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACSlvGn" name="Sleeve Gun" description="+2 to stealth rolls to get the Drop" compset="Ranged">
+    <fieldval field="shortname" value="Sleeve Gun"/>
+    <fieldval field="wpDamage" value="2D6+1"/>
+    <fieldval field="wpShort" value="Touch"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpFireRate" value="1"/>
+    <usesource source="ACTimeWW2"/>
+    <usesource source="ACKG"/>
+    <tag group="WeaponType" tag="ModPistol"/>
+</thing>
+
+<thing id="wpACLEmk3" name="Lee Enfield Mk.III" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Lee Enfield Mk.III"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="10"/>
+    <fieldval field="gearWeight" value="9"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
+    <tag group="Weapon" tag="SnapFire"/> 
+</thing>
+
+<thing id="wpACLEm3S" name="Lee Enfield No.4 Mk.I (T) Scoped" description="Can be fitted with a telescopic sight" compset="Ranged">
+    <fieldval field="shortname" value="Lee Enfield No.4"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="10"/>
+    <fieldval field="gearWeight" value="8"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
+    <tag group="Weapon" tag="SnapFire"/> 
+</thing>
+
+<thing id="wpACM1Car" name="M1 Carbine" description="" compset="Ranged">
+    <fieldval field="shortname" value="M1 Carbine"/>
+    <fieldval field="wpDamage" value="2d6"/>
+    <fieldval field="wpShort" value="15"/>
+    <fieldval field="wpMedium" value="30"/>
+    <fieldval field="wpLong" value="60"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="15"/>
+    <fieldval field="gearWeight" value="5.5"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="Weapon" tag="SemiAuto"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+</thing>
+
+<thing id="wpACM1Gar" name="M1 Garand Rifle" description="..." compset="Ranged">
+    <fieldval field="shortname" value="M1 Garand"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="8"/>
+    <fieldval field="gearWeight" value="9.5"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="SemiAuto"/> 
+</thing>
+
+<thing id="wpACM12S" name="Winchester M12 Shotgun" description="See Savage Worlds" compset="Ranged">
+    <fieldval field="shortname" value="Winchester M12"/>
+    <fieldval field="wpDamage" value="1-3D6"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="6"/>
+    <fieldval field="gearWeight" value="8"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+</thing>
+
+<thing id="wpACm16C" name="Berthier Modele 1892 M16 Carbine" description="" compset="Ranged">
+    <fieldval field="shortname" value="M16 Carbine"/>
+    <fieldval field="wpDamage" value="2D6"/>
+    <fieldval field="wpShort" value="15"/>
+    <fieldval field="wpMedium" value="30"/>
+    <fieldval field="wpLong" value="60"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="5"/>
+    <fieldval field="gearWeight" value="5"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="SemiAuto"/>     
+</thing>
+
+<thing id="wpACM36R" name="MAS Modele 1936 Rifle" description="" compset="Ranged">
+    <fieldval field="shortname" value="MAS 1936"/>
+    <fieldval field="wpDamage" value="2D8"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="5"/>
+    <fieldval field="gearWeight" value="9.5"/>	
+    <fieldval field="wpPiercing" value="1"/>    
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/> 
+    <tag group="Weapon" tag="SnapFire"/>       
+</thing>
+
+<thing id="wpACCaM1" name="De Liste Commando Carbine Mk1" description="" compset="Ranged">
+    <fieldval field="shortname" value="De Liste Carbine"/>
+    <fieldval field="wpDamage" value="2D6+1"/>
+    <fieldval field="wpShort" value="15"/>
+    <fieldval field="wpMedium" value="30"/>
+    <fieldval field="wpLong" value="60"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value="7"/>
+    <fieldval field="gearWeight" value="5"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="SemiAuto"/>     
+</thing>
+
+<thing id="wpACStMG" name="Sten Mk.I-V Submachine-Gun" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Sten gun"/>
+    <fieldval field="wpDamage" value="2d6-1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="3"/>    
+    <fieldval field="wpShots" value="32"/>
+    <fieldval field="gearWeight" value="8"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="FullAuto"/> 
+</thing>
+
+<thing id="wpACBrnG" name="Bren Machine Gun" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Bren gun"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="40"/>
+    <fieldval field="wpMedium" value="80"/>
+    <fieldval field="wpLong" value="160"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="3"/>    
+    <fieldval field="wpShots" value="30/100"/>
+    <fieldval field="gearWeight" value="22"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="StrReqDie" tag="4" name="d8" abbrev="d8"/>
+    <tag group="Weapon" tag="FullAuto"/>
+    <tag group="Weapon" tag="SnapFire"/> 
+</thing>
+
+<thing id="wpACVckr" name="Vickers Machine Gun" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Bren gun"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="30"/>
+    <fieldval field="wpMedium" value="60"/>
+    <fieldval field="wpLong" value="120"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="3"/>    
+    <fieldval field="wpShots" value="250"/>
+    <fieldval field="gearWeight" value="40"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="FullAuto"/>
+    <tag group="Weapon" tag="NoMove"/>
+</thing>
+
+<thing id="wpACTmps" name="Thompson Submachine-Gun" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Thompson SMG"/>
+    <fieldval field="wpDamage" value="2d6+1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="3"/>    
+    <fieldval field="wpShots" value="20/50"/>
+    <fieldval field="gearWeight" value="13"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="FullAuto"/> 
+</thing>
+
+<thing id="wpACBAR" name="Browning Auto Rifle (BAR)" description="..." compset="Ranged">
+    <fieldval field="shortname" value="BAR"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="30"/>
+    <fieldval field="wpMedium" value="60"/>
+    <fieldval field="wpLong" value="120"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="2"/>    
+    <fieldval field="wpShots" value="20"/>
+    <fieldval field="gearWeight" value="20"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="StrReqDie" tag="4" name="d8" abbrev="d8"/>    
+    <tag group="Weapon" tag="FullAuto"/>
+    <tag group="Weapon" tag="SnapFire"/>
+</thing>
+
+<thing id="wpACJm19" name="Johnson M1941 Machine Gun" description="..." compset="Ranged">
+    <fieldval field="shortname" value="M1941"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="30"/>
+    <fieldval field="wpMedium" value="60"/>
+    <fieldval field="wpLong" value="120"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="2"/>    
+    <fieldval field="wpShots" value="20"/>
+    <fieldval field="gearWeight" value="20"/>	
+    <usesource source="ACIG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="StrReqDie" tag="4" name="d8" abbrev="d8"/>    
+    <tag group="Weapon" tag="FullAuto"/>
+    <tag group="Weapon" tag="SnapFire"/>
+</thing>

@@ -1,0 +1,98 @@
+<!-- Keeper's Guide - Weapons - Special -->
+<thing id="wpACDmGr" name="Demolition grenade" description="Demolition grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="Demo Grenade"/>
+    <fieldval field="wpShort" value="04"/>
+    <fieldval field="wpMedium" value="08"/>
+    <fieldval field="wpLong" value="16"/>
+    <fieldval field="wpDamage" value="6d6"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="wpPiercing" value="3"/>
+    <fieldval field="gearWeight" value="10"/>
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>
+    <tag group="Weapon" tag="HvyWeapon"/> 
+</thing>
+
+<thing id="wpACSmGr" name="Smoke grenade" description="Smoke grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="Smoke"/>
+    <fieldval field="wpShort" value="05"/>
+    <fieldval field="wpMedium" value="10"/>
+    <fieldval field="wpLong" value="20"/>
+    <fieldval field="wpDamage" value="Smoke"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="2"/>
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="LargeBurst"/> 
+</thing>
+
+<thing id="wpACNG39" name="Stick grenade- NbG39" description="Stick grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="NbG39"/>
+    <fieldval field="wpShort" value="05"/>
+    <fieldval field="wpMedium" value="10"/>
+    <fieldval field="wpLong" value="20"/>
+    <fieldval field="wpDamage" value="3D6-2"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="2"/>
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>	
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/> 
+</thing>
+
+<thing id="wpACSG24" name="StG24 Splitterring" description="StG24 Splittering" compset="SpecWeap">
+    <fieldval field="shortname" value="StG24"/>
+    <fieldval field="wpShort" value="05"/>
+    <fieldval field="wpMedium" value="10"/>
+    <fieldval field="wpLong" value="20"/>
+    <fieldval field="wpDamage" value="3D6-2"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="gearWeight" value="2"/>
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>
+	<tag group="User" tag="Military"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="LargeBurst"/> 
+</thing>
+
+<thing id="wpACFl35" name="Flammenwerfer (FmW) 35" description="..." compset="SpecWeap">
+    <fieldval field="shortname" value="Flammenwerfer 35"/>
+    <fieldval field="wpDamage" value="2d10"/>
+    <fieldval field="wpAmmo" value="Fuel"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value=""/>
+    <fieldval field="gearWeight" value="60"/>	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="SpecFlame"/>
+    <tag group="Weapon" tag="ConeTempl"/>
+     <tag group="StrReqDie" tag="4" name="d8" abbrev="d8"/>
+	 <!-- cone template -->
+	 <!-- ignores armour -->
+</thing> 
+
+<thing id="wpACFl41" name="Flammenwerfer (FmW) 41" description="..." compset="SpecWeap">
+    <fieldval field="shortname" value="Flammenwerfer 35"/>
+    <fieldval field="wpDamage" value="2d10"/>
+    <fieldval field="wpAmmo" value="Fuel"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="wpShots" value=""/>
+    <fieldval field="gearWeight" value="40"/>	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="SpecFlame"/>
+    <tag group="Weapon" tag="ConeTempl"/>
+     <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
+	 <!-- cone template -->
+	 <!-- ignores armour -->
+</thing> 

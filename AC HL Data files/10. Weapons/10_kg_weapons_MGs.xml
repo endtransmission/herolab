@@ -1,0 +1,53 @@
+<!-- Keeper's Guide - Weapons - Machineguns -->
+<thing id="wpACMG42" name="Maschinengewehr 42 - MG42" description="..." compset="Ranged">
+    <fieldval field="shortname" value="MG42"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="30"/>
+    <fieldval field="wpMedium" value="60"/>
+    <fieldval field="wpLong" value="120"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="wpShots" value="50"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="22.5"/>    
+    <usesource source="ACKG"/>
+    <usesource source="ACTimeWW2"/>    
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="Weapon" tag="SnapFire"/>
+    <tag group="WeaponType" tag="ModMachine"/>
+    <tag group="StrReqDie" tag="4" name="d8" abbrev="d8"/>    
+</thing>
+<thing id="wpACMG151" name="Mauser MG151/20 20x82mm cannon" description="..." compset="Ranged">
+    <fieldval field="shortname" value="MG151/20"/>
+    <fieldval field="wpDamage" value="2d10"/>
+    <fieldval field="wpShort" value="50"/>
+    <fieldval field="wpMedium" value="100"/>
+    <fieldval field="wpLong" value="200"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="wpShots" value="120"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="60"/>   
+    <fieldval field="wpSpecial" value="May not move"/>     
+    <usesource source="ACKG"/>
+    <usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="WeaponType" tag="ModMachine"/>   
+</thing>
+<thing id="wpACMG131" name="Rheinmetall-Borsig M131 12x64mm Machine gun" description="..." compset="Ranged">
+    <fieldval field="shortname" value="MG131"/>
+    <fieldval field="wpDamage" value="2d8+3"/>
+    <fieldval field="wpShort" value="50"/>
+    <fieldval field="wpMedium" value="100"/>
+    <fieldval field="wpLong" value="200"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="wpShots" value="300"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="gearWeight" value="37"/>   
+    <fieldval field="wpSpecial" value="May not move"/>     
+    <usesource source="ACKG"/>
+    <usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="WeaponType" tag="ModMachine"/>   
+</thing>
