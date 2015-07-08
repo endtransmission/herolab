@@ -94,7 +94,7 @@
     <fieldval field="wpShort" value="50"/>
     <fieldval field="wpMedium" value="75"/>
     <fieldval field="wpLong" value="100"/>
-    <fieldval field="wpDamage" value="2d8 / Smoke / Illumination"/>
+    <fieldval field="wpDamage" value="2d8/Smoke/Illuminate"/>
     <fieldval field="wpFireRate" value="1"/>
     <fieldval field="wpShots" value="1"/>
     <fieldval field="gearWeight" value="9"/>  

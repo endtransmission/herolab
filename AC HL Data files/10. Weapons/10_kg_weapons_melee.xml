@@ -1,5 +1,5 @@
 <!-- Keeper's Guide - Weapons - Melee -->
-<thing id="wpACBayo" name="Bayonet" compset="Melee" summary="Bayonet; When attached to rifle: Parry +1, Reach 1, 2 Hands.">
+<thing id="wpACBayo" name="Bayonet" compset="Melee" description="Bayonet; When attached to rifle: Parry +1, Reach 1, 2 Hands.">
     <fieldval field="wpDamage" value="Str+d4/+d6"/>
 	<fieldval field="gearWeight" value="1" />
 	<usesource source="ACTimeWW2"/>
@@ -8,7 +8,7 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACEndTo" name="Entrenching Tool" compset="Melee" summary="Entrenching tool">
+ <thing id="wpACEndTo" name="Entrenching Tool" compset="Melee" description="Entrenching tool">
     <fieldval field="wpDamage" value="Str+d4"/>
 	<fieldval field="gearWeight" value="3" />
 	<usesource source="ACTimeWW2"/>
@@ -17,7 +17,7 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACFsFK" name="Fairburn-Sykes fighting knife" compset="Melee" summary="">
+ <thing id="wpACFsFK" name="Fairburn-Sykes fighting knife" compset="Melee" description="">
     <fieldval field="wpDamage" value="Str+d4"/>
 	<fieldval field="gearWeight" value="3" />
     <fieldval field="wpPiercing" value="1"/>
@@ -27,7 +27,7 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACTrKn" name="MK1. Trench knife" compset="Melee" summary="">
+ <thing id="wpACTrKn" name="MK1. Trench knife" compset="Melee" description="">
     <fieldval field="wpDamage" value="Str+d4"/>
 	<fieldval field="gearWeight" value="3" />
 	<usesource source="ACTimeWW2"/>
@@ -36,20 +36,17 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACM3f" name="M3 Fighting knife" compset="Melee" summary="">
+ <thing id="wpACM3f" name="M3 Fighting knife" compset="Melee" description="Can be thrown. Range: 3/6/12">
     <fieldval field="wpDamage" value="Str+d4+1"/>
 	<fieldval field="gearWeight" value="3" />
-	    <fieldval field="wpShort" value="3"/>
-    <fieldval field="wpMedium" value="6"/>
-    <fieldval field="wpLong" value="12"/>
 	<usesource source="ACTimeWW2"/>
     <usesource source="ACKG"/>
     <tag group="WeaponType" tag="ModMelee"/>
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACBCRA" name="BCRA Fighting/Garotte knife" compset="Melee" summary="Examples of poisons can be found in the Savage Worlds book. For strangling, use Grappling rules.">
-    <fieldval field="wpDamage" value="Str+d4+Poison / Strangle"/>
+ <thing id="wpACBCRA" name="BCRA Fighting/Garotte knife" compset="Melee" description="Examples of poisons can be found in the Savage Worlds book. \n\nCan also be used for Strangling attacks. For strangling, use Grappling rules.">
+    <fieldval field="wpDamage" value="Str+Poison"/>
 	<fieldval field="gearWeight" value="3" />
 	<usesource source="ACTimeWW2"/>
 	<usesource source="ACKG"/>
@@ -57,7 +54,7 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACMWNk" name="Mappin and Webb Nail knife" compset="Melee" summary="">
+ <thing id="wpACMWNk" name="Mappin and Webb Nail knife" compset="Melee" description="">
     <fieldval field="wpDamage" value="Str+d4"/>
 	<fieldval field="gearWeight" value="3" />
 	<usesource source="ACTimeWW2"/>
@@ -66,7 +63,7 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACMPcc" name="McLagen-Peskett Mk.1 Close Combat Weapon" compset="Melee" summary="For Strangling, use Grappling rules.">
+ <thing id="wpACMPcc" name="McLagen-Peskett Mk.1 Close Combat Weapon" compset="Melee" description="For Strangling, use Grappling rules.">
     <fieldval field="wpDamage" value="Str+d4 / Strangle"/>
 	<fieldval field="gearWeight" value="3" />
 	<usesource source="ACTimeWW2"/>
@@ -75,7 +72,7 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACSmtc" name="Smatchet Fighting Knife" compset="Melee" summary="">
+ <thing id="wpACSmtc" name="Smatchet Fighting Knife" compset="Melee" description="">
     <fieldval field="wpDamage" value="Str+d6"/>
 	<fieldval field="gearWeight" value="4" />
 	<usesource source="ACTimeWW2"/>
@@ -84,7 +81,7 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACSprC" name="Spring Cosh" compset="Melee" summary="">
+ <thing id="wpACSprC" name="Spring Cosh" compset="Melee" description="">
     <fieldval field="wpDamage" value="Str+d6"/>
 	<fieldval field="gearWeight" value="2" />
 	<usesource source="ACTimeWW2"/>
@@ -93,7 +90,7 @@
     <tag group="User" tag="Military"/>
 </thing>
 
- <thing id="wpACThmbK" name="Thumb Knife" compset="Melee" summary="Target suffers -1 to rolls to unshake">
+ <thing id="wpACThmbK" name="Thumb Knife" compset="Melee" description="Target suffers -1 to rolls to unshake">
     <fieldval field="wpDamage" value="Str+d4"/>
 	<fieldval field="gearWeight" value="1" />
 	<usesource source="ACTimeWW2"/>
