@@ -1,0 +1,5 @@
+<!-- Three Kings ammo -->
+<thing id="eqACTrRnd" name="Tracer rounds" description="Tracer rounds do half damage to Drottnar" compset="Ammunition" summary="Tracer Rounds">
+    <fieldval field="shortname" value="tracer"/>
+    <usesource source="ACtTM"/>
+</thing>

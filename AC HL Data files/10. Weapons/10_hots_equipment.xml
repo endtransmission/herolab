@@ -1,0 +1,7 @@
+<!-- Heroes of the Sea - Equipment -->
+
+
+<thing id="eqACMagDrm" name="Maglemosian Dream Drug" description="Injecting this fluid causes the subject to fall asleep very quickly for about 4 hours, and find themselves transported in dream to the Maglemosian Dreamlands. The subjective length of the dream may be long or short, and memories of the dream may be disjointed. All who inject the drug together are together in the dream. The Nazis have used herbs only found in the Maglemosian clearing, which is where their dream-selves are transported." compset="Equipment" summary="Dream drug">
+    <usesource source="ACHotS"/>
+    <tag group="GearType" tag="Misc"/>
+</thing>

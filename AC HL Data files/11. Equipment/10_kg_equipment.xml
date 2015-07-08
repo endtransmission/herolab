@@ -1,0 +1,13 @@
+<!-- Keeper's Guide - Equipment -->
+<thing id="eqACMilFak" name="Military Firt Aid Kit" compset="Equipment" description="An Investigator gets +2 on his Healing roll if using a military first aid kit when attempting to treat a wound.">
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="Misc"/>
+</thing>
+<thing id="eqACCaltr" name="Caltrops" compset="Equipment" description="Driving over caltrops forces a Driving, Piloting, or Riding roll; failure could lead to an unfortunate accident. Furthermore, caltrops do 2d4 damage to horses and those without sturdy footwear.">
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="Misc"/>
+</thing>
+<thing id="eqACBre" name="Nachtwolf breather" compset="Equipment" description="This breather is a bulky, gasmask style unit with tubes leading to a wast-pack. It allows the wearer to breathe underwater or in a vacuum at the cost of 1Hit Point per hour, or per turn if in combat. The lenses protect the wearer from flashing lights and allows visibility through 15cm of solid material.">
+    <usesource source="ACKG"/>
+    <tag group="GearType" tag="Misc"/>
+</thing>

@@ -1,0 +1,13 @@
+<!-- Heroes of the Sea - Armour -->
+  <thing id="armACLGCt" name="Leather Greatcoat" compset="Armor" summary="Greatcoat">
+    <fieldval field="defDefense" value="1"/>
+    <usesource source="ACHotS"/>
+    </thing>
+  <thing id="armACTrUni" name="Traumstaffel uniform" compset="Armor" summary="Uniform">
+    <fieldval field="defDefense" value="1"/>
+    <usesource source="ACHotS"/>
+    </thing>
+  <thing id="armACHide" name="Hide" compset="Armor">
+    <fieldval field="defDefense" value="1"/>
+    <usesource source="ACHotS"/>
+    </thing>

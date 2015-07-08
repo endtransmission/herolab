@@ -1,0 +1,10 @@
+<!-- Keeper's Guide - Armour -->
+<thing id="armACAnHA" name="Andersseher-Helm (Advanced)" compset="Armor" summary="Worn by Nachtwolf Stalkers, this helm has been re-enforced with Blause Krystall and contains adjustable lenses that act as the equivalent to binoculars and night vision goggles. They also allow the wearer to see creatures not normally visible such as flying polyps and star vampires.">
+    <fieldval field="defDefense" value=""/>
+    <usesource source="ACKG"/>
+</thing>
+
+<thing id="armACAnH" name="Andersseher-Helm" compset="Armor" summary="Worn by Nachtwolf troops, this helm has been re-enforced with Blause Krystall, but does not contain the lenses provided to the Stalker helms.">
+    <fieldval field="defDefense" value=""/>
+    <usesource source="ACKG"/>
+</thing>

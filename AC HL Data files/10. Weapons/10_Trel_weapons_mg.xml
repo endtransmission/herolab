@@ -1,0 +1,18 @@
+<!-- Trellborg - Machineguns -->
+<thing id="wpacBren1" name="Bren Mk1 LMG" description="The Bren Mark 1 came into use in 1937 and was based upon a Czec designed machine gun, the ZB vz.27" compset="Ranged">
+    <fieldval field="shortname" value="BrenMk1"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="40"/>
+    <fieldval field="wpMedium" value="80"/>
+    <fieldval field="wpLong" value="160"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="wpShots" value="20"/>
+    <fieldval field="wpAmmo" value=".303"/>
+    <fieldval field="gearWeight" value="22"/>
+    <usesource source="ACtTM"/>
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="Weapon" tag="SnapFire"/>
+    <tag group="WeaponType" tag="ModMachine"/>
+    <tag group="StrReqDie" tag="4"/>    
+</thing>

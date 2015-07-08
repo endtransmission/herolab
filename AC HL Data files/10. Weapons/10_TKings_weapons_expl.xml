@@ -1,0 +1,29 @@
+<!-- Three Kings grenades -->
+<thing id="wpACS24" name="Stielhandgranate 24" description="The Model 24 Stielhandgranate was the standard hand grenade of the German Army from the end of World War I until the end of World War II. The very distinctive appearance led to its being called a stick grenade" compset="SpecWeap">
+    <fieldval field="shortname" value="Stiel24"/>
+    <fieldval field="wpDamage" value="3d6-2"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="gearWeight" value="2"/>
+    <usesource source="ACtTM"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>
+</thing>
+
+<thing id="wpACrgl" name="Gewehrhranatgerat" description="This rifle grenade launcher was designed to fit onto the 98K rifle and allowed the firing of numerous different grenade types" compset="SpecWeap">
+    <fieldval field="shortname" value="RGL"/>
+    <fieldval field="wpShort" value="10"/>
+    <fieldval field="wpMedium" value="20"/>
+    <fieldval field="wpLong" value="40"/>
+    <fieldval field="wpDamage" value="2d6+1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="10"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="gearWeight" value="10"/>
+    <usesource source="ACtTM"/>
+    <tag group="WeaponType" tag="SpecGren"/>
+    <tag group="Weapon" tag="MedBurst"/>  
+      
+</thing>

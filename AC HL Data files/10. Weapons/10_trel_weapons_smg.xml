@@ -1,0 +1,35 @@
+<!-- Trellborg - Weapons - SMGs -->
+<thing id="wpACMP40" name="MP40 smg" description="Often wrongly called Schmeisser, the MP40 were submachine guns developed in Nazi Germany and used extensively by Fallschirmjäger, tank crews, platoon and squad leaders, and other troops during World War II." compset="Ranged">
+    <fieldval field="shortname" value="MP40"/>
+    <fieldval field="wpDamage" value="2d6-1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpAmmo" value="9mm"/>
+    <fieldval field="wpShots" value="32"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="gearWeight" value="9"/>
+    <usesource source="ACtTM"/>
+    <usesource source="ACKG"/>
+        <usesource source="ACTimeWW2"/>
+    <tag group="WeaponType" tag="ModSMG"/>
+    <tag group="Weapon" tag="tAuto"/>
+</thing>
+
+<thing id="wpACSSt" name="Silenced Sten MKIIs" description="The STEN (or Sten gun) was a family of British 9 mm submachine guns used extensively by British and Commonwealth forces throughout World War II and the Korean War. They were notable for having a simple design and very low production cost making them effective insurgency weapons for resistance groups." compset="Ranged">
+    <fieldval field="shortname" value="Sten2"/>
+    <fieldval field="wpDamage" value="2d6-1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpAmmo" value="9mm"/>
+    <fieldval field="wpShots" value="32"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="gearWeight" value="8"/>
+    <usesource source="ACtTM"/>
+        <usesource source="ACTimeWW2"/>
+    <tag group="WeaponType" tag="ModSMG"/>
+    <tag group="Weapon" tag="tAuto"/>
+</thing>

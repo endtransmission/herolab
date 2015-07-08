@@ -1,0 +1,20 @@
+<!-- Three Kings - Weapons - Machineguns  -->
+<thing id="wpACMG34" name="MG34" description="The Maschinengewehr 34, or MG 34, is a German recoil-operated air-cooled machine gun that was first tested in 1929 and was introduced in 1934, and first issued to units in 1936. It accepts the 7.92&#215;57mm Mauser cartridge. The versatile MG 34 was arguably the finest machine gun in the world at the time of its adoption and deployment with the German Army." compset="Ranged">
+    <fieldval field="shortname" value="MG34"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="30"/>
+    <fieldval field="wpMedium" value="60"/>
+    <fieldval field="wpLong" value="120"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="wpShots" value="50"/>
+    <fieldval field="wpAmmo" value="57mm"/>
+    <fieldval field="gearWeight" value="27"/>    
+    <usesource source="ACTKing"/>
+    <usesource source="ACKG"/>
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="Weapon" tag="SnapFire"/>
+    <tag group="WeaponType" tag="ModMachine"/>
+    <tag group="Weapon" tag="SmallBurst"/>
+    <tag group="StrReqDie" tag="4" name="d8" abbrev="d8"/>    
+</thing>

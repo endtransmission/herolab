@@ -1,0 +1,34 @@
+<!-- Three Kings - Weapons - SMG -->
+<thing id="wpACM1928" name="Thompson M1928A1 Submachine gun" description="The Thompson was favored by soldiers, criminals, police and civilians alike for its ergonomics, compactness, large .45 ACP cartridge, reliability, and high volume of automatic fire. It has since gained popularity among civilian collectors for its historical significance. The version from Heroes of the Sea is AP1, Shots:30" compset="Ranged">
+    <fieldval field="shortname" value="Thompson M1928a1"/>
+    <fieldval field="wpDamage" value="2d6+1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="wpShots" value="50"/>
+    <fieldval field="wpAmmo" value=".45"/>
+    <usesource source="ACTKing"/>
+    <usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="tAuto" name="Automatic" abbrev="Auto"/>
+    <tag group="Weapon" tag="AP2"/>
+    <tag group="WeaponType" tag="ModSMG"/>
+</thing>
+	
+<thing id="wpACMP38" name="MP38 SMG" description="The MP 38 (MP designates Maschinenpistole.), often wrongly called Schmeisser were submachine guns developed in Nazi Germany and used extensively by Fallschirmj&#228;ger, tank crews, platoon and squad leaders, and other troops during World War II." compset="Ranged">
+    <fieldval field="shortname" value="MP38"/>
+    <fieldval field="wpDamage" value="2d6-1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="wpShots" value="32"/>
+    <fieldval field="wpAmmo" value="19mm"/>
+    <usesource source="ACTKing"/>
+    <usesource source="ACKG"/>
+    <usesource source="ACTimeWW2"/>
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="WeaponType" tag="ModSMG"/>
+</thing>

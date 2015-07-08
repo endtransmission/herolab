@@ -1,0 +1,84 @@
+<!-- Three Kings - Equipment -->
+  <thing id="eqCyanide" name="Cyanide pill" compset="Equipment">
+    <fieldval field="shortname" value="Cyanide pill"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Misc"/>
+    </thing>
+  <thing id="eqWBottle" name="Water bottle" compset="Equipment">
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqGasMask" name="Gas mask" compset="Equipment">
+    <fieldval field="shortname" value="Gas Mask"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Misc"/>
+    </thing>
+  <thing id="eqEntrench" name="Enrenching tool" compset="Equipment">
+    <fieldval field="shortname" value="Entrenching tool"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqHaversac" name="Haversack" compset="Equipment">
+    <fieldval field="shortname" value="Haversack"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    <bootstrap thing="eq24Ration"></bootstrap>
+    <bootstrap thing="eq24Ration"></bootstrap>
+    <bootstrap thing="eqGSheet"></bootstrap>
+    <bootstrap thing="eqEnMug"></bootstrap>
+    <bootstrap thing="eqMessTin"></bootstrap>
+    <bootstrap thing="eqColStove"></bootstrap>
+    <bootstrap thing="eqFuelBloc"></bootstrap>
+    <bootstrap thing="eqPureTabs"></bootstrap>
+    </thing>
+  <thing id="eq24Ration" name="24 Hour rations" compset="Equipment">
+    <fieldval field="shortname" value="Rations"/>
+    <fieldval field="gearWeight" value="1"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Food"/>
+    </thing>
+  <thing id="eqGSheet" name="Ground sheet" compset="Equipment">
+    <fieldval field="shortname" value="Sheet"/>
+    <fieldval field="gearWeight" value="1"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqEnMug" name="Enamelled mug" compset="Equipment">
+    <fieldval field="shortname" value="Mug"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqMessTin" name="Mess tin" compset="Equipment">
+    <fieldval field="shortname" value="Mess Tin"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqColStove" name="Collapsible stove" compset="Equipment">
+    <fieldval field="shortname" value="Stove"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqFuelBloc" name="Tin of fuel blocks" compset="Equipment">
+    <fieldval field="shortname" value="Fuel blocks"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqPureTabs" name="Water purification tablets" compset="Equipment">
+    <fieldval field="shortname" value="Purification tablets"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqCompass" name="Compass" compset="Equipment">
+    <fieldval field="shortname" value="Compass"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqWireCut" name="Wire cutters" compset="Equipment">
+    <fieldval field="shortname" value="Wire cutters"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Adventure"/>
+    </thing>
+  <thing id="eqACGarot" name="Garotte" description="The victim must make a Vigour roll every turn the garotte is used, or suffer a level of fatigue. A successful grapple roll negates the roll for a turn, with a raise allowing the victim to escape it" compset="Equipment">
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="Misc"/>
+    </thing>

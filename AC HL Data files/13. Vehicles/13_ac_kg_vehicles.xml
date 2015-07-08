@@ -1,0 +1,207 @@
+<!-- Keeper's Guide - Vehicles -->
+<thing id="vhACBmwr75" name="BMW R75 Motorbike" compset="Vehicle">
+    <fieldval field="shortname" value="BMW R75"/>
+    <fieldval field="vhAccel" value="20"/>
+    <fieldval field="vhTopSpeed" value="36"/>
+    <fieldval field="vhTough" value="5"/>
+    <fieldval field="vhArmor" value="1"/>
+    <fieldval field="vhCrew" value="1"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACKubW" name="Kubelwagen" compset="Vehicle">
+    <fieldval field="shortname" value="Kubelwagen"/>
+    <fieldval field="vhAccel" value="10"/>
+    <fieldval field="vhTopSpeed" value="40"/>
+    <fieldval field="vhTough" value="7"/>
+    <fieldval field="vhArmor" value="1"/>
+    <fieldval field="vhCrew" value="1 / 3 "/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACM770" name="Mercedes Benz 770K" compset="Vehicle">
+    <fieldval field="shortname" value="M-B 770K"/>
+    <fieldval field="vhAccel" value="15"/>
+    <fieldval field="vhTopSpeed" value="50"/>
+    <fieldval field="vhTough" value="6"/>
+    <fieldval field="vhArmor" value="1"/>
+    <fieldval field="vhCrew" value="1 / 3"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACOpBl" name="Opel Blitz" compset="Vehicle">
+    <fieldval field="shortname" value="Opel Blitz"/>
+    <fieldval field="vhAccel" value="10"/>
+    <fieldval field="vhTopSpeed" value="25"/>
+    <fieldval field="vhTough" value="12"/>
+    <fieldval field="vhArmor" value="1"/>
+    <fieldval field="vhCrew" value="1 / 20"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACkfz2" name="Sd.Kfz.2 (Kettenkrad)" compset="Vehicle">
+    <fieldval field="shortname" value="Sd.Kfz.2"/>
+    <fieldval field="vhAccel" value="5"/>
+    <fieldval field="vhTopSpeed" value="12"/>
+    <fieldval field="vhTough" value="6"/>
+    <fieldval field="vhArmor" value="2"/>
+    <fieldval field="vhCrew" value="1"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="Vehicle" tag="Halftrack"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACK251" name="Sd.Kfz.251 (Hanomag)" compset="Vehicle">
+    <fieldval field="shortname" value="Hanomag"/>
+    <fieldval field="vhAccel" value="5"/>
+    <fieldval field="vhTopSpeed" value="15"/>
+    <fieldval field="vhTough" value="14/9/9"/>
+    <fieldval field="vhArmor" value="2/1/1"/>
+    <fieldval field="vhCrew" value="1 / 10"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="Vehicle" tag="Halftrack"/>
+    <tag group="Vehicle" tag="HvyArmor"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACUnCa" name="Vickers Armstrong Universal Carrier" compset="Vehicle">
+    <fieldval field="shortname" value="Universal Carrier"/>
+    <fieldval field="vhAccel" value="5"/>
+    <fieldval field="vhTopSpeed" value="15"/>
+    <fieldval field="vhTough" value="14/9/9"/>
+    <fieldval field="vhArmor" value="2/1/1"/>
+    <fieldval field="vhCrew" value="1 / 3"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="Tracked"/>
+    <tag group="Vehicle" tag="HvyArmor"/>
+    <tag group="VehType" tag="Ground"/>
+    <bootstrap thing="wpTDBrenGu"></bootstrap>
+</thing>
+<thing id="vhACWilJ" name="Willys Jeep" compset="Vehicle">
+    <fieldval field="shortname" value="Willys Jeep"/>
+    <fieldval field="vhAccel" value="10"/>
+    <fieldval field="vhTopSpeed" value="40"/>
+    <fieldval field="vhTough" value="7"/>
+    <fieldval field="vhArmor" value="1"/>
+    <fieldval field="vhCrew" value="1 / 4"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="Vehicle" tag="Wheeled"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACCCKW" name="CCKW Truck" compset="Vehicle">
+    <fieldval field="shortname" value="CCKW Truck"/>
+    <fieldval field="vhAccel" value="10"/>
+    <fieldval field="vhTopSpeed" value="25"/>
+    <fieldval field="vhTough" value="12"/>
+    <fieldval field="vhArmor" value="1"/>
+    <fieldval field="vhCrew" value="1 / 20"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="Vehicle" tag="Wheeled"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACDukw" name="DUKW" compset="Vehicle">
+    <fieldval field="shortname" value="DUKW"/>
+    <fieldval field="vhAccel" value="5/2.5"/>
+    <fieldval field="vhTopSpeed" value="10/3"/>
+    <fieldval field="vhTough" value="14/14/11"/>
+    <fieldval field="vhArmor" value="4/4/1"/>
+    <fieldval field="vhCrew" value="2 / 25"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="Vehicle" tag="Wheeled"/>
+    <tag group="Vehicle" tag="Aquatic"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACHTra" name="Half Track" compset="Vehicle">
+    <fieldval field="shortname" value="Half Track"/>
+    <fieldval field="vhAccel" value="5"/>
+    <fieldval field="vhTopSpeed" value="15"/>
+    <fieldval field="vhTough" value="14/9/9"/>
+    <fieldval field="vhArmor" value="2/1/1"/>
+    <fieldval field="vhCrew" value="1 / 10"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+	<tag group="Vehicle" tag="HvyArmor"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="Halftrack"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACHPz1" name="Panzer I" compset="Vehicle">
+    <fieldval field="shortname" value="Panzer I"/>
+    <fieldval field="vhAccel" value="5"/>
+    <fieldval field="vhTopSpeed" value="10"/>
+    <fieldval field="vhTough" value="13/13/13"/>
+    <fieldval field="vhArmor" value="3/3/3"/>
+    <fieldval field="vhCrew" value="2"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="Tracked"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACHPz2" name="Panzer II" compset="Vehicle">
+    <fieldval field="shortname" value="Panzer II"/>
+    <fieldval field="vhAccel" value="5"/>
+    <fieldval field="vhTopSpeed" value="10"/>
+    <fieldval field="vhTough" value="13/13/13"/>
+    <fieldval field="vhArmor" value="3/3/3"/>
+    <fieldval field="vhCrew" value="3"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="Tracked"/>
+    <tag group="Vehicle" tag="HvyArmor"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>
+<thing id="vhACHPz3" name="Panzer III" compset="Vehicle">
+    <fieldval field="shortname" value="Panzer III"/>
+    <fieldval field="vhAccel" value="5"/>
+    <fieldval field="vhTopSpeed" value="10"/>
+    <fieldval field="vhTough" value="18/18/18"/>
+    <fieldval field="vhArmor" value="8/8/8"/>
+    <fieldval field="vhCrew" value="5"/>
+    <usesource source="ACKG"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="Tracked"/>
+    <tag group="VehType" tag="Ground"/>
+</thing><thing id="vhACSdkfz7" name="Sd.Kfz.7 (Sonderkraftfahrzeug 7)" compset="Vehicle">
+    <fieldval field="shortname" value="SD KFZ 7"/>
+    <fieldval field="vhAccel" value="3"/>
+    <fieldval field="vhTopSpeed" value="7"/>
+    <fieldval field="vhTough" value="13"/>
+    <fieldval field="vhArmor" value="2"/>
+    <fieldval field="vhCrew" value="2 / 7"/>
+    <usesource source="ACTKing"/>
+    <tag group="VehEra" tag="WWII"/>
+    <tag group="User" tag="Military"/>
+    <tag group="Vehicle" tag="tNoWeapon" name="No Weapons"/>
+    <tag group="Vehicle" tag="Tracked"/>
+    <tag group="VehType" tag="Ground"/>
+</thing>

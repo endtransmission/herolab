@@ -1,0 +1,29 @@
+<!-- Trellborg - Weapons - Special -->
+<thing id="wpACFmW35" name="Flammenwerfer 35" description="The Flammenwerfer 35 was a one man German flamethrower used for clearing out trenches and buildings. It could project fuel up to 25m from the user." compset="SpecWeap">
+    <fieldval field="shortname" value="FmW35"/>
+    <fieldval field="wpDamage" value="2d10"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="10"/>
+    <fieldval field="wpAmmo" value="Fuel"/>
+    <fieldval field="wpSpecial" value="Ignores Armour, chance of target catching fire"/>
+    <fieldval field="gearWeight" value="40"/>
+    <usesource source="ACtTM"/>
+    <tag group="WeaponType" tag="SpecFlame"/>
+    <tag group="Weapon" tag="ConeTempl"/>  
+    <tag group="StrReqDie" tag="4"/>  
+</thing>
+
+<thing id="wpACL28" name="Leuchtpistole 28 (Flare gun)" description="Flare gun" compset="SpecWeap">
+    <fieldval field="shortname" value="L28FG"/>
+    <fieldval field="wpShort" value="15"/>
+    <fieldval field="wpMedium" value="30"/>
+    <fieldval field="wpLong" value="60"/>
+    <fieldval field="wpDamage" value="2d10"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="1"/>
+    <fieldval field="wpPiercing" value=""/>
+    <fieldval field="gearWeight" value="8"/>
+	<fieldval field="wpSpecial" value="Chance of target catching fire"/>
+    <usesource source="ACtTM"/>
+    <tag group="WeaponType" tag="SpecExplos"/>    
+</thing>

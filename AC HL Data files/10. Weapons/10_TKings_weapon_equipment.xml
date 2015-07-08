@@ -1,0 +1,6 @@
+<!-- Three Kings - Equipment - Scope -->
+<thing id="eqACTelSco" name="Telescopic scope" description="Shots at medium range or greater get a +2 bonus" compset="Equipment" summary="Telescopic scope">
+    <fieldval field="shortname" value="Sight"/>
+    <usesource source="ACTKing"/>
+    <tag group="GearType" tag="WeaponAcc"/>
+</thing>

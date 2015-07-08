@@ -1,0 +1,35 @@
+<!-- Investigator guide - armour -->
+<thing id="armACmk1B" name="Mk.I Brodie Helmet" compset="Armor" summary="50% chance V2 Head shot">
+    <fieldval field="defDefense" value="1"/>
+    <usesource source="ACIG"/>
+</thing>
+
+<thing id="armACmk3T" name="Mk.III Turtle Helmet" compset="Armor" summary="50% chance V2 Head shot">
+    <fieldval field="defDefense" value="2"/>
+    <usesource source="ACIG"/>
+</thing>
+
+<thing id="armACmk35" name="M1935 Helmet" compset="Armor" summary="50% chance V2 Head shot">
+    <fieldval field="defDefense" value="3"/>
+    <usesource source="ACIG"/>
+</thing>
+
+<thing id="armACmk40" name="M1940 Helmet" compset="Armor" summary="50% chance V2 Head shot">
+    <fieldval field="defDefense" value="3"/>
+    <usesource source="ACIG"/>
+</thing>
+
+<thing id="armACfalH" name="M1936 Fallschirmjager Helmet" compset="Armor" summary="50% chance V2 Head shot">
+    <fieldval field="defDefense" value="3"/>
+    <usesource source="ACIG"/>
+</thing>
+
+<thing id="armACM3M5" name="M3/M5 Helmet" compset="Armor" summary="50% chance V2 Head shot; Allows use of communication equipment whilst wearing helmet">
+    <fieldval field="defDefense" value="3"/>
+    <usesource source="ACIG"/>
+</thing>
+
+<thing id="armACmk2T" name="Mk2 Talker Helmet" compset="Armor" summary="50% chance V2 Head shot; Allows use of communication equipment whilst wearing helmet">
+    <fieldval field="defDefense" value="2"/>
+    <usesource source="ACIG"/>
+</thing>

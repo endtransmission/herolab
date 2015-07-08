@@ -1,0 +1,31 @@
+<!-- Trellborg - weapons - Rifles -->
+<thing id="wpACKrag" name="Krag-Jorgensen M/1894" description="This model, the Long Krag, was the most common model of Krag rifle in Norway." compset="Ranged">
+    <fieldval field="shortname" value="krag1894"/>
+    <fieldval field="wpDamage" value="2d8-1"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="wpShots" value="5"/>
+    <fieldval field="wpAmmo" value="6.5x55"/>
+    <fieldval field="gearWeight" value="9"/>
+    <usesource source="ACtTM"/>
+    <tag group="Weapon" tag="SemiAuto"/>
+    <tag group="WeaponType" tag="ModRifle"/>
+</thing>
+<thing id="wpACKar98" name="Kar98 Bolt-action rifle" description="The Kar98 replaced the Gewehr 98 bolt action rifle in general service in 1935. " compset="Ranged">
+    <fieldval field="shortname" value="Kar98"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpAmmo" value="57mm"/>
+    <fieldval field="wpShots" value="5"/>
+    <fieldval field="wpFireRate" value="1"/>
+    <fieldval field="gearWeight" value="9"/>
+    <usesource source="ACtTM"/>
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="SemiAuto"/>
+    <tag group="StrReqDie" tag="3"/>    
+</thing>

@@ -1,0 +1,5 @@
+<!-- Three Kings - armour -->
+<thing id="armACSHel" name="Steel Helmet" compset="Armor">
+    <fieldval field="defDefense" value="3"/>
+    <usesource source="ACTKing"/>
+</thing>

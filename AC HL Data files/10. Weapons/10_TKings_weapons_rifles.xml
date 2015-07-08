@@ -1,0 +1,39 @@
+<!-- Three Kings - Weapons - Rifles -->
+<thing id="wpACP14Enf" name="P14 Enfield Rifle" description="The Rifle, .303 Pattern 1914 (or P14) was a British service rifle of the First World War period. A bolt action weapon with an integral 5-round magazine, it was principally contract manufactured by companies in the United States. It served as a sniper rifle and as second line and reserve issue until being declared obsolete in 1947. The P14 was the successor to the P13 Enfield and the predecessor of the U.S. Rifle M1917 Enfield." compset="Ranged">
+    <fieldval field="shortname" value="Enfield rifle"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpPiercing" value="1"/>
+    <fieldval field="wpShots" value="10"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpAmmo" value=".303"/>
+    <usesource source="ACTKing"/>
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="SnapFire"/>
+    </thing>
+  <thing id="wpACVz33" name="Vz33 Bolt-action rifle" description="The puska vz. 33, sometimes referred to as kr&#225;tk&#225; puska vz. 33 - short rifle model 33, was a Czechoslovak bolt action rifle that was based on a Mauser type action, designed and produced in Ceskoslovensk&#225; zbrojovka in Brno during the 1930s in order to replace the obsolete Mannlicher vz. 1895 carbines of the Czechoslovak cetnictvo (gendarmerie). The manufacturer&apos;s designation was vz. 16/33 (model 16/33), and although the rifle is often called carbine vz. 33, that was not an official designation of the Czechoslovak armed forces." compset="Ranged">
+    <fieldval field="shortname" value="Vz33 Rifle"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpShots" value="5"/>
+    <fieldval field="wpAmmo" value="57mm"/>
+    <usesource source="ACTKing"/>
+    <tag group="WeaponType" tag="ModRifle"/>
+    </thing>
+  <thing id="wpACGEW98" name="GEW 98 Bolt-action rifle" description="The Gewehr 98 (abbreviated G98, Gew 98 or M98) is a German bolt action Mauser rifle firing cartridges from a 5 round internal clip-loaded magazine that was the German service rifle from 1898 to 1935, when it was replaced by the Karabiner 98k. It was hence the main rifle of the German infantry during World War I. The Gewehr 98 replaced the earlier Gewehr 1888 rifle as the German service rifle. " compset="Ranged">
+    <fieldval field="shortname" value="GEW 98"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="12"/>
+    <fieldval field="wpMedium" value="24"/>
+    <fieldval field="wpLong" value="48"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpAmmo" value="57mm"/>
+    <fieldval field="wpShots" value="5"/>
+    <usesource source="ACTKing"/>
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="SemiAuto"/>
+    </thing>

@@ -1,0 +1,93 @@
+<!-- Keeper's Guide - Weapons - Rifles -->
+
+<thing id="wpACFG42" name="Fallschirmjagergewehr 42 - FG42" description="..." compset="Ranged">
+    <fieldval field="shortname" value="FG42"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpAmmo" value="57mm"/>
+    <fieldval field="wpFireRate" value="3"/>    
+    <fieldval field="wpShots" value="30"/>
+    <fieldval field="gearWeight" value="12.5"/>	
+    <usesource source="ACKG"/>
+	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
+</thing>
+
+<thing id="wpACgk43" name="Gewehr/Karabiner 43 - G/K43" description="..." compset="Ranged">
+    <fieldval field="shortname" value="G/K43"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpShots" value="10"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="gearWeight" value="10"/>	
+    <usesource source="ACKG"/>
+    	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="SemiAuto"/>
+    <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>    
+</thing>
+
+<thing id="wpACk98k" name="Karabiner 98k" description="..." compset="Ranged">
+    <fieldval field="shortname" value="Karabiner 98K"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpShots" value="5"/>
+    <fieldval field="wpFireRate" value="1"/>    
+    <fieldval field="gearWeight" value="9"/>	
+    <usesource source="ACKG"/>
+    	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="SnapFire"/>
+    <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
+</thing>
+
+<thing id="wpACStG44" name="Sturmgewehr 44 - StGw44" description="..." compset="Ranged">
+    <fieldval field="shortname" value="StGw44"/>
+    <fieldval field="wpDamage" value="2d8-1"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpShots" value="30"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="gearWeight" value="11.5"/>	
+    <usesource source="ACKG"/>
+    	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
+</thing>
+
+<thing id="wpACSG43a" name="Jagdgewehr StGw43-A" description="..." compset="Ranged">
+    <fieldval field="shortname" value="StGw43-A"/>
+    <fieldval field="wpDamage" value="2d8"/>
+    <fieldval field="wpShort" value="24"/>
+    <fieldval field="wpMedium" value="48"/>
+    <fieldval field="wpLong" value="96"/>
+    <fieldval field="wpPiercing" value="2"/>
+    <fieldval field="wpAmmo" value=""/>
+    <fieldval field="wpShots" value="30"/>
+    <fieldval field="wpFireRate" value="3"/>
+    <fieldval field="gearWeight" value="14"/>	
+    <fieldval field="wpSpecial" value="Ignores Darkness Penalties, Single underslung launcher for special ammo (10/20/40) (Iron plague or Feurflugel rounds)"/>
+    <usesource source="ACKG"/>
+    	<usesource source="ACTimeWW2"/>	
+    <tag group="WeaponType" tag="ModRifle"/>
+    <tag group="Weapon" tag="tAuto"/>
+    <tag group="Weapon" tag="3RB"/>
+    <tag group="StrReqDie" tag="4" name="d8" abbrev="d8"/>
+</thing>
