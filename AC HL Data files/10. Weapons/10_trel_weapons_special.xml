@@ -1,4 +1,4 @@
-<!-- Trellborg - Weapons - Special -->
+<!-- Trelborg - Weapons - Special -->
 <thing id="wpACFmW35" name="Flammenwerfer 35" description="The Flammenwerfer 35 was a one man German flamethrower used for clearing out trenches and buildings. It could project fuel up to 25m from the user." compset="SpecWeap">
     <fieldval field="shortname" value="FmW35"/>
     <fieldval field="wpDamage" value="2d10"/>

@@ -1,5 +1,5 @@
 <!-- Keeper's Guide - Weapons - Machineguns -->
-<thing id="wpACMG42" name="Maschinengewehr 42 - MG42" description="..." compset="Ranged">
+<thing id="wpACMG42" name="Maschinengewehr 42 - MG42" description="The MG 42 (shortened from German: Maschinengewehr 42, or machine gun 42) is a 7.92×57mm Mauser general purpose machine gun designed in Nazi Germany and used extensively by the Wehrmacht and the Waffen-SS during the second half of World War II. Intended to replace the more expensive and time-consuming to manufacture frontline MG 34, they ended up produced in tandem until the end of the war." compset="Ranged">
     <fieldval field="shortname" value="MG42"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="30"/>
@@ -17,7 +17,7 @@
     <tag group="WeaponType" tag="ModMachine"/>
     <tag group="StrReqDie" tag="4" name="d8" abbrev="d8"/>    
 </thing>
-<thing id="wpACMG151" name="Mauser MG151/20 20x82mm cannon" description="..." compset="Ranged">
+<thing id="wpACMG151" name="Mauser MG151/20 20x82mm cannon" description="The MG 151 (MG 151/15) was a 15 mm aircraft-mounted autocannon produced by Waffenfabrik Mauser during World War II. Its 20mm variant, the 20 mm MG 151/20 cannon, was widely used on German Luftwaffe fighters, night fighters, fighter-bombers, bombers and ground-attack aircraft." compset="Ranged">
     <fieldval field="shortname" value="MG151/20"/>
     <fieldval field="wpDamage" value="2d10"/>
     <fieldval field="wpShort" value="50"/>
@@ -34,7 +34,7 @@
     <tag group="Weapon" tag="tAuto"/>
     <tag group="WeaponType" tag="ModMachine"/>   
 </thing>
-<thing id="wpACMG131" name="Rheinmetall-Borsig M131 12x64mm Machine gun" description="..." compset="Ranged">
+<thing id="wpACMG131" name="Rheinmetall-Borsig M131 12x64mm Machine gun" description="The MG 131 (shortened from German: Maschinengewehr 131, or Machine gun 131) was a German 13 mm caliber machine gun developed in 1938 by Rheinmetall-Borsig and produced from 1940 to 1945. The MG 131 was designed for use at fixed, flexible or turreted, single or twin mountings in Luftwaffe aircraft during World War II." compset="Ranged">
     <fieldval field="shortname" value="MG131"/>
     <fieldval field="wpDamage" value="2d8+3"/>
     <fieldval field="wpShort" value="50"/>

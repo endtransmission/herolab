@@ -92,6 +92,5 @@
     <tag group="WeaponType" tag="SpecFlame"/>
     <tag group="Weapon" tag="ConeTempl"/>
      <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
-	 <!-- cone template -->
 	 <!-- ignores armour -->
 </thing> 

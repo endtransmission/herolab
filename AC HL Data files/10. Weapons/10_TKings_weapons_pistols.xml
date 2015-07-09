@@ -1,6 +1,6 @@
 <!-- Three Kings - Weapons - Pistols  -->
-<thing id="wpACWebley" name="Webley Revolver" description="The Webley Revolver (also known as the Webley Break-Top Revolver or Webley Self-Extracting Revolver) was, in various marks, the standard issue service pistol for the armed forces of the United Kingdom, the British Empire, and the Commonwealth from 1887 until 1963. Firing the large .455 Webley cartridge, Webley service revolvers are among the most powerful top-break revolvers ever produced." compset="Ranged">
-    <fieldval field="shortname" value="Webley .455 Revolver"/>
+<thing id="wpACWebley" name="Webley .455 Revolver" description="The Webley Revolver (also known as the Webley Break-Top Revolver or Webley Self-Extracting Revolver) was, in various marks, the standard issue service pistol for the armed forces of the United Kingdom, the British Empire, and the Commonwealth from 1887 until 1963. Firing the large .455 Webley cartridge, Webley service revolvers are among the most powerful top-break revolvers ever produced." compset="Ranged">
+    <fieldval field="shortname" value="Webley"/>
     <fieldval field="wpDamage" value="2D6+1"/>
     <fieldval field="wpShort" value="12"/>
     <fieldval field="wpMedium" value="24"/>
@@ -15,7 +15,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-  <thing id="wpACM1911" name="Browning M1911" description="The M1911 is a single-action, semi-automatic, magazine-fed, recoil-operated pistol chambered for the .45 ACP cartridge,[1] which served as the standard-issue sidearm for the United States armed forces from 1911 to 1985. It was widely used in World War I, World War II, the Korean War, and the Vietnam War. The M1911 is still carried by some U.S. forces." compset="Ranged">
+  <thing id="wpACM1911" name="Browning M1911" description="The M1911 is a single-action, semi-automatic, magazine-fed, recoil-operated pistol chambered for the .45 ACP cartridge, which served as the standard-issue sidearm for the United States armed forces from 1911 to 1985. It was widely used in World War I, World War II, the Korean War, and the Vietnam War. The M1911 is still carried by some U.S. forces." compset="Ranged">
     <fieldval field="wpDamage" value="2d6+1"/>
     <fieldval field="wpShort" value="12"/>
     <fieldval field="wpMedium" value="24"/>
@@ -29,7 +29,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
     </thing>
   <thing id="wpACBMk19" name="Browning Hi-Power" description="The Browning Hi-Power is a single-action, 9 mm semi-automatic handgun. It is based on a design by American firearms inventor John Browning, and completed by Dieudonn&#233; Saive at Fabrique Nationale (FN) of Herstal, Belgium. Browning died in 1926, several years before the design was finalized. The Hi-Power is one of the most widely used military pistols of all time,[3] having been used by the armed forces of over 50 countries." compset="Ranged">
-    <fieldval field="shortname" value="Browning Mk1 9mm"/>
+    <fieldval field="shortname" value="Browning Mk1"/>
     <fieldval field="wpDamage" value="2d6+1"/>
     <fieldval field="wpShort" value="12"/>
     <fieldval field="wpMedium" value="24"/>

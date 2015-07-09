@@ -1,6 +1,6 @@
 <!-- Keeper's Guide - Weapons - MG pistols -->
 
-<thing id="wpACWP38" name="Walther P38" description="..." compset="Ranged">
+<thing id="wpACWP38" name="Walther P38" description="The Walther P38 (also known as a Pistole 38) is a 9 mm semi-automatic pistol that was developed by Walther arms as the service pistol of the Wehrmacht shortly before World War II. It was intended to replace the costly Luger P08, the production of which was scheduled to end in 1942" compset="Ranged">
     <fieldval field="shortname" value="Walther P38"/>
     <fieldval field="wpDamage" value="2D6-1"/>
     <fieldval field="wpShort" value="12"/>
@@ -16,7 +16,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-<thing id="wpACWaPp" name="Walther PP" description="..." compset="Ranged">
+<thing id="wpACWaPp" name="Walther PP" description="The Walther PP (Polizeipistole, or police pistol) series pistols are blowback-operated semi-automatic pistols, developed by the German arms manufacturer Walther." compset="Ranged">
     <fieldval field="shortname" value="Walther PP"/>
     <fieldval field="wpDamage" value="2D6-1"/>
     <fieldval field="wpShort" value="10"/>
@@ -32,7 +32,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-<thing id="wpACWPPK" name="Walther PPK" description="..." compset="Ranged">
+<thing id="wpACWPPK" name="Walther PPK" description="The most common variant of the PP is the Walther PPK, a smaller version of the PP with a shorter grip and barrel and reduced magazine capacity. The smaller size made it more concealable than the original PP and hence better suited to plainclothes or undercover work. It was released in 1931." compset="Ranged">
     <fieldval field="shortname" value="Walther PPK"/>
     <fieldval field="wpDamage" value="2D6-1"/>
     <fieldval field="wpShort" value="10"/>

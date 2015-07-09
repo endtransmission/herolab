@@ -1,7 +1,7 @@
 
 <!-- Keeper's Guide - weapons - Ranged -->
 
-<thing id="wpACBrHi" name="Browning Hi-Power Pistol" description="..." compset="Ranged">
+<thing id="wpACBrHi" name="Browning Hi-Power Pistol" description="The Browning Hi Power is a single-action, semi-automatic handgun available in 9mm and .40 S&W calibers. It is based on a design by American firearms inventor John Browning, and completed by Dieudonné Saive at Fabrique Nationale (FN) of Herstal, Belgium." compset="Ranged">
     <fieldval field="shortname" value="Browning Hi-Power"/>
     <fieldval field="wpDamage" value="2D6-1"/>
     <fieldval field="wpShort" value="12"/>
@@ -18,8 +18,8 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-<thing id="wpACWb38S" name="Webley .38/200 Service Revolver" description="..." compset="Ranged">
-    <fieldval field="shortname" value="Browning Hi-Power"/>
+<thing id="wpACWb38S" name="Webley .38/200 Service Revolver" description="The Webley Revolver (also known as the Webley Top-Break Revolver or Webley Self-Extracting Revolver) was, in various marks, the standard issue service pistol for the armed forces of the United Kingdom, the British Empire, and the Commonwealth from 1887 until 1963." compset="Ranged">
+    <fieldval field="shortname" value="Webley .38/200"/>
     <fieldval field="wpDamage" value="2D6+1"/>
     <fieldval field="wpShort" value="12"/>
     <fieldval field="wpMedium" value="24"/>
@@ -35,8 +35,8 @@
     <tag group="Weapon" tag="Revolver"/>    
 </thing>
 
-<thing id="wpACM191" name="M191 1A1" description="..." compset="Ranged">
-    <fieldval field="shortname" value="M191 1A1"/>
+<thing id="wpACM191" name="Colt M1911A1" description="The pistol's formal designation as of 1940 was Automatic Pistol, Caliber .45, M1911 for the original model of 1911 or Automatic Pistol, Caliber .45, M1911A1 for the M1911A1, adopted in 1924." compset="Ranged">
+    <fieldval field="shortname" value="M1911A1"/>
     <fieldval field="wpDamage" value="2D6+1"/>
     <fieldval field="wpShort" value="12"/>
     <fieldval field="wpMedium" value="24"/>
@@ -52,7 +52,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-<thing id="wpACMAB" name="MAB Modele D Pistol" description="..." compset="Ranged">
+<thing id="wpACMAB" name="MAB Modele D Pistol" description="The MAB model D is a pistol produced by MAB (Manufacture d'Armes de Bayonne) from 1933 to 1963 (.32 ACP) and 1982 (.380 ACP); it was inspired by the Belgian Browning FN pistol 1910/22." compset="Ranged">
     <fieldval field="shortname" value="MAB Pistol"/>
     <fieldval field="wpDamage" value="2D6+1"/>
     <fieldval field="wpShort" value="12"/>
@@ -68,7 +68,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-<thing id="wpACMAS" name="MAS Modele 1873 Revolver" description="..." compset="Ranged">
+<thing id="wpACMAS" name="MAS Modele 1873 Revolver" description="The service revolver model 1873 Chamelot-Delvigne was the first double-action revolver used by the French Army. It was produced by Manufacture d'armes de Saint-Étienne from 1873 to 1887 in about 337,000 copies. Although soon replaced by the Modele 1892 revolver, it was nevertheless widely used during the First World War, and issued to reserve units in 1940. The Resistance made widespread use of it during the Occupation." compset="Ranged">
     <fieldval field="shortname" value="MAS 1873"/>
     <fieldval field="wpDamage" value="2D8"/>
     <fieldval field="wpShort" value="12"/>
@@ -101,7 +101,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-<thing id="wpACHDMp" name="High Standard HDM Pistol" description="..." compset="Ranged">
+<thing id="wpACHDMp" name="High Standard HDM Pistol" description="The High Standard HDM is a semiautomatic pistol equipped with an integral sound suppressor. Based on the High Standard HD model target pistol, it was adopted by the Office of Strategic Services (OSS) during World War II. OSS head Bill Donovan demonstrated the pistol to President Franklin Roosevelt inside the Oval Office. Because of legal concerns during wartime, full-metal-jacketed .22 LR rounds were developed for this pistol." compset="Ranged">
     <fieldval field="shortname" value="HDM Pistol"/>
     <fieldval field="wpDamage" value="2D6-1"/>
     <fieldval field="wpShort" value="12"/>
@@ -118,7 +118,7 @@
     <tag group="Weapon" tag="ThreeRound"/>    
 </thing>
 
-<thing id="wpACWlrd" name="Welrod Mk.IIA Pistol" description="..." compset="Ranged">
+<thing id="wpACWlrd" name="Welrod Mk.IIA Pistol" description="The Welrod was a British bolt action, magazine fed, suppressed pistol devised during World War II at the Inter-Services Research Bureau (later Station IX), based near Welwyn Garden City, UK, for use by irregular forces and resistance groups. Approximately 2,800 were made." compset="Ranged">
     <fieldval field="shortname" value="Welrod Mk.IIA"/>
     <fieldval field="wpDamage" value="2D6+1"/>
     <fieldval field="wpShort" value="12"/>
@@ -135,7 +135,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-<thing id="wpACWlr9" name="Welrod 9mm Pistol" description="..." compset="Ranged">
+<thing id="wpACWlr9" name="Welrod 9mm Pistol" description="The Welrod was a British bolt action, magazine fed, suppressed pistol devised during World War II at the Inter-Services Research Bureau (later Station IX), based near Welwyn Garden City, UK, for use by irregular forces and resistance groups. Approximately 2,800 were made." compset="Ranged">
     <fieldval field="shortname" value="Welrod Mk.IIA"/>
     <fieldval field="wpDamage" value="2D8"/>
     <fieldval field="wpShort" value="12"/>
@@ -164,7 +164,7 @@
     <tag group="WeaponType" tag="ModPistol"/>
 </thing>
 
-<thing id="wpACLEmk3" name="Lee Enfield Mk.III" description="..." compset="Ranged">
+<thing id="wpACLEmk3" name="Lee Enfield Mk.III" description="The Lee–Enfield bolt-action, magazine-fed, repeating rifle was the main firearm used by the military forces of the British Empire and Commonwealth during the first half of the 20th century. It was the British Army's standard rifle from its official adoption in 1895 until 1957" compset="Ranged">
     <fieldval field="shortname" value="Lee Enfield Mk.III"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="24"/>
@@ -198,7 +198,7 @@
     <tag group="Weapon" tag="SnapFire"/> 
 </thing>
 
-<thing id="wpACM1Car" name="M1 Carbine" description="" compset="Ranged">
+<thing id="wpACM1Car" name="M1 Carbine" description="The M1 carbine (formally the United States Carbine, Caliber .30, M1) is a lightweight .30 caliber semi-automatic carbine that became a standard firearm for the U.S. military during World War II" compset="Ranged">
     <fieldval field="shortname" value="M1 Carbine"/>
     <fieldval field="wpDamage" value="2d6"/>
     <fieldval field="wpShort" value="15"/>
@@ -213,7 +213,7 @@
     <tag group="WeaponType" tag="ModRifle"/>
 </thing>
 
-<thing id="wpACM1Gar" name="M1 Garand Rifle" description="..." compset="Ranged">
+<thing id="wpACM1Gar" name="M1 Garand Rifle" description="The M1 Garand (officially designated as U. S. rifle, caliber .30, M1, later simply called Rifle, Caliber .30, M1, also abbreviated as US Rifle, Cal. .30, M1) is a semi-automatic rifle chambered for the .30-06 Springfield rifle cartridge. It was the first standard-issue semi-automatic rifle." compset="Ranged">
     <fieldval field="shortname" value="M1 Garand"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="24"/>
@@ -243,7 +243,7 @@
     <tag group="WeaponType" tag="ModRifle"/>
 </thing>
 
-<thing id="wpACm16C" name="Berthier Modele 1892 M16 Carbine" description="" compset="Ranged">
+<thing id="wpACm16C" name="Berthier Model 1892 M16 Carbine" description="The Berthier carbine (French: Mousqueton Berthier) was a French service rifle adopted in 1892, which was chambered in 8x50mmR Lebel and was widely used during the First and Second World War." compset="Ranged">
     <fieldval field="shortname" value="M16 Carbine"/>
     <fieldval field="wpDamage" value="2D6"/>
     <fieldval field="wpShort" value="15"/>
@@ -258,7 +258,7 @@
     <tag group="Weapon" tag="SemiAuto"/>     
 </thing>
 
-<thing id="wpACM36R" name="MAS Modele 1936 Rifle" description="" compset="Ranged">
+<thing id="wpACM36R" name="MAS Modele 1936 Rifle" description="The MAS Modèle 36 was a military bolt action rifle. First adopted in 1936 by France and intended to replace the Berthier and Lebel series of service rifles, it saw service long past the World War II period. It was manufactured by Manufacture d'Armes de Saint-Étienne (MAS), one of several government-owned arms factories in France. Because production was initiated late in 1937, not enough MAS-36 rifles were available to arm French infantry when the war broke out in September 1939." compset="Ranged">
     <fieldval field="shortname" value="MAS 1936"/>
     <fieldval field="wpDamage" value="2D8"/>
     <fieldval field="wpShort" value="12"/>
@@ -274,7 +274,7 @@
     <tag group="Weapon" tag="SnapFire"/>       
 </thing>
 
-<thing id="wpACCaM1" name="De Liste Commando Carbine Mk1" description="" compset="Ranged">
+<thing id="wpACCaM1" name="De Lisle Commando Carbine Mk1" description="The De Lisle carbine or De Lisle Commando carbine was a British firearm used during World War II that was designed with an integrated suppressor. That, combined with its use of subsonic ammunition, made it extremely quiet in action, possibly one of the quietest firearms ever made" compset="Ranged">
     <fieldval field="shortname" value="De Liste Carbine"/>
     <fieldval field="wpDamage" value="2D6+1"/>
     <fieldval field="wpShort" value="15"/>
@@ -286,10 +286,11 @@
     <usesource source="ACIG"/>
 	<usesource source="ACTimeWW2"/>	
     <tag group="WeaponType" tag="ModRifle"/>
-    <tag group="Weapon" tag="SemiAuto"/>     
+    <tag group="Weapon" tag="SemiAuto"/>  
+<!-- should this have some form of bonus for being so quiet? -->	
 </thing>
 
-<thing id="wpACStMG" name="Sten Mk.I-V Submachine-Gun" description="..." compset="Ranged">
+<thing id="wpACStMG" name="Sten Mk.I-V Submachine-Gun" description="The STEN (or Sten gun) was a family of British submachine guns chambered in 9×19mm and used extensively by British and Commonwealth forces throughout World War II and the Korean War. They were notable for having a simple design and very low production cost making them effective insurgency weapons for resistance groups." compset="Ranged">
     <fieldval field="shortname" value="Sten gun"/>
     <fieldval field="wpDamage" value="2d6-1"/>
     <fieldval field="wpShort" value="12"/>
@@ -305,7 +306,7 @@
     <tag group="Weapon" tag="FullAuto"/> 
 </thing>
 
-<thing id="wpACBrnG" name="Bren Machine Gun" description="..." compset="Ranged">
+<thing id="wpACBrnG" name="Bren Machine Gun" description="The Bren was a modified version of Czechoslovak-designed light machine guns, the ZB vz. 26 and its descendants, which British Army officials had tested during a firearms service competition in the 1930s. The later Bren featured a distinctive top-mounted curved box magazine, conical flash hider and quick change barrel." compset="Ranged">
     <fieldval field="shortname" value="Bren gun"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="40"/>
@@ -323,7 +324,7 @@
     <tag group="Weapon" tag="SnapFire"/> 
 </thing>
 
-<thing id="wpACVckr" name="Vickers Machine Gun" description="..." compset="Ranged">
+<thing id="wpACVckr" name="Vickers Machine Gun" description="The Vickers machine gun or Vickers gun is a name primarily used to refer to the water-cooled .303 British (7.7 mm) machine gun produced by Vickers Limited, originally for the British Army. The machine gun typically required a six to eight-man team to operate: one fired, one fed the ammunition, the rest helped to carry the weapon, its ammunition and spare parts." compset="Ranged">
     <fieldval field="shortname" value="Bren gun"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="30"/>
@@ -340,7 +341,7 @@
     <tag group="Weapon" tag="NoMove"/>
 </thing>
 
-<thing id="wpACTmps" name="Thompson Submachine-Gun" description="..." compset="Ranged">
+<thing id="wpACTmps" name="Thompson Submachine-Gun" description="The Thompson submachine gun (nicknamed the Thompson) is an American submachine gun, invented by John T. Thompson in 1918, that became infamous during the Prohibition era. It was a common sight in the media of the time, being used by both law enforcement officers and criminals." compset="Ranged">
     <fieldval field="shortname" value="Thompson SMG"/>
     <fieldval field="wpDamage" value="2d6+1"/>
     <fieldval field="wpShort" value="12"/>
@@ -356,7 +357,7 @@
     <tag group="Weapon" tag="FullAuto"/> 
 </thing>
 
-<thing id="wpACBAR" name="Browning Auto Rifle (BAR)" description="..." compset="Ranged">
+<thing id="wpACBAR" name="Browning Auto Rifle (BAR)" description="The Browning Automatic Rifle (BAR) is a family of United States automatic rifles (or machine rifles) and light machine guns used by the United States and numerous other countries during the 20th century." compset="Ranged">
     <fieldval field="shortname" value="BAR"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="30"/>
@@ -374,7 +375,7 @@
     <tag group="Weapon" tag="SnapFire"/>
 </thing>
 
-<thing id="wpACJm19" name="Johnson M1941 Machine Gun" description="..." compset="Ranged">
+<thing id="wpACJm19" name="Johnson M1941 Machine Gun" description="The M1941 Johnson Light Machine Gun was an American recoil-operated light machine gun designed in the late 1930s by Melvin Johnson. It shared the same operating principle and many parts with the M1941 Johnson rifle and the M1947 Johnson auto carbine." compset="Ranged">
     <fieldval field="shortname" value="M1941"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="30"/>

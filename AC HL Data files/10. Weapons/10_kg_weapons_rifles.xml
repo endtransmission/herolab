@@ -1,6 +1,6 @@
 <!-- Keeper's Guide - Weapons - Rifles -->
 
-<thing id="wpACFG42" name="Fallschirmjagergewehr 42 - FG42" description="..." compset="Ranged">
+<thing id="wpACFG42" name="Fallschirmjagergewehr 42 - FG42" description="The FG 42 (German: Fallschirmjägergewehr 42, paratrooper rifle 42) is a selective-fire battle rifle produced in Nazi Germany during World War II. The weapon was developed specifically for the use of the Fallschirmjäger airborne infantry in 1942 and was used in very limited numbers until the end of the war." compset="Ranged">
     <fieldval field="shortname" value="FG42"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="24"/>
@@ -18,7 +18,7 @@
     <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
 </thing>
 
-<thing id="wpACgk43" name="Gewehr/Karabiner 43 - G/K43" description="..." compset="Ranged">
+<thing id="wpACgk43" name="Gewehr/Karabiner 43 - G/K43" description="The Gewehr 43 or Karabiner 43 (abbreviated G43, K43, Gew 43, Kar 43) is a 7.92×57mm Mauser caliber semi-automatic rifle developed by Nazi Germany during World War II. It was a modification of the earlier G41(W), using an improved gas system similar to that of the Soviet Tokarev SVT-40." compset="Ranged">
     <fieldval field="shortname" value="G/K43"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="24"/>
@@ -36,7 +36,7 @@
     <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>    
 </thing>
 
-<thing id="wpACk98k" name="Karabiner 98k" description="..." compset="Ranged">
+<thing id="wpACk98k" name="Karabiner 98k" description="The Karabiner 98 Kurz (often abbreviated Kar98k, K98, or K98k) is a bolt action rifle chambered for the 7.92×57mm Mauser cartridge that was adopted on 21 June 1935 as the standard service rifle by the German Wehrmacht.[2] It was one of the final developments in the long line of Mauser military rifles. Although supplemented by semi- and fully automatic rifles during World War II, it remained the primary German service rifle until the end of the war in 1945." compset="Ranged">
     <fieldval field="shortname" value="Karabiner 98K"/>
     <fieldval field="wpDamage" value="2d8"/>
     <fieldval field="wpShort" value="24"/>
@@ -54,7 +54,7 @@
     <tag group="StrReqDie" tag="3" name="d6" abbrev="d6"/>
 </thing>
 
-<thing id="wpACStG44" name="Sturmgewehr 44 - StGw44" description="..." compset="Ranged">
+<thing id="wpACStG44" name="Sturmgewehr 44 - StGw44" description="The StG 44 (abbreviation of Sturmgewehr 44, assault rifle 44) is a German selective-fire rifle developed during World War II that was the first of its kind to see major deployment and is considered to be the first modern assault rifle." compset="Ranged">
     <fieldval field="shortname" value="StGw44"/>
     <fieldval field="wpDamage" value="2d8-1"/>
     <fieldval field="wpShort" value="24"/>
