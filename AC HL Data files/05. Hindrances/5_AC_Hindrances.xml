@@ -52,32 +52,6 @@ herofield[acMaxHindP].value += 1
 	  <tag group="Print" tag="NoPrint" name="NoPrint" abbrev="NoPrint"/>
 	  <eval phase="PreTraits" priority="5000"><![CDATA[perform #traitadjust[trCharisma,-,2,"Bad Reputation"]]]></eval>
   </thing>
-  
-  <thing id="hinACMTam" name="Mythos Tome after effect [Add Knowledge(Mythos)]" description="This needs to be added when you sell or drop a Mythos Tome (Assuming you\'ve read the book!) and you don\'t already have Knowledge(Mythos). NOTE You will need to manually add the text Mythos to the free knowledge skill" compset="Hindrance" summary="After effects of reading a mythos tome" uniqueness="useronce">
-	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
-	  <tag group="Print" tag="NoPrint" name="NoPrint" abbrev="NoPrint"/>
-	  <bootstrap thing="injACSLoss"></bootstrap>
-	  <bootstrap thing="skKnow">
-		  <assignval field="domDomain" value="Mythos"/>
-	  </bootstrap>
-   </thing>
-   <thing id="hinACMTim" name="Mythos Tome after effect [Increase Mythos]" description="This needs to be added when you sell or drop a Mythos Tome (Assuming you&apos;ve read the book!)" compset="Hindrance" summary="After effects of reading a mythos tome">
-	  <usesource source="sepActCth"/>
-	  <tag group="Print" tag="NoPrint"/>
-	  <bootstrap thing="injACSLoss"></bootstrap>
-	  <eval phase="Initialize" priority="10000"><![CDATA[
-   foreach pick in hero where "thingid.skKnow"
-	 if (compare(lowercase(eachpick.field[domDomain].text),"mythos") = 0) then
-		perform eachpick.field[trtBonus].modify[+,1,"mythos"]
-	 endif
-   nexteach]]></eval>
-	  <prereq message="Knowledge(Mythos) is required">
-		<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
-  if (compare(lowercase(eachpick.field[domDomain].text),"mythos") = 0) then
-  validif (eachpick.field[trtFinal].value >= 2)
-  endif
-  nexteach]]></validate>
-		</prereq>
-  </thing>
+
 
 <!-- / 5_AC_Hindrances -->

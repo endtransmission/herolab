@@ -53,6 +53,11 @@
 		<usesource source="sepActCth"/>
 		<tag group="EdgeType" tag="Weird"/> 
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
+				<eval phase="PreTraits" priority="5000">
+			<![CDATA[
+				perform #traitroll[skSwimming,+,2,"Squid edge bonus"]
+			]]>
+		</eval>
 </thing>
 <thing id="edgACSugg" name="Suggestible" description="Something about your mental make-up makes it easier for modern psychiatric methods to repair the psychological damage inflicted by both the sanity-blasting horrors of the Mythos, and the more mundane horrors of the war. Not only does the investigator make mental healing rolls in half the time of his colleagues, he also gains a +2 bonus to the roll." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="Suggestible"/>

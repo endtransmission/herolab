@@ -47,7 +47,7 @@
       	]]></exprreq>
 </thing>
 
-<thing id="edgACHeD" name="Hoze Em down" description="Machine-gunners with this Edge can suppress an area more effectively than the typical gunner. When using a braced medium or heavy machine gun, this killer can sup- press an area equal to two Medium Burst templates. The second template must be adjacent to the first (in any direction), and the weapon burns through double its usual amount of ammunition." compset="Edge" uniqueness="useronce">
+<thing id="edgACHeD" name="Hoze Em down" description="Machine-gunners with this Edge can suppress an area more effectively than the typical gunner. When using a braced medium or heavy machine gun, this killer can suppress an area equal to two Medium Burst templates. The second template must be adjacent to the first (in any direction), and the weapon burns through double its usual amount of ammunition." compset="Edge" uniqueness="useronce">
 		<fieldval field="shortname" value="Hoze em down"/>
 	<usesource source="sepActCth"/>
 		<tag group="EdgeType" tag="Combat"/>

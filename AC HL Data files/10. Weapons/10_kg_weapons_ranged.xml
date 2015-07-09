@@ -1,7 +1,7 @@
 
 <!-- Keeper's Guide - weapons - Ranged -->
 
-<thing id="wpACBrHi" name="Browning Hi-Power Pistol" description="The Browning Hi Power is a single-action, semi-automatic handgun available in 9mm and .40 S&W calibers. It is based on a design by American firearms inventor John Browning, and completed by Dieudonné Saive at Fabrique Nationale (FN) of Herstal, Belgium." compset="Ranged">
+<thing id="wpACBrHi" name="Browning Hi-Power Pistol" description="The Browning Hi Power is a single-action, semi-automatic handgun available in 9mm and .40 calibers. It is based on a design by American firearms inventor John Browning, and completed by Dieudonné Saive at Fabrique Nationale (FN) of Herstal, Belgium." compset="Ranged">
     <fieldval field="shortname" value="Browning Hi-Power"/>
     <fieldval field="wpDamage" value="2D6-1"/>
     <fieldval field="wpShort" value="12"/>

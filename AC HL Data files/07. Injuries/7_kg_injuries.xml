@@ -1,0 +1,43 @@
+<!-- Keeper's Guide - Injuries -->
+
+<thing id="injACBlFnk" name="Blue Funk" description="In the presence of over 2.2lbs (1kg) of raw crystals or 22lbs (10kg) of Blauer Kristall (p.146) for more than 8 hours at a time, characters must make a successful Spirit roll check every 8 hour period or suffer from strange visions as they sleep. \n\nOnce they begin to have these visions, they must succeed at a further Spirit roll or succumb to a waking daydream in which they see the vista of the cosmos uncovered in all its true horror. \n\nIf they do fall victim to the daydream, then every subsequent hour they must make another successful Spirit roll or wake up and begin killing every creature they can see, along with themselves, in the most terrifying manner possible." compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+
+<thing id="injACBlStl" name="Black Steel injury" description="Wounds or shaken status from Black Steel weapons cause -1 to spellcasting; cumulative/temporary" compset="Injury">
+    <usesource source="sepActCth"/>
+</thing>
+
+
+
+  <thing id="injACMTam" name="Mythos Tome after effect [Add Knowledge(Mythos)]" description="This needs to be added when you sell or drop a Mythos Tome (Assuming you\'ve read the book!) and you don\'t already have Knowledge(Mythos). NOTE You will need to manually add the text Mythos to the free knowledge skill" compset="Injury" summary="After effects of reading a mythos tome" uniqueness="useronce">
+	  <usesource source="sepActCth" parent="sepActCth" name="Achtung! Cthulhu"/>
+	  <tag group="Print" tag="NoPrint" name="NoPrint" abbrev="NoPrint"/>
+	  <bootstrap thing="injACSLoss"></bootstrap>
+	  <bootstrap thing="skKnow">
+		  <assignval field="domDomain" value="Mythos"/>
+	  </bootstrap>
+	      <eval phase="Effects" priority="5000">
+    	<![CDATA[
+    		perform #resspent[resSkill,-,1,"Free Mythos Knowledge"]
+    		]]>
+    </eval>
+   </thing>
+   <thing id="injACMTim" name="Mythos Tome after effect [Increase Mythos]" description="This needs to be added when you sell or drop a Mythos Tome (Assuming you&apos;ve read the book!)" compset="Injury" summary="After effects of reading a mythos tome">
+	  <usesource source="sepActCth"/>
+	  <tag group="Print" tag="NoPrint"/>
+	  <bootstrap thing="injACSLoss"></bootstrap>
+	  <eval phase="Initialize" priority="10000"><![CDATA[
+   foreach pick in hero where "thingid.skKnow"
+	 if (compare(lowercase(eachpick.field[domDomain].text),"mythos") = 0) then
+		perform eachpick.field[trtBonus].modify[+,1,"mythos"]
+	 endif
+   nexteach]]></eval> 
+	  <prereq message="Knowledge(Mythos) is required">
+		<validate><![CDATA[foreach pick in hero where "thingid.skKnow"
+  if (compare(lowercase(eachpick.field[domDomain].text),"mythos") = 0) then
+  validif (eachpick.field[trtFinal].value >= 2)
+  endif
+  nexteach]]></validate>
+		</prereq>
+  </thing>

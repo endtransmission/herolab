@@ -5,6 +5,15 @@
 		<tag group="EdgeType" tag="Profession"/>		
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>	
 		<pickreq thing="edgACaFgM"/>	
+		<eval phase="PreTraits" priority="5000">
+			<![CDATA[
+				perform #traitroll[skStealth,+,1,"Commando stealth"]
+				perform #traitroll[skSurvival,+,2,"Commando survival skills"]
+			]]>
+		</eval>
+
+		
+		
       <exprreq message="Spirit d6 required."><![CDATA[
       #trait[attrSpi] >= 3
       ]]></exprreq>
@@ -48,6 +57,12 @@
 		<usesource source="sepActCth"/>
 		<tag group="EdgeType" tag="Profession"/>
 		<tag group="MinRank" tag="0" name="Novice" abbrev="Novice"/>
+  	  		<eval phase="PreTraits" priority="5000">
+			<![CDATA[
+				perform #traitroll[skSwimming,+,2,"Frogman swim bonus"]
+				perform #traitadjust[trPace,+,1,"Frogman pace bonus"]
+			]]>
+		</eval>
       <exprreq message="Smarts d6 required."><![CDATA[
       #trait[attrSma] >= 3
       ]]></exprreq>	
@@ -60,7 +75,8 @@
 	  <exprreq message="Swimming d8+ required"><![CDATA[
 	  #traitfound[skSwimming] >=4	  
 	  ]]></exprreq>
-    <prereq message="KnowlEdge(Demolitions) d6 required">
+
+    <prereq message="Knowledge(Demolitions) d6 required">
       <validate><![CDATA[        foreach pick in hero where "thingid.skKnow"
           if (compare(lowercase(eachpick.field[domDomain].text),"demolitions") = 0) then
             validif (eachpick.field[trtFinal].value >= 3)

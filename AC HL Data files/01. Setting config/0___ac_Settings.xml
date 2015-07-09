@@ -2,7 +2,7 @@
 <document signature="Hero Lab Data">
 <!--
 Savage Worlds Data file for Modiphius' Acthung! Cthulhu setting. 
-All data Copyright Modiphius 2013
+All data Copyright Modiphius 2013-2015
 http://www.modiphius.com/achtung-cthulhu.html
 
 Datafile Author: Paul Smith
@@ -21,10 +21,9 @@ Sanity - The character's Sanity is based upon the Spirit value. The In-Play tab 
     <fieldval field="setGrpTerm" value="Careers"/>
     <tag group="Hero" tag="GroupUse"/>
     <tag group="Hero" tag="FactionUse"/>    
-	<bootstrap thing="skACDream"></bootstrap>	
-    <eval phase="Initialize" priority="10000"><![CDATA[
-  perform #resspent[resSkill,-,1,"Free Dreaming"]
-]]>~Set starting Cash
+	
+    <eval phase="Initialize" priority="10000">
+    ~Set starting Cash
 	trustme
       herofield[acCashCfg].value = 50</eval>
 </thing>
